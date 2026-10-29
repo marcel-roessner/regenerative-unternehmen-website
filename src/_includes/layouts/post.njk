@@ -34,8 +34,19 @@ layout: layouts/base.njk
     {%- set prev = collections.posts | getPreviousCollectionItem(page) %}
     {%- set next = collections.posts | getNextCollectionItem(page) %}
     <nav class="pager" aria-label="Weitere Beiträge">
-      <div>{% if next %}<a href="{{ next.url }}"><span class="label">← Älter</span><span class="t">{{ next.data.title }}</span></a>{% endif %}</div>
-      <div class="next">{% if prev %}<a href="{{ prev.url }}"><span class="label">Neuer →</span><span class="t">{{ prev.data.title }}</span></a>{% endif %}</div>
+      <span class="label pager-head">Weiterlesen</span>
+      <div class="pager-grid">
+        {%- for item in [next, prev] %}{% if item %}
+        <a class="pager-item" href="{{ item.url }}">
+          <span class="pager-thumb">{% if item.data.image %}<img src="{{ item.data.image | img(true) }}" alt="" loading="lazy">{% endif %}</span>
+          <span class="pager-text">
+            <span class="label">{{ "Älterer Beitrag" if item == next else "Neuerer Beitrag" }} · {{ item.date | dateDe }}</span>
+            <span class="t">{{ item.data.title }}</span>
+            <span class="pager-more">Lesen <span aria-hidden="true">→</span></span>
+          </span>
+        </a>
+        {%- endif %}{% endfor %}
+      </div>
     </nav>
   </footer>
 </article>
