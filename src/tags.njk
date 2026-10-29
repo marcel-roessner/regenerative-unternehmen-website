@@ -18,7 +18,7 @@ eleventyComputed:
     <li><a href="{{ post.url }}">
       <span class="label date">{{ post.date | dateDe }}</span>
       <span class="t">{{ post.data.title }}</span>
-      <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image }}-720.webp" alt="" loading="lazy">{% endif %}</span>
+      <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(true) }}" alt="" loading="lazy">{% endif %}</span>
     </a></li>
     {%- endfor %}
   </ul>

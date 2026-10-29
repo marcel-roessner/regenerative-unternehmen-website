@@ -14,16 +14,16 @@
       <div class="wrap story-grid">
         <div class="story-text">
           <ol class="story-steps">
-            {%- for s in model %}
+            {%- for s in model.stages %}
             <li class="story-step" data-step="{{ loop.index0 }}">
-              <span class="label">Stufe {{ loop.index }} / {{ model.length }}</span>
+              <span class="label">Stufe {{ loop.index }} / {{ model.stages.length }}</span>
               <h3 class="story-name">{{ s.name }}</h3>
               <p class="story-claim">{{ s.claim }}</p>
               <p class="story-body">{{ s.text }}</p>
             </li>
             {%- endfor %}
           </ol>
-          <div class="story-progress" aria-hidden="true">{% for s in model %}<span></span>{% endfor %}</div>
+          <div class="story-progress" aria-hidden="true">{% for s in model.stages %}<span></span>{% endfor %}</div>
         </div>
 
         <figure class="story-figure" aria-label="Diagramm: degenerative und regenerative Entwicklung">
@@ -44,7 +44,7 @@
             <line class="sv-axis" x1="60" y1="290" x2="950" y2="290"/>
             <path class="sv-axis" d="M60 290 l12 -7 v14 z M950 290 l-12 -7 v14 z"/>
             {%- set xs = [120, 320, 500, 700, 925] %}{%- set anchors = ["start", "middle", "middle", "end", "end"] %}
-            {%- for s in model %}
+            {%- for s in model.stages %}
             <g class="sv-station" data-step="{{ loop.index0 }}">
               <line x1="{{ xs[loop.index0] }}" y1="282" x2="{{ xs[loop.index0] }}" y2="298"/>
               <text x="{{ xs[loop.index0] - (12 if loop.first else 0) + (14 if loop.last else 0) + (14 if loop.index0 == 3 else 0) }}" y="{{ 328 if loop.index0 > 2 else 260 }}" text-anchor="{{ anchors[loop.index0] }}">{{ s.name }}</text>

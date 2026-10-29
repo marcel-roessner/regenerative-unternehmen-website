@@ -16,7 +16,7 @@ description: Beiträge zu regenerativem Wirtschaften – Purpose, Strategie, Org
   <div class="cards">
     {%- for post in collections.posts %}
     <a class="card{% if loop.first %} card--feature{% endif %}" href="{{ post.url }}">
-      <div class="thumb">{% if post.data.image %}<img src="{{ post.data.image }}{% if not loop.first %}-720{% endif %}.webp" alt="" {% if not loop.first %}loading="lazy"{% endif %}>{% endif %}</div>
+      <div class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(not loop.first) }}" alt="" {% if not loop.first %}loading="lazy"{% endif %}>{% endif %}</div>
       <div>
         <span class="label">{{ post.date | dateDe }}{% if loop.first %} · Neu{% endif %}</span>
         <h2 class="t">{{ post.data.title }}</h2>

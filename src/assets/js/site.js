@@ -56,3 +56,11 @@ if (story) {
   window.addEventListener("resize", onScroll);
   update();
 }
+
+// ---------- Neue Seiten beginnen immer oben ----------
+// (verhindert, dass der Browser beim Öffnen eines Beitrags eine alte Scrollposition übernimmt)
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+if (!location.hash) {
+  window.scrollTo(0, 0);
+  window.addEventListener("pageshow", () => window.scrollTo(0, 0));
+}

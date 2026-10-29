@@ -90,9 +90,9 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
       <h2 class="h2">Unser <em>Kollektiv</em></h2>
       <p class="lead">Wir beschäftigen uns mit der Zukunft unserer Wirtschaft – mit Hintergrund in Organisations- und Nachhaltigkeitsentwicklung. Lernt uns kennen und geht mit uns in den Austausch, um gemeinsam eine regenerative Wirtschaft zu gestalten.</p>
       <div class="team">
-        {%- for p in team %}
+        {%- for p in team.members %}
         <div class="person">
-          <figure><img src="{{ p.image }}-720.webp" alt="Porträt {{ p.name }}" loading="lazy" width="720" height="900"></figure>
+          <figure><img src="{{ p.image | img(true) }}" alt="Porträt {{ p.name }}" loading="lazy" width="720" height="900"></figure>
           <span class="label">{{ p.role }}</span>
           <p class="name">{{ p.name }}</p>
           <ul>{% for f in p.focus %}<li>{{ f }}</li>{% endfor %}</ul>
@@ -114,7 +114,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
         <li><a href="{{ post.url }}">
           <span class="label date">{{ post.date | dateDe }}</span>
           <span class="t">{{ post.data.title }}</span>
-          <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image }}-720.webp" alt="" loading="lazy">{% endif %}</span>
+          <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(true) }}" alt="" loading="lazy">{% endif %}</span>
         </a></li>
         {%- endfor %}
       </ul>

@@ -5,13 +5,13 @@ permalink: /product-page/planetary-thinking-kartenset/
 description: Interaktives Werkzeug, um ein Bewusstsein für die planetaren Grenzen zu schaffen und nachhaltige Entscheidungen in Organisationen zu fördern. 21 Themenkarten, 4 Workshop-Module, Booklet.
 image: /assets/img/b34276_78fa1eadb33f43e98c5e3aab2b7512f7
 ---
-{%- set p = products[0] %}
+{%- set p = products.items[0] %}
 <section class="wrap" style="padding-block:clamp(3rem,7vw,6rem)">
   <a class="label" href="/category/produkte/">← Alle Produkte</a>
   <div class="product" style="margin-top:2rem">
     <div class="gallery">
-      <img src="{{ p.image }}.webp" alt="Planetary Thinking Kartenset mit Schachtel und Karten" fetchpriority="high">
-      <img src="{{ p.image2 }}.webp" alt="Booklet des Kartensets" loading="lazy">
+      <img src="{{ p.image | img }}" alt="Planetary Thinking Kartenset mit Schachtel und Karten" fetchpriority="high">
+      <img src="{{ p.image2 | img }}" alt="Booklet des Kartensets" loading="lazy">
       <img src="/assets/img/b34276_3e3f241e751d4986b62d228848ce047b.webp" alt="Doppelseite aus dem Booklet: Teil 1 – Wissen" loading="lazy">
     </div>
     <div style="position:sticky;top:2rem">

@@ -1,7 +1,7 @@
 # regenerative-unternehmen.de
 
 Die Website von **Regenerative Unternehmen** – migriert von Wix auf eine statische Seite.
-Gebaut mit [Eleventy](https://www.11ty.dev/), gehostet kostenlos auf **GitHub Pages**.
+Gebaut mit [Eleventy](https://www.11ty.dev/), gehostet in der EU auf **[statichost.eu](https://www.statichost.eu)**, Redaktion mit **[Sveltia CMS](https://sveltiacms.app)** unter `/admin`.
 
 - Keine Cookies, kein Tracking, keine externen Schriften oder Skripte
 - Blog in Markdown (`src/posts/*.md`) – ein neuer Beitrag ist eine neue Datei
@@ -21,19 +21,47 @@ Voraussetzung: [Node.js](https://nodejs.org/) ab Version 20.
 
 ## Online stellen (einmalig)
 
-1. Auf GitHub ein neues Repository anlegen (z. B. `regenerative-unternehmen`) und diesen Ordner hochladen:
+**Repo (privat) bei GitHub, Website bei statichost.eu (Schweden, nur europäische Server).**
+
+1. **GitHub:** Neues *privates* Repository anlegen (z. B. `regenerative-unternehmen`) und hochladen:
    ```bash
    git remote add origin git@github.com:DEIN-ACCOUNT/regenerative-unternehmen.git
    git push -u origin main
    ```
-2. Im Repo: **Settings → Pages → Build and deployment → Source: „GitHub Actions“**.
-   Ab jetzt baut und veröffentlicht jeder Push auf `main` die Seite automatisch.
-3. **Eigene Domain:** Die Datei `src/static/CNAME` enthält bereits `www.regenerative-unternehmen.de`.
-   Beim Domain-Anbieter einstellen:
-   - `www` → **CNAME** auf `DEIN-ACCOUNT.github.io`
-   - Root-Domain (`@`) → **A-Records** auf `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - Danach in *Settings → Pages* die Domain eintragen und **„Enforce HTTPS“** aktivieren.
-4. Erst wenn alles läuft: Wix-Abo kündigen. **Vorher** Newsletter-Abonnent:innen und Bestellungen aus Wix exportieren.
+   Im GitHub-Konto **Zwei-Faktor-Authentifizierung** aktivieren (Settings → Password and authentication).
+   Wenn ihr eine GitHub-Organisation nutzt: Organisation → Settings → Authentication security → „Require two-factor authentication“.
+2. **statichost.eu:** Konto anlegen (Tarif „Hobby“ ist kostenlos) → neue Site mit der **SSH-Adresse** des Repos.
+   Den angezeigten öffentlichen Schlüssel bei GitHub unter *Repo → Settings → Deploy keys* eintragen (nur Lesezugriff).
+   Für automatische Veröffentlichung bei jeder Änderung den Webhook aus dem statichost-Dashboard bei GitHub unter *Repo → Settings → Webhooks* eintragen.
+   Die Build-Einstellungen stehen bereits in `statichost.yml` (Node 22, `npm ci && npm run build`, Ausgabe `_site`).
+3. **AV-Vertrag:** Den Auftragsverarbeitungsvertrag von statichost.eu (https://www.statichost.eu/dpa/) ausdrucken, unterschreiben und an statichost senden – die Datenschutzerklärung geht davon aus.
+4. **Domain:** Im statichost-Dashboard unter *Settings → Domains* `www.regenerative-unternehmen.de` und `regenerative-unternehmen.de` eintragen. Beim Domain-Anbieter:
+   - `www` → **CNAME** auf `SITENAME.statichost.page.`
+   - Root-Domain → **ALIAS** auf `SITENAME.statichost.page.` (oder `A 95.217.26.94` und `AAAA 2a01:4f9:c01f:8002::`)
+   HTTPS wird automatisch eingerichtet.
+5. **Redaktion:** In `src/admin/config.yml` bei `repo:` euren GitHub-Account eintragen (siehe unten).
+6. Erst wenn alles läuft: Wix-Abo kündigen. **Vorher** Newsletter-Abonnent:innen und Bestellungen aus Wix exportieren.
+
+Alte Wix-Adressen werden über `_redirects` dauerhaft (301) auf die neuen Adressen umgeleitet.
+
+## Redaktion (Backend) unter /admin
+
+Unter **https://www.regenerative-unternehmen.de/admin/** lassen sich Blogbeiträge schreiben und Kerntexte ändern:
+Blog · Modell (5 Stufen) · Team · Produkte · Einstellungen (Kontakt, Shop, Newsletter) · Impressum · Datenschutz.
+Jede Änderung wird als Commit im Repo gespeichert; statichost baut die Seite danach automatisch neu (ca. 1 Minute).
+
+**Anmeldung mit 2FA – so geht’s:**
+1. Bei GitHub anmelden (Passwort + zweiter Faktor).
+2. *Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token*
+   - Repository access: **Only select repositories** → nur dieses Repo
+   - Permissions: **Contents: Read and write** (sonst nichts)
+   - Ablaufdatum setzen (z. B. 90 Tage)
+3. `/admin` öffnen → „Sign In Using Access Token“ → Token einfügen.
+
+Der Token bleibt nur im eigenen Browser gespeichert. Wer keinen GitHub-Zugang mit 2FA hat, kommt nicht hinein; ein verlorener Token wird bei GitHub einfach widerrufen.
+Das CMS läuft komplett im Browser – es gibt keinen eigenen Server. Hinweis: Die Redaktionsoberfläche lädt ihre eigenen Symbol-Schriften von einem CDN (jsDelivr); das betrifft nur die Redaktion, nicht die Besucher der Website.
+
+Seitenlayouts (Startseite, Mission, Kartenset) bleiben bewusst fest im Code – so kann beim Bearbeiten nichts am Design kaputtgehen.
 
 ## Inhalte pflegen
 
@@ -94,7 +122,7 @@ in `main.css` einsetzen – dann am besten anstelle von Unbounded.
 
 ## Vor dem Livegang prüfen
 
-- [ ] **Datenschutzerklärung** (`src/datenschutz.md`) ist ein Entwurf: Wix-, Google-Ads-, Analytics- usw. Abschnitte wurden entfernt, GitHub-Pages-Hosting ergänzt. Bitte rechtlich prüfen lassen (z. B. eRecht24-Generator neu durchlaufen).
+- [ ] **Datenschutzerklärung** (`src/datenschutz.md`) ist ein Entwurf: Wix-, Google-Ads-, Analytics- usw. Abschnitte wurden entfernt, Hosting bei statichost.eu ergänzt. Bitte rechtlich prüfen lassen (z. B. eRecht24-Generator neu durchlaufen).
 - [ ] **Impressum:** auf DDG/MStV aktualisiert (TMG/RStV gelten nicht mehr).
 - [ ] **Shop:** Bei Verkauf an Verbraucher braucht es AGB, Widerrufsbelehrung und Preisangaben inkl. MwSt.-Hinweis.
 - [ ] **Bildrechte:** Wix-Stockfotos wurden bewusst nicht übernommen (deren Lizenz gilt nur auf Wix). Alle übernommenen Bilder stammen aus eurem eigenen Wix-Medienordner – bitte trotzdem kurz prüfen, ob für jedes Bild die Rechte vorliegen.

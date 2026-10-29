@@ -1,0 +1,4 @@
+# Build-Einstellungen für statichost.eu (Hosting in der EU)
+image: node:22.12.0
+command: npm ci && npm run build
+public: _site

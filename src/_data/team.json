@@ -1,16 +1,26 @@
-[
-  {
-    "name": "Marcel Rößner",
-    "role": "Transformationsberater",
-    "focus": ["Regeneratives Business Development", "Organisationsentwicklung", "Strategie"],
-    "image": "/assets/img/b34276_c95169365015472193bf0a4d83fd7841",
-    "linkedin": "https://www.linkedin.com/in/marcel-r%C3%B6%C3%9Fner/"
-  },
-  {
-    "name": "Karry Schwettmann",
-    "role": "Transformationsberaterin",
-    "focus": ["Organisationsentwicklung", "Kommunikation", "Nachhaltigkeitsberichterstattung"],
-    "image": "/assets/img/b34276_4d044138f7c24c91b946ed4c98435c57",
-    "linkedin": "https://www.linkedin.com/in/karryschwettmann/"
-  }
-]
+{
+  "members": [
+    {
+      "name": "Marcel Rößner",
+      "role": "Transformationsberater",
+      "focus": [
+        "Regeneratives Business Development",
+        "Organisationsentwicklung",
+        "Strategie"
+      ],
+      "image": "/assets/img/b34276_c95169365015472193bf0a4d83fd7841",
+      "linkedin": "https://www.linkedin.com/in/marcel-r%C3%B6%C3%9Fner/"
+    },
+    {
+      "name": "Karry Schwettmann",
+      "role": "Transformationsberaterin",
+      "focus": [
+        "Organisationsentwicklung",
+        "Kommunikation",
+        "Nachhaltigkeitsberichterstattung"
+      ],
+      "image": "/assets/img/b34276_4d044138f7c24c91b946ed4c98435c57",
+      "linkedin": "https://www.linkedin.com/in/karryschwettmann/"
+    }
+  ]
+}

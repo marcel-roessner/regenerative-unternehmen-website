@@ -5,7 +5,7 @@ permalink: /datenschutz/
 description: Informationen zum Umgang mit personenbezogenen Daten auf dieser Website.
 ---
 
-<p class="label">Stand: Oktober 2026 · Entwurf nach Umzug zu GitHub Pages – vor Livegang rechtlich prüfen lassen.</p>
+<p class="label">Stand: Oktober 2026 · Entwurf nach Umzug zu statichost.eu – vor Livegang rechtlich prüfen lassen.</p>
 
 ## 1) Einleitung und Kontaktdaten des Verantwortlichen
 1.1 Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.
@@ -29,9 +29,11 @@ Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres be
 
 ## 3) Hosting
 
-Diese Website wird über GitHub Pages bereitgestellt. Anbieter ist die GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande; Mutterunternehmen ist die GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+Diese Website wird bei folgendem Anbieter gehostet: Variable Object Assignment (statichost.eu), c/o Knackeriet, Stockholm, Schweden.
 
-Beim Aufruf der Website verarbeitet GitHub die unter Ziffer 2 genannten Server-Logfiles (insbesondere die IP-Adresse), um die Website technisch auszuliefern und die Sicherheit des Dienstes zu gewährleisten. Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer sicheren und effizienten Bereitstellung unseres Internetauftritts. Eine Übermittlung in die USA ist dabei nicht ausgeschlossen. GitHub, Inc. ist unter dem EU-U.S. Data Privacy Framework zertifiziert; damit besteht ein Angemessenheitsbeschluss der Europäischen Kommission. Weitere Informationen: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement
+Beim Aufruf der Website verarbeitet der Anbieter die unter Ziffer 2 genannten Server-Logfiles (insbesondere die IP-Adresse), um die Website technisch auszuliefern und die Sicherheit des Dienstes zu gewährleisten. Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer sicheren und effizienten Bereitstellung unseres Internetauftritts. Die Daten werden ausschließlich innerhalb der EU/des EWR verarbeitet. Als Unterauftragsverarbeiter setzt der Anbieter die Hetzner Online GmbH (Rechenzentrum, Deutschland) und die BunnyWay d.o.o. (Content Delivery Network, Slowenien) ein.
+
+Wir haben mit dem Anbieter einen Auftragsverarbeitungsvertrag geschlossen, der den Schutz der Daten unserer Seitenbesucher sicherstellt und eine unberechtigte Weitergabe an Dritte untersagt.
 
 Schriftarten werden lokal von unserem eigenen Webspace geladen; es findet keine Verbindung zu Servern Dritter (z. B. Google Fonts) statt.
 

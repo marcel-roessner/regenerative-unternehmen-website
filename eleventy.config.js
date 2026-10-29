@@ -4,7 +4,12 @@ import { existsSync, readFileSync } from "node:fs";
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
-  eleventyConfig.addPassthroughCopy({ "src/static/.nojekyll": ".nojekyll" });
+
+  // Redaktion (Sveltia CMS): Oberfläche + Programm lokal ausliefern
+  eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.ignores.add("src/admin/**");
+  eleventyConfig.addPassthroughCopy({ "node_modules/@sveltia/cms/dist/sveltia-cms.js": "admin/sveltia-cms.js" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/@sveltia/cms/dist/chunks": "admin/chunks" });
 
   // Blogbeiträge, neueste zuerst
   eleventyConfig.addCollection("posts", (api) =>
@@ -31,6 +36,12 @@ export default function (eleventyConfig) {
     return Math.max(1, Math.round(words / 200));
   });
   eleventyConfig.addFilter("head", (arr = [], n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
+  // Bildpfad: alte Bilder liegen ohne Endung vor (name → name.webp / name-720.webp),
+  // im CMS hochgeladene Bilder haben eine Endung und werden direkt verwendet.
+  eleventyConfig.addFilter("img", (path = "", small = false) =>
+    /\.(jpe?g|png|webp|gif|svg|avif)$/i.test(path) ? path : `${path}${small ? "-720" : ""}.webp`
+  );
+  eleventyConfig.addFilter("urlencodePath", (p) => p.split("/").map(encodeURIComponent).join("/"));
   eleventyConfig.addFilter("pad", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("topicTags", (tags = []) => tags.filter((t) => t !== "post"));
   eleventyConfig.addFilter("slugTag", (t) =>

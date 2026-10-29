@@ -5,13 +5,13 @@ permalink: /product-page/regenerative-strategien-whitepaper/
 description: Whitepaper zu kontextbasierten Strategien – wie Unternehmen der Berichts- und Dokumentationsfalle entkommen und Nachhaltigkeit konsequent umsetzen.
 image: /assets/img/b34276_ab43e671a04b4d43986fe2db9696bd11
 ---
-{%- set p = products[1] %}
+{%- set p = products.items[1] %}
 <section class="wrap" style="padding-block:clamp(3rem,7vw,6rem)">
   <a class="label" href="/category/produkte/">← Alle Produkte</a>
   <div class="product" style="margin-top:2rem">
     <div class="gallery">
-      <img src="{{ p.image }}.webp" alt="Titelseite des Whitepapers „Kontextbasierte Strategien“" fetchpriority="high" style="background:#fbf9f4">
-      <img src="{{ p.image2 }}.webp" alt="Innenseite des Whitepapers" loading="lazy" style="background:#fbf9f4">
+      <img src="{{ p.image | img }}" alt="Titelseite des Whitepapers „Kontextbasierte Strategien“" fetchpriority="high" style="background:#fbf9f4">
+      <img src="{{ p.image2 | img }}" alt="Innenseite des Whitepapers" loading="lazy" style="background:#fbf9f4">
     </div>
     <div style="position:sticky;top:2rem">
       <span class="label">Whitepaper</span>

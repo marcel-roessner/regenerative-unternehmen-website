@@ -14,7 +14,7 @@ layout: layouts/base.njk
   </header>
   {%- if image %}
   <figure class="article-hero wrap">
-    <img src="{{ image }}.webp" alt="" loading="eager" fetchpriority="high">
+    <img src="{{ image | img }}" alt="" loading="eager" fetchpriority="high">
   </figure>
   {%- endif %}
   <div class="article wrap">
@@ -40,4 +40,4 @@ layout: layouts/base.njk
   </footer>
 </article>
 {% include "partials/newsletter.njk" %}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"datePublished":"{{ date | isoDate }}","dateModified":"{{ updated }}","author":{"@type":"Person","name":{{ author | dump | safe }}},"image":"{{ site.url }}{{ image }}.webp","mainEntityOfPage":"{{ site.url }}{{ page.url }}"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"datePublished":"{{ date | isoDate }}","dateModified":"{{ updated }}","author":{"@type":"Person","name":{{ author | dump | safe }}},"image":"{{ site.url }}{{ image | img }}","mainEntityOfPage":"{{ site.url }}{{ page.url }}"}</script>

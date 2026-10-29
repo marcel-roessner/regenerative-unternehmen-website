@@ -1,0 +1,10 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# Alte Wix-Adressen → neue Adressen (statichost.eu, 301 = dauerhaft)
+{% for r in redirects -%}
+{%- set from = r.from | urlencodePath -%}
+{{ from }}    {{ r.to }}    301
+{{ from | replace(r/\/$/, "") }}    {{ r.to }}    301
+{% endfor -%}
