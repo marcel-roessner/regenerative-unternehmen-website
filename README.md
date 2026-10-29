@@ -83,20 +83,15 @@ Jeder dieser Dienste muss in der Datenschutzerklärung ergänzt werden.
 
 ## Schriften
 
-Alle Schriften liegen selbst gehostet in `src/assets/fonts/` (DSGVO-freundlich, keine Google-Server):
+Die Seite nutzt genau drei Schriftfamilien, alle selbst gehostet in `src/assets/fonts/`
+(DSGVO-freundlich, keine Google-Server):
 
-- **Unbounded** – Überschriften, von [NaN](https://www.nan.xyz/fonts/unbounded) (SIL Open Font License)
+- **Unbounded** – Überschriften (leicht) und Wortmarke/Kapitelnamen (fett), von [NaN](https://www.nan.xyz/fonts/unbounded) (SIL Open Font License)
 - **Hanken Grotesk** – Fließtext (OFL)
-- **Instrument Serif** – kursive Akzente und Zitate (OFL)
-- **IBM Plex Mono** – kleine Beschriftungen (OFL)
+- **IBM Plex Mono** – kleine Beschriftungen wie Datum, Bildunterschriften (OFL)
 
-**Optional – NaN Holo Gigawide Ultra:** gratis (CC BY-ND) über
-[nan.xyz](https://www.nan.xyz/fonts/nan-holo-gigawide-ultra/) per E-Mail-Anmeldung. Die WOFF2-Datei als
-`src/assets/fonts/NaNHoloGigawide-Ultra.woff2` ablegen – sie wird automatisch für Wortmarke,
-Hero-Zeile und die großen Kapitelnummern verwendet. Bis dahin springt Unbounded ein.
-
-Eine lizenzierte NaN-Schrift (z. B. NaN Jaune oder NaN Serf) lässt sich später über die Variablen
-`--f-head` bzw. `--f-wide` in `main.css` einsetzen.
+Eine lizenzierte NaN-Schrift lässt sich später über die Variablen `--f-head` bzw. `--f-wide`
+in `main.css` einsetzen – dann am besten anstelle von Unbounded, damit es bei drei Schriften bleibt.
 
 ## Vor dem Livegang prüfen
 

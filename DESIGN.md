@@ -7,7 +7,7 @@ eine starke Schrift und ein paar überraschende Details.
 
 | Vorher (Wix) | Jetzt | Warum |
 | --- | --- | --- |
-| Helvetica Bold in Versalien, überall gleich laut | **Unbounded** (NaN) leicht für Überschriften, breite Versalzeile für den Hero, **Instrument Serif kursiv** für einzelne Akzentwörter | Klare Hierarchie; der Kontrast breit/grotesk ↔ kursiv/serif wirkt künstlerisch, ohne laut zu sein |
+| Helvetica Bold in Versalien, überall gleich laut | Drei Schriften: **Unbounded** (NaN) leicht für Überschriften und fett-breit für Wortmarke und Kapitelnamen, **Hanken Grotesk** für Text, **IBM Plex Mono** für kleine Beschriftungen | Klare Hierarchie mit wenigen Mitteln |
 | Reinweiß + Hellgrau | Warmes Papier `#f1ede3`, Tinte `#171713`, **Rost** `#c4471f` als einzige Akzentfarbe, **Tannengrün** aus dem Kartenset, Lime nur als Highlight | Eine eigene, ruhige Farbwelt, die zum Kartenset passt |
 | Stockfotos (Windräder, Wüste) als Hintergründe | Generative **Wachstumsringe** (SVG, langsam rotierend) im Hero | Eigenständiges Motiv: Jahresringe, Donut, Kreislauf. Außerdem: Wix-Bilder dürfen außerhalb von Wix nicht genutzt werden |
 | Weißer Text auf Blogbildern | Bilder in **Graustufen**, Farbe erscheint beim Hover; Titel unter dem Bild | Bunt gemischte KI-Bilder wirken als Serie, Titel sind lesbar |
