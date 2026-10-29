@@ -9,7 +9,7 @@ eine starke Schrift und ein paar überraschende Details.
 | --- | --- | --- |
 | Helvetica Bold in Versalien, überall gleich laut | Drei Schriften: **Unbounded** (NaN) leicht für Überschriften und fett-breit für Wortmarke und Kapitelnamen, **Hanken Grotesk** für Text, **IBM Plex Mono** für kleine Beschriftungen | Klare Hierarchie mit wenigen Mitteln |
 | Reinweiß + Hellgrau | Warmes Papier `#f1ede3`, Tinte `#171713`, **Rost** `#c4471f` als einzige Akzentfarbe, **Tannengrün** aus dem Kartenset, Lime nur als Highlight | Eine eigene, ruhige Farbwelt, die zum Kartenset passt |
-| Stockfotos (Windräder, Wüste) als Hintergründe | Generative **Wachstumsringe** (SVG, langsam rotierend) im Hero | Eigenständiges Motiv: Jahresringe, Donut, Kreislauf. Außerdem: Wix-Bilder dürfen außerhalb von Wix nicht genutzt werden |
+| Stockfotos (Windräder, Wüste) als Hintergründe | Generative **Wachstumsringe** (SVG, ruhig) im Hero | Eigenständiges Motiv: Jahresringe, Donut, Kreislauf. Außerdem: Wix-Bilder dürfen außerhalb von Wix nicht genutzt werden |
 | Weißer Text auf Blogbildern | Bilder in **Graustufen**, Farbe erscheint beim Hover; Titel unter dem Bild | Bunt gemischte KI-Bilder wirken als Serie, Titel sind lesbar |
 | Zentrierter Fließtext, kleine Schrift | 18 px Text, max. 66 Zeichen pro Zeile, links ausgerichtet | Deutlich besser lesbar, besonders bei langen Blogbeiträgen |
 | Icon-Kreise im Angebot | Römische Ziffern *i. ii. iii.* und Haarlinien | Editorial statt Baukasten |
@@ -20,13 +20,17 @@ eine starke Schrift und ein paar überraschende Details.
 
 Technisch: keine Cookies, kein Tracking, keine externen Server, Schriften lokal, Bilder als WebP in zwei Größen und mit Lazy Loading.
 
-## Die Seite wächst beim Scrollen
+## Ein starker Moment: das Modell als Geschichte
 
-- **Farbe:** Das Papier wandert beim Scrollen langsam von Sand zu einem hellen Moosgrün.
-- **Jahresringe:** Im Hero liegt anfangs nur der Kern, weitere Ringe wachsen beim Scrollen dazu. Unten rechts zeigt ein kleines Ring-Emblem den Fortschritt auf jeder Seite (Klick = nach oben); am Ende färbt sich ein Ring rostrot.
-- **Überschriften** gewinnen an Gewicht, während sie ins Bild kommen (variable Schriftstärke von Unbounded).
-- **Kapitelnummern** füllen sich, **Linien** wachsen von links, **Listen und Karten** keimen nacheinander auf.
-- Alles in `src/assets/js/site.js`; bei „Bewegung reduzieren“ im System drehen sich die Ringe nicht.
+Der Rest der Seite bleibt ruhig. In Kapitel 02 der Startseite bleibt die Bühne beim Scrollen stehen,
+und das Modell nach Reed / Mang baut sich Stufe für Stufe auf:
+**Konventionell → Grün → Nachhaltig → Wiederherstellend → Regenerativ.**
+
+- Ein Punkt wandert über die Achse und rastet an jeder Stufe kurz ein.
+- Die schwarze Fläche (degenerative Entwicklung) schrumpft bis „Nachhaltig“, danach wächst die grüne Fläche (regenerative Entwicklung).
+- Links wechseln Stufenname, Kernsatz und Erklärung; ein Balken zeigt, wo man steht.
+- Texte stehen in `src/_data/model.json`, die Grafik in `src/_includes/partials/story.njk`, die Logik in `src/assets/js/site.js`.
+- Ohne JavaScript erscheint die fertige Grafik mit allen fünf Stufen als Liste.
 
 ## Weitere Vorschläge
 

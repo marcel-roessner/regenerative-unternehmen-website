@@ -194,8 +194,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .hero-art figcaption { position: absolute; right: 0; bottom: -.5rem; text-align: right; }
 
 .rings { width: 100%; height: auto; overflow: visible; }
-.rings .ring { stroke: var(--ink); stroke-width: .7; opacity: .75; transform-origin: 310px 310px; animation: spin 140s linear infinite; }
-.rings .ring--alt { animation-direction: reverse; animation-duration: 190s; opacity: .45; }
+.rings .ring { stroke: var(--ink); stroke-width: .7; opacity: .75; }
+.rings .ring--alt { opacity: .45; }
 .rings .ring--accent { stroke: var(--accent); stroke-width: 2.2; opacity: 1; }
 .rings .ring-core { fill: var(--accent); }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -442,64 +442,81 @@ details.acc > div { padding-bottom: 1.2rem; font-size: 1rem; color: var(--ink-2)
 @media (max-width: 980px) { .offer--2 { grid-template-columns: 1fr; } .offer--2 article:nth-child(n) { padding-left: 0; border-right: 0; } }
 
 /* ==========================================================================
-   Evolution beim Scrollen (nur aktiv, wenn JavaScript läuft)
+   Scrollytelling: das Modell (Startseite, Kapitel 02)
+   Ohne JS: Abbildung vollständig + Stufen als Liste. Mit JS (.is-live):
+   die Bühne bleibt stehen, das Diagramm baut sich Stufe für Stufe auf.
    ========================================================================== */
-.evolve body { transition: background-color .2s linear; }
-
-/* Ringe zeichnen sich */
-.evolve .rings .ring { stroke-dasharray: 1; transition: stroke-dashoffset .35s var(--ease), opacity .35s; }
-
-/* Kapitelnummern füllen sich */
-.split > .side .num { transition: color .9s var(--ease); }
-.split > .side .num.is-full { color: var(--ink); }
-.section--forest .split > .side .num.is-full { color: var(--forest-ink); }
-
-/* Überschriften wachsen im Gewicht – weich nachziehen */
-.evolve .h2, .evolve .page-head .display, .evolve .article-head .display { transition: font-weight .5s var(--ease); }
-
-/* Linien wachsen von links */
-.evolve .offer, .evolve .postlist, .evolve .specs, .evolve .pager { border-top-color: transparent; position: relative; }
-.evolve .principles { border-top-color: transparent; position: relative; }
-.evolve .offer::before, .evolve .postlist::before, .evolve .specs::before, .evolve .pager::before, .evolve .principles::before {
-  content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px;
-  background: currentColor; transform-origin: left; transform: scaleX(var(--line, 0));
+.story { background: var(--paper-2); border-top: 1px solid var(--rule); }
+.story-intro { padding-block: clamp(4rem, 9vw, 8rem) 2rem; }
+.story-hint { display: none; margin-top: 1.5rem; }
+.story-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 8fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.story-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2.5rem; }
+.story-name {
+  font-family: var(--f-wide); font-weight: 800; text-transform: uppercase;
+  font-size: clamp(1.3rem, 2.3vw, 2.2rem); line-height: 1; letter-spacing: -.01em;
+  margin: .8rem 0 1rem; hyphens: manual;
 }
-.evolve .principles::before { opacity: .3; }
+.story-claim { font-family: var(--f-head); font-weight: 300; font-size: clamp(1.2rem, 1.8vw, 1.5rem); letter-spacing: -.03em; line-height: 1.2; margin: 0 0 .8rem; }
+.story-body { margin: 0; color: var(--ink-2); max-width: 38ch; }
+.story-progress { display: none; }
+.story-figure { margin: 0; }
+.story-figure svg { width: 100%; height: auto; overflow: visible; }
+.story-figure figcaption { margin-top: 1rem; }
+.story-outro { padding-block: 2rem clamp(4rem, 9vw, 8rem); }
 
-/* Elemente keimen nacheinander */
-.evolve .principles li, .evolve .offer article, .evolve .postlist li, .evolve .person, .evolve .card {
-  opacity: .25; transform: translateY(16px);
-  transition: opacity .8s var(--ease), transform .9s var(--ease);
-  transition-delay: calc(var(--i, 0) * 90ms);
-}
-.evolve .is-in { opacity: 1 !important; transform: none !important; }
+/* SVG */
+.sv-axis { stroke: var(--ink); stroke-width: 2; fill: var(--ink); }
+.sv-zero { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 6; }
+.sv-degen { fill: var(--ink); }
+.sv-regen { fill: var(--forest); }
+.sv-cap { font: 400 17px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; fill: var(--muted); }
+.sv-small { font: 400 15px var(--f-mono); fill: var(--muted); }
+.sv-area { font: 500 19px var(--f-body); }
+.sv-area--degen { fill: var(--paper); }
+.sv-area--regen { fill: var(--forest-ink); }
+.sv-station line { stroke: var(--ink); stroke-width: 2; }
+.sv-station text { font: 400 21px var(--f-head); letter-spacing: -.02em; fill: var(--ink); }
+.sv-marker { fill: var(--ink); }
+.sv-marker-ring { fill: none; stroke: var(--ink); stroke-width: 1; }
 
-/* Emblem unten rechts: wachsende Jahresringe = Lesefortschritt */
-.emblem {
-  position: fixed; z-index: 60;
-  right: max(18px, env(safe-area-inset-right, 0px));
-  bottom: max(18px, env(safe-area-inset-bottom, 0px));
-  width: 74px; height: 74px; padding: 6px;
-  border: 1px solid var(--rule); border-radius: 50%;
-  background: color-mix(in srgb, var(--paper) 85%, transparent);
-  backdrop-filter: blur(6px);
-  cursor: pointer; color: var(--ink);
-  opacity: 0; transform: scale(.6); pointer-events: none;
-  transition: opacity .5s var(--ease), transform .5s var(--ease), border-color .5s;
-}
-.emblem.is-visible { opacity: 1; transform: none; pointer-events: auto; }
-.emblem .rings { width: 100%; height: 100%; }
-.emblem .rings .ring { stroke-width: 7; animation: none; opacity: .85; }
-.emblem .rings .ring--alt { opacity: .5; }
-.emblem .rings .ring--accent { stroke: var(--ink); stroke-width: 7; }
-.emblem.is-complete .rings .ring--accent { stroke: var(--accent); stroke-width: 14; }
-.emblem.is-complete { border-color: var(--accent); }
-.emblem-pct {
-  position: absolute; left: 50%; top: calc(100% + 6px); transform: translateX(-50%);
-  font: 400 .62rem/1 var(--f-mono); letter-spacing: .06em; color: var(--muted);
-  opacity: 0; transition: opacity .3s;
-}
-.emblem:hover .emblem-pct, .emblem:focus-visible .emblem-pct { opacity: 1; }
-@media (max-width: 640px) { .emblem { width: 58px; height: 58px; } }
+/* Live-Modus */
+.story.is-live .story-hint { display: block; }
+.story.is-live .story-track { height: calc(var(--steps, 5) * 85vh + 100vh); position: relative; }
+.story.is-live .story-stage { position: sticky; top: 0; height: 100vh; display: flex; align-items: center; overflow: hidden; }
+.story.is-live .story-steps { display: grid; gap: 0; }
+.story.is-live .story-step { grid-area: 1 / 1; opacity: 0; transform: translateY(24px); transition: opacity .55s var(--ease), transform .7s var(--ease); pointer-events: none; }
+.story.is-live .story-step.is-active { opacity: 1; transform: none; pointer-events: auto; }
+.story.is-live .story-step.is-past { transform: translateY(-24px); }
+.story.is-live .story-progress { display: flex; gap: 6px; margin-top: 2.5rem; }
+.story.is-live .story-progress span { height: 3px; flex: 1; background: var(--rule); position: relative; overflow: hidden; }
+.story.is-live .story-progress span::after { content: ""; position: absolute; inset: 0; background: var(--ink); transform-origin: left; transform: scaleX(var(--f, 0)); }
 
-.calm .rings .ring { animation: none; }
+.story.is-live .sv-degen { transform-origin: 70px 300px; transform: scale(calc(1 - var(--degen, 0))); }
+.story.is-live .sv-regen { transform-origin: 540px 280px; transform: scale(var(--regen, 0)); }
+.story.is-live .sv-area--degen { opacity: calc(1 - var(--degen, 0) * 2); }
+.story.is-live .sv-area--regen { opacity: calc((var(--regen, 0) - .75) * 4); }
+.story.is-live .sv-mech { opacity: calc(1 - var(--p, 0)); }
+.story.is-live .sv-live { opacity: var(--p, 0); }
+.story.is-live .sv-small { opacity: calc(1 - var(--p, 0) * 1.6); }
+.story.is-live .sv-top { opacity: calc(var(--p, 0) * 1.6 - .6); }
+.story.is-live .sv-station text { opacity: .3; transition: opacity .4s; }
+.story.is-live .sv-station.is-reached text { opacity: 1; }
+.story.is-live .sv-marker, .story.is-live .sv-marker-ring { transform: translateX(var(--mx, 0px)); }
+.story.is-live .sv-marker-ring { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes pulse { 50% { stroke-opacity: .2; } }
+
+@media (max-width: 860px) {
+  .story-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .story.is-live .story-stage { align-items: flex-start; padding-top: 5vh; }
+  .story-figure { order: -1; }
+  .sv-cap, .sv-small { display: none; }
+  .sv-station text { font-size: 32px; }
+  .story.is-live .sv-station text, .story.is-live .sv-station.is-reached text { opacity: 0; }
+  .story.is-live .sv-station.is-current text { opacity: 1; }
+
+  .story-name { font-size: clamp(1.1rem, 5.3vw, 2rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story.is-live .story-step { transition: none; }
+  .story.is-live .sv-marker-ring { animation: none; }
+}

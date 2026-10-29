@@ -1,0 +1,65 @@
+{#- Scrollytelling: Das Modell nach Reed / Mang baut sich Stufe für Stufe auf.
+    Ohne JavaScript erscheint dieselbe Abbildung vollständig mit allen fünf Stufen als Liste. -#}
+<section class="story" id="modell" aria-labelledby="story-title">
+  <div class="story-intro wrap split">
+    <div class="side"><span class="num">02</span><span class="label">Modell</span></div>
+    <div>
+      <h2 class="h2" id="story-title" style="max-width:20ch">Wie sieht die Zukunft Ihres Unternehmens aus? Die Schritte einer Ökonomie im Einklang mit den planetaren Grenzen.</h2>
+      <p class="label story-hint">Scrollen, um die fünf Stufen zu durchlaufen ↓</p>
+    </div>
+  </div>
+
+  <div class="story-track">
+    <div class="story-stage">
+      <div class="wrap story-grid">
+        <div class="story-text">
+          <ol class="story-steps">
+            {%- for s in model %}
+            <li class="story-step" data-step="{{ loop.index0 }}">
+              <span class="label">Stufe {{ loop.index }} / {{ model.length }}</span>
+              <h3 class="story-name">{{ s.name }}</h3>
+              <p class="story-claim">{{ s.claim }}</p>
+              <p class="story-body">{{ s.text }}</p>
+            </li>
+            {%- endfor %}
+          </ol>
+          <div class="story-progress" aria-hidden="true">{% for s in model %}<span></span>{% endfor %}</div>
+        </div>
+
+        <figure class="story-figure" aria-label="Diagramm: degenerative und regenerative Entwicklung">
+          <svg viewBox="0 0 1000 560" role="img" aria-hidden="true">
+            <!-- Beschriftung oben/unten -->
+            <text class="sv-cap sv-mech" x="250" y="40" text-anchor="middle">Mechanisches System Design</text>
+            <text class="sv-cap sv-live" x="770" y="40" text-anchor="middle">Lebendes System Design</text>
+            <!-- Nulllinie -->
+            <line class="sv-zero" x1="540" y1="70" x2="540" y2="520"/>
+            <text class="sv-small" x="540" y="545" text-anchor="middle">Zerstörung umliegender Ökosysteme</text>
+            <text class="sv-small sv-top" x="540" y="62" text-anchor="middle">Zusammenarbeit mit umliegenden Ökosystemen</text>
+            <!-- Flächen -->
+            <polygon class="sv-degen" points="70,300 540,300 70,520"/>
+            <polygon class="sv-regen" points="540,280 940,280 940,90"/>
+            <text class="sv-area sv-area--degen" x="90" y="330">Degenerative Entwicklung</text>
+            <text class="sv-area sv-area--regen" x="925" y="262" text-anchor="end">Regenerative Entwicklung</text>
+            <!-- Achse -->
+            <line class="sv-axis" x1="60" y1="290" x2="950" y2="290"/>
+            <path class="sv-axis" d="M60 290 l12 -7 v14 z M950 290 l-12 -7 v14 z"/>
+            {%- set xs = [120, 320, 500, 700, 925] %}{%- set anchors = ["start", "middle", "middle", "end", "end"] %}
+            {%- for s in model %}
+            <g class="sv-station" data-step="{{ loop.index0 }}">
+              <line x1="{{ xs[loop.index0] }}" y1="282" x2="{{ xs[loop.index0] }}" y2="298"/>
+              <text x="{{ xs[loop.index0] - (12 if loop.first else 0) + (14 if loop.last else 0) + (14 if loop.index0 == 3 else 0) }}" y="{{ 328 if loop.index0 > 2 else 260 }}" text-anchor="{{ anchors[loop.index0] }}">{{ s.name }}</text>
+            </g>
+            {%- endfor %}
+            <circle class="sv-marker" cx="120" cy="290" r="11"/>
+            <circle class="sv-marker-ring" cx="120" cy="290" r="22"/>
+          </svg>
+          <figcaption class="label">Abb. 01 — Regeneratives Design und Entwicklung, nach Reed / Mang (2018)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap story-outro">
+    <a class="btn" href="/post/die-neue-sau-im-dorf-warum-die-idee-die-von-regeneration-so-wichtig-ist/">Mehr zum Modell im Blog</a>
+  </div>
+</section>

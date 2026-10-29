@@ -24,7 +24,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
 <section class="section">
   <div class="wrap split">
     <div class="side"><span class="num">01</span><span class="label">Haltung</span></div>
-    <div class="reveal">
+    <div>
       <h2 class="h2">Regeneration = <em>Erfolg?</em></h2>
       <blockquote class="quote">
         <p>Inspiriere andere, unserem Beispiel zu folgen, um Lösungen zur aktuellen Umweltkrise zu finden</p>
@@ -37,24 +37,12 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   </div>
 </section>
 
-<section class="section section--tint">
-  <div class="wrap split">
-    <div class="side"><span class="num">02</span><span class="label">Modell</span></div>
-    <div class="reveal">
-      <h2 class="h2" style="max-width:20ch">Wie sieht die Zukunft Ihres Unternehmens aus? Die Schritte einer Ökonomie im Einklang mit den <em>planetaren Grenzen.</em></h2>
-      <figure class="plate plate--diagram" style="margin-top:2.5rem">
-        <img src="/assets/img/b34276_82d65210ea5d44d6bf8c011cf28524f9.webp" alt="Von konventionell über grün, nachhaltig und wiederherstellend zu regenerativ: degenerative und regenerative Entwicklung im Überblick" loading="lazy" width="1600" height="900">
-      </figure>
-      <div class="plate"><figcaption><span class="label">Abb. 01 — Regeneratives Design und Entwicklung</span><span class="label">nach Reed / Mang (2018)</span></figcaption></div>
-      <div class="btns"><a class="btn" href="/post/die-neue-sau-im-dorf-warum-die-idee-die-von-regeneration-so-wichtig-ist/">Weiterlesen</a></div>
-    </div>
-  </div>
-</section>
+{% include "partials/story.njk" %}
 
 <section class="section">
   <div class="wrap split">
     <div class="side"><span class="num">03</span><span class="label">Warum</span></div>
-    <div class="reveal">
+    <div>
       <h2 class="h2" style="max-width:22ch">In der heutigen Zeit gibt es einige Herausforderungen zu meistern. Regeneration ist <em>ein Teil der Lösung.</em></h2>
       <div class="prose">
         <h3 class="h3" style="margin-top:2.5rem">Welchen Vorteil bieten regenerative Unternehmensstrukturen?</h3>
@@ -68,13 +56,13 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
 <section class="section section--tint" id="angebot">
   <div class="wrap split">
     <div class="side"><span class="num">04</span><span class="label">Angebot</span></div>
-    <div class="reveal">
+    <div>
       <h2 class="h2">Unser <em>Angebot</em></h2>
       <p class="lead">Wir stärken Ihr Team mit praxisnahen Trainings, unterstützen Sie mit nachhaltigen Strategien durch unsere Beratung und entwickeln in interaktiven Workshops gemeinsam innovative Lösungen für eine regenerative Zukunft Ihres Unternehmens.</p>
     </div>
   </div>
   <div class="wrap">
-    <div class="offer reveal">
+    <div class="offer">
       <article>
         <span class="roman">i.</span>
         <h3 class="h3">Workshops</h3>
@@ -98,7 +86,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
 <section class="section">
   <div class="wrap split">
     <div class="side"><span class="num">05</span><span class="label">Kollektiv</span></div>
-    <div class="reveal">
+    <div>
       <h2 class="h2">Unser <em>Kollektiv</em></h2>
       <p class="lead">Wir beschäftigen uns mit der Zukunft unserer Wirtschaft – mit Hintergrund in Organisations- und Nachhaltigkeitsentwicklung. Lernt uns kennen und geht mit uns in den Austausch, um gemeinsam eine regenerative Wirtschaft zu gestalten.</p>
       <div class="team">
@@ -119,7 +107,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
 <section class="section section--tint">
   <div class="wrap split">
     <div class="side"><span class="num">06</span><span class="label">Journal</span></div>
-    <div class="reveal">
+    <div>
       <h2 class="h2">Aktuelle Beiträge <em>zum Thema.</em></h2>
       <ul class="postlist">
         {%- for post in collections.posts | head(5) %}
@@ -139,7 +127,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   <div class="wrap">
     <span class="label">07 — Prinzipien</span>
     <h2 class="display" style="font-size:clamp(2.2rem,5.4vw,5rem);max-width:16ch;margin-top:1.5rem">Von regenerativem Wirtschaften profitieren <em>wir alle.</em></h2>
-    <ol class="principles reveal">
+    <ol class="principles">
       <li><span class="n">/01</span><span class="p">Positiver Impact als grundlegender Zweck</span></li>
       <li><span class="n">/02</span><span class="p">Langfristige &amp; zyklische Ausrichtung an der Umwelt</span></li>
       <li><span class="n">/03</span><span class="p">Kooperative Beziehungen auf Augenhöhe</span></li>

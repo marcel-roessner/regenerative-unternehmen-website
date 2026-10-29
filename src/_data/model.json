@@ -1,0 +1,7 @@
+[
+  { "name": "Konventionell", "claim": "Beim Gesetz bleiben.", "text": "Das Unternehmen erfüllt, was Regulierung verlangt. Schäden an umliegenden Ökosystemen werden in Kauf genommen – sie sind Teil des Geschäftsmodells." },
+  { "name": "Grün", "claim": "Weniger negative Auswirkungen.", "text": "Effizienz steigt, Emissionen sinken. Das Systemdesign bleibt dasselbe – es wird nur sparsamer betrieben." },
+  { "name": "Nachhaltig", "claim": "Kein nachhaltiger Schaden.", "text": "Nachhaltigkeit bedeutet in diesem Modell, die Dinge weniger schlecht zu machen. Der Nullpunkt ist fast erreicht – aber noch nichts ist besser geworden." },
+  { "name": "Wiederherstellend", "claim": "Ökosysteme heilen.", "text": "Restorative Ansätze versetzen bestehende Systeme wieder in einen gesunden Zustand. Der Mensch greift ein, um ursprüngliche Funktionen wiederherzustellen." },
+  { "name": "Regenerativ", "claim": "Dem ganzen Ökosystem dienen.", "text": "Der Mensch ist integraler Teil lebender Systeme – als Partner, nicht als Ausbeuter. Das Unternehmen stärkt die Fähigkeit des Systems, sich selbst zu erneuern." }
+]
