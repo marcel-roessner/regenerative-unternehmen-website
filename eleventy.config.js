@@ -47,7 +47,7 @@ export default function (eleventyConfig) {
       return existsSync(f) ? `<figure class="fig">${readFileSync(f, "utf8")}</figure>` : null;
     };
     content = content.replace(/<p>\s*<img[^>]*src="\/assets\/img\/([a-z0-9_]+)\.webp"[^>]*>\s*<\/p>/g, (m, n) => swap(n) || m);
-    content = content.replace(/<img[^>]*data-fig="([a-z0-9_]+)"[^>]*>/g, (m, n) => swap(n) || m);
+    content = content.replace(/<img[^>]*data-fig="([a-z0-9_-]+)"[^>]*>/g, (m, n) => swap(n) || m);
     return content;
   });
 
