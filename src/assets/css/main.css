@@ -152,13 +152,15 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .wordmark {
   font-family: var(--f-wide);
   font-weight: 800;
-  font-size: .9rem;
+  font-size: .82rem;
   letter-spacing: .01em;
-  line-height: 1;
+  line-height: .95;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex; align-items: center; gap: .7rem;
+  display: flex; align-items: flex-start; gap: .7rem;
 }
+.wordmark .dot { margin-top: .12em; }
+.site-header .wrap { padding-block: 1rem; }
 .wordmark:hover { color: var(--ink); }
 .wordmark .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); flex: none; transition: transform .6s var(--ease); }
 .wordmark:hover .dot { transform: scale(1.6); }
@@ -400,8 +402,6 @@ details.acc > div { padding-bottom: 1.2rem; font-size: 1rem; color: var(--ink-2)
 
 /* ---------- Scroll-Reveal (dezent) ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
-  .reveal.is-in { opacity: 1; transform: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .rings .ring { animation: none; }
@@ -440,3 +440,66 @@ details.acc > div { padding-bottom: 1.2rem; font-size: 1rem; color: var(--ink-2)
 .offer--2 article:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--rule); }
 .offer--2 article:nth-child(even) { padding-left: clamp(1rem, 2vw, 2rem); border-right: 0; }
 @media (max-width: 980px) { .offer--2 { grid-template-columns: 1fr; } .offer--2 article:nth-child(n) { padding-left: 0; border-right: 0; } }
+
+/* ==========================================================================
+   Evolution beim Scrollen (nur aktiv, wenn JavaScript läuft)
+   ========================================================================== */
+.evolve body { transition: background-color .2s linear; }
+
+/* Ringe zeichnen sich */
+.evolve .rings .ring { stroke-dasharray: 1; transition: stroke-dashoffset .35s var(--ease), opacity .35s; }
+
+/* Kapitelnummern füllen sich */
+.split > .side .num { transition: color .9s var(--ease); }
+.split > .side .num.is-full { color: var(--ink); }
+.section--forest .split > .side .num.is-full { color: var(--forest-ink); }
+
+/* Überschriften wachsen im Gewicht – weich nachziehen */
+.evolve .h2, .evolve .page-head .display, .evolve .article-head .display { transition: font-weight .5s var(--ease); }
+
+/* Linien wachsen von links */
+.evolve .offer, .evolve .postlist, .evolve .specs, .evolve .pager { border-top-color: transparent; position: relative; }
+.evolve .principles { border-top-color: transparent; position: relative; }
+.evolve .offer::before, .evolve .postlist::before, .evolve .specs::before, .evolve .pager::before, .evolve .principles::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px;
+  background: currentColor; transform-origin: left; transform: scaleX(var(--line, 0));
+}
+.evolve .principles::before { opacity: .3; }
+
+/* Elemente keimen nacheinander */
+.evolve .principles li, .evolve .offer article, .evolve .postlist li, .evolve .person, .evolve .card {
+  opacity: .25; transform: translateY(16px);
+  transition: opacity .8s var(--ease), transform .9s var(--ease);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.evolve .is-in { opacity: 1 !important; transform: none !important; }
+
+/* Emblem unten rechts: wachsende Jahresringe = Lesefortschritt */
+.emblem {
+  position: fixed; z-index: 60;
+  right: max(18px, env(safe-area-inset-right, 0px));
+  bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 74px; height: 74px; padding: 6px;
+  border: 1px solid var(--rule); border-radius: 50%;
+  background: color-mix(in srgb, var(--paper) 85%, transparent);
+  backdrop-filter: blur(6px);
+  cursor: pointer; color: var(--ink);
+  opacity: 0; transform: scale(.6); pointer-events: none;
+  transition: opacity .5s var(--ease), transform .5s var(--ease), border-color .5s;
+}
+.emblem.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.emblem .rings { width: 100%; height: 100%; }
+.emblem .rings .ring { stroke-width: 7; animation: none; opacity: .85; }
+.emblem .rings .ring--alt { opacity: .5; }
+.emblem .rings .ring--accent { stroke: var(--ink); stroke-width: 7; }
+.emblem.is-complete .rings .ring--accent { stroke: var(--accent); stroke-width: 14; }
+.emblem.is-complete { border-color: var(--accent); }
+.emblem-pct {
+  position: absolute; left: 50%; top: calc(100% + 6px); transform: translateX(-50%);
+  font: 400 .62rem/1 var(--f-mono); letter-spacing: .06em; color: var(--muted);
+  opacity: 0; transition: opacity .3s;
+}
+.emblem:hover .emblem-pct, .emblem:focus-visible .emblem-pct { opacity: 1; }
+@media (max-width: 640px) { .emblem { width: 58px; height: 58px; } }
+
+.calm .rings .ring { animation: none; }

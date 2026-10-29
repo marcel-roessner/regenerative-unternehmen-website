@@ -28,5 +28,6 @@
     {{ content | safe }}
   </main>
   {% include "partials/footer.njk" %}
+  {%- if page.url != "/" %}<template id="rings-template">{% include "partials/rings-lite.svg" %}</template>{% endif %}
 </body>
 </html>

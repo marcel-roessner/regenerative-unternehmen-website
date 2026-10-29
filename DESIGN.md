@@ -20,6 +20,14 @@ eine starke Schrift und ein paar überraschende Details.
 
 Technisch: keine Cookies, kein Tracking, keine externen Server, Schriften lokal, Bilder als WebP in zwei Größen und mit Lazy Loading.
 
+## Die Seite wächst beim Scrollen
+
+- **Farbe:** Das Papier wandert beim Scrollen langsam von Sand zu einem hellen Moosgrün.
+- **Jahresringe:** Im Hero liegt anfangs nur der Kern, weitere Ringe wachsen beim Scrollen dazu. Unten rechts zeigt ein kleines Ring-Emblem den Fortschritt auf jeder Seite (Klick = nach oben); am Ende färbt sich ein Ring rostrot.
+- **Überschriften** gewinnen an Gewicht, während sie ins Bild kommen (variable Schriftstärke von Unbounded).
+- **Kapitelnummern** füllen sich, **Linien** wachsen von links, **Listen und Karten** keimen nacheinander auf.
+- Alles in `src/assets/js/site.js`; bei „Bewegung reduzieren“ im System drehen sich die Ringe nicht.
+
 ## Weitere Vorschläge
 
 1. **Echte Fotografie statt KI-Bilder.** Eine kleine Serie eigener Fotos (Workshops, Hände mit Karten,
