@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="Regenerative Unternehmen – Startseite"><span class="dot" aria-hidden="true"></span>Regenerative<br>Unternehmen</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav"><span>Menü</span></button>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <ul>
+        {%- for item in nav %}
+        {%- set active = (page.url == item.url) or (item.url == "/blog/" and (page.url.startsWith("/blog") or page.url.startsWith("/post/"))) %}
+        <li><a href="{{ item.url }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

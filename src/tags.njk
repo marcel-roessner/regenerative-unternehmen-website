@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.topics
+  size: 1
+  alias: topic
+permalink: "/blog/tags/{{ topic | slugTag }}/"
+eleventyComputed:
+  title: "Thema: {{ topic }}"
+---
+<header class="page-head wrap">
+  <a class="label" href="/blog/">← Alle Beiträge</a>
+  <h1 class="display" style="margin-top:1.6rem"><em>#</em>{{ topic }}</h1>
+</header>
+<section class="wrap" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  <ul class="postlist">
+    {%- for post in collections[topic] %}
+    <li><a href="{{ post.url }}">
+      <span class="label date">{{ post.date | dateDe }}</span>
+      <span class="t">{{ post.data.title }}</span>
+      <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image }}-720.webp" alt="" loading="lazy">{% endif %}</span>
+    </a></li>
+    {%- endfor %}
+  </ul>
+</section>

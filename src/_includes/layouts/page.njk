@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<header class="page-head wrap">
+  <span class="label">{{ kicker or "Rechtliches" }}</span>
+  <h1 class="display">{{ title }}</h1>
+</header>
+<section class="wrap" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  <div class="article" style="padding:0">
+    {{ content | safe }}
+  </div>
+</section>

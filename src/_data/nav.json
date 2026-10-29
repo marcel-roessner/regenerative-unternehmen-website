@@ -1,0 +1,7 @@
+[
+  { "label": "Mission", "url": "/mission/" },
+  { "label": "Angebot", "url": "/#angebot" },
+  { "label": "Kartenset", "url": "/kartenset/" },
+  { "label": "Blog", "url": "/blog/" },
+  { "label": "Kontakt", "url": "/kontakt/" }
+]

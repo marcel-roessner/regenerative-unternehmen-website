@@ -1,0 +1,25 @@
+{
+  "title": "Regenerative Unternehmen",
+  "claim": "Regenerativ wirken.",
+  "description": "In der Zukunft erfolgreich – regenerative Unternehmen entwickeln. Workshops, Trainings und Beratung für Organisationen auf dem Weg zu einer regenerativen Wirtschaft.",
+  "url": "https://www.regenerative-unternehmen.de",
+  "lang": "de",
+  "email": "direkt@regenerative-unternehmen.de",
+  "linkedin": "https://www.linkedin.com/showcase/96482766/",
+  "year": 2026,
+
+  "_hinweis_shop": "Shop-Links: leer lassen = Button öffnet eine vorausgefüllte E-Mail. Später z. B. Stripe-Payment-Link oder Digistore-URL eintragen.",
+  "shop": {
+    "kartenset": "",
+    "whitepaper": ""
+  },
+
+  "_hinweis_newsletter": "Newsletter: Formular-Action eines Anbieters (z. B. Brevo, Mailchimp, Buttondown) eintragen. Leer = Abschnitt zeigt einen Mail-Link statt Formular.",
+  "newsletter": {
+    "action": "",
+    "emailField": "email"
+  },
+
+  "_hinweis_kontakt": "Kontaktformular: z. B. https://formspree.io/f/XXXX eintragen. Leer = es wird nur die E-Mail-Adresse angezeigt.",
+  "contactFormAction": ""
+}

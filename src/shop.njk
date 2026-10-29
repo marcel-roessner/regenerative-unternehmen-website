@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Produkte
+permalink: /category/produkte/
+description: Kartensets wie Planetary Thinking und praxisorientierte Tools – sie fördern innovative Denkweisen und begleiten Organisationen auf dem Weg zur Transformation.
+---
+<header class="page-head wrap">
+  <span class="label">Shop</span>
+  <h1 class="display">Werkzeuge für die <em>Transformation.</em></h1>
+  <p class="lead">Unsere Lösungen unterstützen Unternehmen dabei, nachhaltig und regenerativ zu handeln – sie fördern innovative Denkweisen und begleiten Organisationen auf dem Weg zur Transformation.</p>
+</header>
+<section class="wrap" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  <div class="shop-grid">
+    {%- for p in products %}
+    <a class="card" href="/product-page/{{ p.slug }}/">
+      <div class="thumb" style="aspect-ratio:5/4;background:#fbf9f4"><img src="{{ p.image }}.webp" alt="" style="object-fit:contain;padding:6%" loading="lazy"></div>
+      <span class="label">{{ p.kicker }} · {{ p.price }}</span>
+      <h2 class="t">{{ p.title }}</h2>
+      <p>{{ p.teaser }}</p>
+    </a>
+    {%- endfor %}
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Kontakt
+description: Sprechen Sie mit uns über den nächsten sinnvollen Schritt Ihrer Organisation in Richtung regeneratives Wirtschaften.
+---
+<header class="page-head wrap">
+  <span class="label">Kontakt</span>
+  <h1 class="display">Lassen Sie uns <em>sprechen.</em></h1>
+  <p class="lead">Ob Workshop, Training, Beratung oder Feedback zum Kartenset – schreiben Sie uns. Wir melden uns in der Regel innerhalb weniger Tage.</p>
+</header>
+<section class="section">
+  <div class="wrap split">
+    <div class="side">
+      <span class="label">Direkt</span>
+      <p style="margin-top:1rem"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p><a href="{{ site.linkedin }}" rel="noopener">LinkedIn ↗</a></p>
+    </div>
+    <div>
+      {%- if site.contactFormAction %}
+      <form action="{{ site.contactFormAction }}" method="post" style="max-width:44rem">
+        <div class="field"><label class="label" for="c-name">Name</label><input id="c-name" type="text" name="name" required autocomplete="name"></div>
+        <div class="field"><label class="label" for="c-mail">E-Mail-Adresse</label><input id="c-mail" type="email" name="email" required autocomplete="email"></div>
+        <div class="field"><label class="label" for="c-sub">Betreff</label><input id="c-sub" type="text" name="_subject"></div>
+        <div class="field"><label class="label" for="c-msg">Nachricht</label><textarea id="c-msg" name="message" required></textarea></div>
+        <label class="check"><input type="checkbox" required> <span>Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> zur Kenntnis genommen.</span></label>
+        <div class="btns"><button class="btn btn--solid" type="submit">Nachricht senden</button></div>
+      </form>
+      {%- else %}
+      <h2 class="h2" style="max-width:18ch">Am schnellsten per <em>E-Mail.</em></h2>
+      <div class="btns">
+        <a class="btn btn--solid" href="{{ 'Anfrage über die Website' | mailto(site.email) }}">E-Mail schreiben</a>
+        <a class="btn" href="{{ 'Feedback zum Kartenset' | mailto(site.email) }}">Feedback zum Kartenset</a>
+      </div>
+      {%- endif %}
+    </div>
+  </div>
+</section>

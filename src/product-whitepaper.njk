@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Kontextbasierte Strategien – Whitepaper
+permalink: /product-page/regenerative-strategien-whitepaper/
+description: Whitepaper zu kontextbasierten Strategien – wie Unternehmen der Berichts- und Dokumentationsfalle entkommen und Nachhaltigkeit konsequent umsetzen.
+image: /assets/img/b34276_ab43e671a04b4d43986fe2db9696bd11
+---
+{%- set p = products[1] %}
+<section class="wrap" style="padding-block:clamp(3rem,7vw,6rem)">
+  <a class="label" href="/category/produkte/">← Alle Produkte</a>
+  <div class="product" style="margin-top:2rem">
+    <div class="gallery">
+      <img src="{{ p.image }}.webp" alt="Titelseite des Whitepapers „Kontextbasierte Strategien“" fetchpriority="high" style="background:#fbf9f4">
+      <img src="{{ p.image2 }}.webp" alt="Innenseite des Whitepapers" loading="lazy" style="background:#fbf9f4">
+    </div>
+    <div style="position:sticky;top:2rem">
+      <span class="label">Whitepaper</span>
+      <h1 class="display" style="font-size:clamp(2rem,4vw,3.4rem);margin-top:1rem">Kontextbasierte <em>Strategien</em></h1>
+      <p class="label" style="margin-top:.8rem">Konsequente Umsetzung von Nachhaltigkeit</p>
+      <p class="price">kostenlos</p>
+      <div class="prose" style="margin-top:2rem">
+        <p>Tolle Zahlen und farbenfrohe Bilder: So sehen die Nachhaltigkeitsberichte vieler Unternehmen aus. Doch zahlen die inhaltlichen Bestandteile dieser Berichte auf die Einhaltung der planetaren Grenzen ein? Wird damit das 1,5-Grad-Ziel nachhaltig erreicht?</p>
+        <p>Es braucht einen Weg, der Nachhaltigkeitsberichterstattungs- und Dokumentationsfalle zu entkommen und Maßnahmen anzugehen. Kontextbasierte Strategien können hierfür eine Lösung sein.</p>
+      </div>
+      <div class="btns"><a class="btn btn--solid" href="{{ site.shop.whitepaper or ('Whitepaper: Kontextbasierte Strategien' | mailto(site.email)) }}">Whitepaper anfordern</a></div>
+    </div>
+  </div>
+</section>

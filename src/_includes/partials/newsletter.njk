@@ -1,0 +1,24 @@
+<section class="section section--tint" aria-labelledby="nl-title">
+  <div class="wrap cta">
+    <div>
+      <span class="label">Newsletter</span>
+      <h2 class="h2" id="nl-title" style="margin-top:1rem">Den nächsten Beitrag <em>direkt</em> ins Postfach.</h2>
+      <p class="muted" style="max-width:44ch;margin:0">Ein paar Mal im Jahr: neue Texte, Werkzeuge und Termine rund um regeneratives Wirtschaften.</p>
+    </div>
+    <div>
+      {%- if site.newsletter.action %}
+      <form class="newsletter" action="{{ site.newsletter.action }}" method="post">
+        <label class="label" for="nl-email">E-Mail-Adresse</label>
+        <div class="form-inline" style="margin-top:.4rem">
+          <input id="nl-email" type="email" name="{{ site.newsletter.emailField }}" required autocomplete="email" placeholder="name@organisation.de">
+          <button class="btn btn--solid" type="submit">Eintragen</button>
+        </div>
+        <label class="check"><input type="checkbox" required> <span>Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> zur Kenntnis genommen.</span></label>
+      </form>
+      {%- else %}
+      <a class="btn btn--solid" href="{{ 'Newsletter-Anmeldung' | mailto(site.email) }}">Per E-Mail anmelden</a>
+      <p class="check">Schreib uns kurz – wir nehmen dich in den Verteiler auf. Abmeldung jederzeit.</p>
+      {%- endif %}
+    </div>
+  </div>
+</section>

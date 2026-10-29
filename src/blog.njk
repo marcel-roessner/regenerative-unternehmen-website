@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Blog
+permalink: /blog/
+description: Beiträge zu regenerativem Wirtschaften – Purpose, Strategie, Organisationsdesign und Fallbeispiele.
+---
+<header class="page-head wrap">
+  <span class="label">Journal · {{ collections.posts.length }} Beiträge</span>
+  <h1 class="display">Gedanken zu einer <em>regenerativen</em> Wirtschaft.</h1>
+  <ul class="chips" style="margin-top:2.5rem">
+    <li><a href="/blog/" aria-current="page">Alle</a></li>
+    {%- for t in collections.topics %}<li><a href="/blog/tags/{{ t | slugTag }}/">{{ t }}</a></li>{% endfor %}
+  </ul>
+</header>
+<section class="wrap" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  <div class="cards">
+    {%- for post in collections.posts %}
+    <a class="card{% if loop.first %} card--feature{% endif %}" href="{{ post.url }}">
+      <div class="thumb">{% if post.data.image %}<img src="{{ post.data.image }}{% if not loop.first %}-720{% endif %}.webp" alt="" {% if not loop.first %}loading="lazy"{% endif %}>{% endif %}</div>
+      <div>
+        <span class="label">{{ post.date | dateDe }}{% if loop.first %} · Neu{% endif %}</span>
+        <h2 class="t">{{ post.data.title }}</h2>
+        {% if post.data.description %}<p>{{ post.data.description | excerpt(loop.first and 260 or 140) }}</p>{% endif %}
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+{% include "partials/newsletter.njk" %}

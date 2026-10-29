@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+{%- set topics = tags | topicTags %}
+<article>
+  <header class="article-head wrap">
+    <a class="label" href="/blog/">← Blog</a>
+    <h1 class="display" style="margin-top:1.6rem">{{ title }}</h1>
+    <div class="meta label">
+      <span>{{ author }}</span>
+      <time datetime="{{ date | isoDate }}">{{ date | dateDe }}</time>
+      <span>{{ content | readingTime }} Min. Lesezeit</span>
+    </div>
+  </header>
+  {%- if image %}
+  <figure class="article-hero wrap">
+    <img src="{{ image }}.webp" alt="" loading="eager" fetchpriority="high">
+  </figure>
+  {%- endif %}
+  <div class="article wrap">
+    {{ content | safe }}
+  </div>
+  <footer class="article-foot wrap">
+    <div class="article" style="padding:0">
+      <div>
+        {%- if topics.length %}
+        <span class="label">Themen</span>
+        <ul class="chips" style="margin:.8rem 0 3rem">
+          {%- for t in topics %}<li><a href="/blog/tags/{{ t | slugTag }}/">{{ t }}</a></li>{% endfor %}
+        </ul>
+        {%- endif %}
+      </div>
+    </div>
+    {%- set prev = collections.posts | getPreviousCollectionItem(page) %}
+    {%- set next = collections.posts | getNextCollectionItem(page) %}
+    <nav class="pager" aria-label="Weitere Beiträge">
+      <div>{% if next %}<a href="{{ next.url }}"><span class="label">← Älter</span><span class="t">{{ next.data.title }}</span></a>{% endif %}</div>
+      <div class="next">{% if prev %}<a href="{{ prev.url }}"><span class="label">Neuer →</span><span class="t">{{ prev.data.title }}</span></a>{% endif %}</div>
+    </nav>
+  </footer>
+</article>
+{% include "partials/newsletter.njk" %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | dump | safe }},"datePublished":"{{ date | isoDate }}","dateModified":"{{ updated }}","author":{"@type":"Person","name":{{ author | dump | safe }}},"image":"{{ site.url }}{{ image }}.webp","mainEntityOfPage":"{{ site.url }}{{ page.url }}"}</script>
