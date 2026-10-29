@@ -7,12 +7,12 @@ eine starke Schrift und ein paar überraschende Details.
 
 | Vorher (Wix) | Jetzt | Warum |
 | --- | --- | --- |
-| Helvetica Bold in Versalien, überall gleich laut | Drei Schriften: **Unbounded** (NaN) leicht für Überschriften und fett-breit für Wortmarke und Kapitelnamen, **Hanken Grotesk** für Text, **IBM Plex Mono** für kleine Beschriftungen | Klare Hierarchie mit wenigen Mitteln |
+| Helvetica Bold in Versalien, überall gleich laut | Zwei Schriften: **Unbounded** (NaN) leicht für Überschriften, fett-breit für Wortmarke und Kapitelnamen, klein für Beschriftungen; **Hanken Grotesk** für Text | Klare Hierarchie mit wenigen Mitteln |
 | Reinweiß + Hellgrau | Warmes Papier `#f1ede3`, Tinte `#171713`, **Rost** `#c4471f` als einzige Akzentfarbe, **Tannengrün** aus dem Kartenset, Lime nur als Highlight | Eine eigene, ruhige Farbwelt, die zum Kartenset passt |
 | Stockfotos (Windräder, Wüste) als Hintergründe | Generative **Wachstumsringe** (SVG, ruhig) im Hero | Eigenständiges Motiv: Jahresringe, Donut, Kreislauf. Außerdem: Wix-Bilder dürfen außerhalb von Wix nicht genutzt werden |
 | Weißer Text auf Blogbildern | Bilder in Farbe, Titel unter dem Bild | Titel sind lesbar |
 | Zentrierter Fließtext, kleine Schrift | 18 px Text, max. 66 Zeichen pro Zeile, links ausgerichtet | Deutlich besser lesbar, besonders bei langen Blogbeiträgen |
-| Icon-Kreise im Angebot | Kleine Mono-Ziffern und Haarlinien | Editorial statt Baukasten |
+| Icon-Kreise im Angebot | Kleine Ziffern und Haarlinien | Editorial statt Baukasten |
 | Abschnitte ohne Ordnung | Nummerierte Kapitel **01–07** mit Outline-Ziffern | Gibt der Startseite einen Lesefluss wie in einem Magazin |
 | Bunte Diagramme als Bilddateien | Alle 21 Diagramme als SVG im CI neu gezeichnet (`src/_includes/fig/`) | Eine Bildsprache, scharf auf jedem Bildschirm |
 | Fußnoten als Wix-Dashboard-Links | Hochgestellte Verweise + sauberer Quellenblock | Wissenschaftlicher, funktionierend |

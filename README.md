@@ -83,15 +83,14 @@ Jeder dieser Dienste muss in der Datenschutzerklärung ergänzt werden.
 
 ## Schriften
 
-Die Seite nutzt genau drei Schriftfamilien, alle selbst gehostet in `src/assets/fonts/`
+Die Seite nutzt zwei Schriftfamilien (höchstens drei), alle selbst gehostet in `src/assets/fonts/`
 (DSGVO-freundlich, keine Google-Server):
 
-- **Unbounded** – Überschriften (leicht) und Wortmarke/Kapitelnamen (fett), von [NaN](https://www.nan.xyz/fonts/unbounded) (SIL Open Font License)
+- **Unbounded** – Überschriften (leicht), Wortmarke/Kapitelnamen (fett) und kleine Beschriftungen (Medium), von [NaN](https://www.nan.xyz/fonts/unbounded) (SIL Open Font License)
 - **Hanken Grotesk** – Fließtext (OFL)
-- **IBM Plex Mono** – kleine Beschriftungen wie Datum, Bildunterschriften (OFL)
 
 Eine lizenzierte NaN-Schrift lässt sich später über die Variablen `--f-head` bzw. `--f-wide`
-in `main.css` einsetzen – dann am besten anstelle von Unbounded, damit es bei drei Schriften bleibt.
+in `main.css` einsetzen – dann am besten anstelle von Unbounded.
 
 ## Vor dem Livegang prüfen
 
