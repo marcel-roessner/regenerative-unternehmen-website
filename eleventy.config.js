@@ -1,4 +1,5 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { existsSync, readFileSync } from "node:fs";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
@@ -37,6 +38,18 @@ export default function (eleventyConfig) {
   );
   eleventyConfig.addFilter("excerpt", (s = "", n = 180) => (s.length > n ? s.slice(0, s.lastIndexOf(" ", n)) + " …" : s));
   eleventyConfig.addFilter("mailto", (subject, email) => `mailto:${email}?subject=${encodeURIComponent(subject)}`);
+
+  // Diagramme: liegt zu einem Bild eine SVG-Fassung in src/_includes/fig/, wird sie inline eingesetzt
+  eleventyConfig.addTransform("figures", (content, outputPath) => {
+    if (!outputPath || !outputPath.endsWith(".html")) return content;
+    const swap = (name) => {
+      const f = `src/_includes/fig/${name}.svg`;
+      return existsSync(f) ? `<figure class="fig">${readFileSync(f, "utf8")}</figure>` : null;
+    };
+    content = content.replace(/<p>\s*<img[^>]*src="\/assets\/img\/([a-z0-9_]+)\.webp"[^>]*>\s*<\/p>/g, (m, n) => swap(n) || m);
+    content = content.replace(/<img[^>]*data-fig="([a-z0-9_]+)"[^>]*>/g, (m, n) => swap(n) || m);
+    return content;
+  });
 
   // Bilder in Beiträgen: lazy loading + async decoding
   eleventyConfig.addTransform("lazyImages", (content, outputPath) => {

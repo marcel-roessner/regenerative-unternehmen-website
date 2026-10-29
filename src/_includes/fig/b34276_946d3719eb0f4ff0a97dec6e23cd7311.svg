@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 670" role="img" aria-label="Entwicklungskurve von konventionellem über grünes und nachhaltiges zu restaurativem und regenerativem Design: Technical System Design mit degenerierender Wirkung und höherem Energiebedarf, Living System Design mit regenerierender Wirkung und geringerem Energiebedarf">
+<polygon class="f-ink" points="80,352 488.5,352 80,523.6"/>
+<polygon class="f-forest" points="674.2,300 950,300 950,184.2"/>
+<text class="t-head t-inv" x="98" y="388">Degenerating</text>
+<text class="t-head t-inv" x="934" y="284" text-anchor="end">Regenerating</text>
+<path class="s-ink" d="M488.5 352H66"/><path class="f-ink" d="M54 352 l13 -7 v14 z"/>
+<path class="s-forest" d="M674.2 300H966"/><path class="f-forest" d="M978 300 l-13 -7 v14 z"/>
+<path class="s-ink" d="M60 545L72.9 539.6M81.2 536.1L94.1 530.7M102.4 527.2L115.3 521.8M123.6 518.3L136.5 512.9M144.8 509.4L157.7 503.9M166 500.5L178.9 495M187.2 491.6L200.1 486.1M208.4 482.6L221.3 477.2M229.6 473.7L242.5 468.3M250.8 464.8L263.8 459.4M272.1 455.9L285 450.5M293.3 447L306.2 441.6M314.5 438.1L327.4 432.7M335.7 429.2L348.6 423.8M356.9 420.3L369.8 414.9M378.1 411.4L391 406M399.3 402.5L412.2 397.1M420.5 393.6L433.4 388.2M441.7 384.7L454.6 379.2M462.9 375.8L475.8 370.3M484.1 366.9L497 361.4M611.3 313.4L624.2 308M632.5 304.5L645.4 299.1M653.7 295.6L666.7 290.2M675 286.7L687.9 281.3M696.2 277.8L709.1 272.4M717.4 268.9L730.3 263.5M738.6 260L751.5 254.5M759.8 251.1L772.7 245.6M781 242.2L793.9 236.7M802.2 233.2L815.1 227.8M823.4 224.3L836.3 218.9M844.6 215.4L857.5 210M865.8 206.5L878.7 201.1M887 197.6L899.9 192.2M908.2 188.7L921.1 183.3M929.4 179.8L942.3 174.4"/>
+<path class="f-ink" d="M0 0 l-16 -8 v16 z" transform="translate(960.9 166.6) rotate(-22.8)"/>
+<path class="s-forest" d="M520 304V118"/><path class="f-forest" d="M520 104 l-7 13 h14 z"/>
+<path class="s-ink" d="M520 350V540"/><path class="f-ink" d="M520 554 l-7 -13 h14 z"/>
+<text class="t-head t-forest" x="536" y="150">Less</text>
+<text class="t-body" x="536" y="176">Energy required</text>
+<text class="t-head" x="504" y="420" text-anchor="end">More</text>
+<text class="t-body" x="504" y="446" text-anchor="end">Energy required</text>
+<text class="t-head" x="80" y="336">Conventional</text>
+<text class="t-head" x="414" y="336" text-anchor="end">Green</text>
+<text class="t-head" x="520" y="336" text-anchor="middle">Sustainable</text>
+<text class="t-head" x="636" y="336">Restorative</text>
+<text class="t-head" x="966" y="336" text-anchor="end">Regenerative</text>
+<text class="t-head t-forest" x="966" y="70" text-anchor="end">Living System Design</text>
+<text class="t-body" x="966" y="98" text-anchor="end">Living &amp; Whole systems</text>
+<text class="t-body" x="966" y="120" text-anchor="end">Pattern thinking</text>
+<text class="t-head" x="80" y="598">Technical System Design</text>
+<text class="t-body" x="80" y="626">Technologies &amp; techniques</text>
+<text class="t-body" x="80" y="648">Fragmented thinking</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" role="img" aria-label="Praktische Anwendung regenerativer Business-Strategien: Grundsätze und Kriterien, umgeben von den Strategien Wiederherstellen, Erhalten und Aufwerten mit steigendem Grad der Regeneration">
+  <!-- Strategien: Ringe -->
+  <path class="f-forest-3" fill-rule="evenodd" d="M 84 410 A 316 316 0 1 1 716 410 A 316 316 0 1 1 84 410 Z M 116 410 A 284 284 0 1 0 684 410 A 284 284 0 1 0 116 410 Z"/>
+  <path class="f-forest-2" fill-rule="evenodd" d="M 48 410 A 352 352 0 1 1 752 410 A 352 352 0 1 1 48 410 Z M 80 410 A 320 320 0 1 0 720 410 A 320 320 0 1 0 80 410 Z"/>
+  <path class="f-forest" fill-rule="evenodd" d="M 12 410 A 388 388 0 1 1 788 410 A 388 388 0 1 1 12 410 Z M 44 410 A 356 356 0 1 0 756 410 A 356 356 0 1 0 44 410 Z"/>
+  <!-- Kriterien: äußere Segmente -->
+  <path class="f-rule" d="M 120.0 406.0 A 280 280 0 0 1 199.2 214.9 L 298.2 313.9 A 140 140 0 0 0 260.1 406.0 Z"/>
+  <path class="f-rule" d="M 204.9 209.2 A 280 280 0 0 1 595.1 209.2 L 496.1 308.2 A 140 140 0 0 0 303.9 308.2 Z"/>
+  <path class="f-rule" d="M 600.8 214.9 A 280 280 0 0 1 680.0 406.0 L 539.9 406.0 A 140 140 0 0 0 501.8 313.9 Z"/>
+  <path class="f-ink" d="M 680.0 414.0 A 280 280 0 0 1 600.8 605.1 L 501.8 506.1 A 140 140 0 0 0 539.9 414.0 Z"/>
+  <path class="f-ink" d="M 595.1 610.8 A 280 280 0 0 1 204.9 610.8 L 303.9 511.8 A 140 140 0 0 0 496.1 511.8 Z"/>
+  <path class="f-ink" d="M 199.2 605.1 A 280 280 0 0 1 120.0 414.0 L 260.1 414.0 A 140 140 0 0 0 298.2 506.1 Z"/>
+  <!-- Grundsätze: Kern -->
+  <path class="f-tint" d="M 270.1 406 A 130 130 0 0 1 529.9 406 Z"/>
+  <path class="f-tint" d="M 529.9 414 A 130 130 0 0 1 270.1 414 Z"/>
+  <text class="t-body" x="195" y="342" text-anchor="middle">Impact</text>
+  <text class="t-body" x="195" y="364" text-anchor="middle">auf das</text>
+  <text class="t-body" x="195" y="386" text-anchor="middle">Ökosystem</text>
+  <text class="t-body" x="400" y="202" text-anchor="middle">Beziehung zum</text>
+  <text class="t-body" x="400" y="224" text-anchor="middle">Ökosystem</text>
+  <text class="t-body" x="605" y="342" text-anchor="middle">Zugrunde</text>
+  <text class="t-body" x="605" y="364" text-anchor="middle">liegende</text>
+  <text class="t-body" x="605" y="386" text-anchor="middle">Geschäftslogik</text>
+  <text class="t-body t-inv" x="195" y="448" text-anchor="middle">Gespür für</text>
+  <text class="t-body t-inv" x="195" y="470" text-anchor="middle">den Ort</text>
+  <text class="t-body t-inv" x="400" y="602" text-anchor="middle">Unternehmensstrategie und</text>
+  <text class="t-body t-inv" x="400" y="624" text-anchor="middle">strategische Praktiken</text>
+  <text class="t-body t-inv" x="605" y="448" text-anchor="middle">Zeitliche</text>
+  <text class="t-body t-inv" x="605" y="470" text-anchor="middle">Orientierung</text>
+  <text class="t-head" x="400" y="362" text-anchor="middle">Systembasiertes</text>
+  <text class="t-head" x="400" y="390" text-anchor="middle">Anspruchsniveau</text>
+  <text class="t-head" x="400" y="452" text-anchor="middle">Adaptiver</text>
+  <text class="t-head" x="400" y="480" text-anchor="middle">Management-</text>
+  <text class="t-head" x="400" y="508" text-anchor="middle">ansatz</text>
+  <text class="t-body" x="400" y="716" text-anchor="middle">Wiederherstellen</text>
+  <text class="t-body t-inv" x="400" y="752" text-anchor="middle">Erhalten</text>
+  <text class="t-body t-inv" x="400" y="788" text-anchor="middle">Aufwerten</text>
+  <!-- Grad der Regeneration -->
+  <line class="s-ink" x1="591.5" y1="249.3" x2="737.1" y2="127.2"/>
+  <path class="f-ink" d="M 0 0 l -18 -9 v 18 z" transform="translate(749.3 116.9) rotate(-40)"/>
+  <text class="t-head" x="990" y="72" text-anchor="end">Grad der</text>
+  <text class="t-head" x="990" y="100" text-anchor="end">Regeneration</text>
+  <!-- Legende -->
+  <circle class="f-ink" cx="460" cy="310" r="4"/>
+  <line class="s-thin" x1="460" y1="310" x2="990" y2="310"/>
+  <text class="t-head" x="990" y="298" text-anchor="end">Grundsätze</text>
+  <circle class="f-ink" cx="662" cy="510" r="4"/>
+  <line class="s-thin" x1="662" y1="510" x2="990" y2="510"/>
+  <text class="t-head" x="990" y="498" text-anchor="end">Kriterien</text>
+  <circle class="f-ink" cx="619.0" cy="615" r="4"/>
+  <line class="s-thin" x1="619.0" y1="615" x2="990" y2="615"/>
+  <circle class="f-ink" cx="654.8" cy="629" r="4"/>
+  <line class="s-thin" x1="654.8" y1="629" x2="990" y2="629"/>
+  <circle class="f-ink" cx="690.0" cy="643" r="4"/>
+  <line class="s-thin" x1="690.0" y1="643" x2="990" y2="643"/>
+  <text class="t-head" x="990" y="603" text-anchor="end">Strategien</text>
+</svg>

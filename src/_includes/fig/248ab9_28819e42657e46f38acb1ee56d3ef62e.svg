@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" role="img" aria-label="Zwei Perspektiven auf Purpose: Purpose als Intention im Vergleich zu POSIWID">
+  <text class="t-head-l" x="40" y="44">Zwei Perspektiven auf Purpose</text>
+  <rect class="f-ink" x="40" y="80" width="430" height="64"/>
+  <text class="t-head t-inv" x="64" y="120">Purpose als Intention</text>
+  <text class="t-mono" x="500" y="117" text-anchor="middle">vs</text>
+  <rect class="f-forest" x="530" y="80" width="430" height="64"/>
+  <text class="t-head t-inv" x="554" y="120">POSIWID</text>
+  <line class="s-rule" x1="500" y1="170" x2="500" y2="520"/>
+  <rect class="f-ink" x="40" y="199" width="9" height="9"/>
+  <text class="t-body" x="68" y="210">Ausgangspunkt ist das Individuum (oder</text>
+  <text class="t-body" x="68" y="236">eine Gruppe von Individuen/Akteuren)</text>
+  <text class="t-body" x="68" y="262">und seine Motivation</text>
+  <line class="s-rule" x1="40" y1="302" x2="470" y2="302"/>
+  <rect class="f-ink" x="40" y="321" width="9" height="9"/>
+  <text class="t-body" x="68" y="332">Hängt von der Handlungsfähigkeit der</text>
+  <text class="t-body" x="68" y="358">Akteure ab das System zu gestalten</text>
+  <text class="t-body" x="68" y="384">und zu lenken</text>
+  <line class="s-rule" x1="40" y1="424" x2="470" y2="424"/>
+  <rect class="f-ink" x="40" y="443" width="9" height="9"/>
+  <text class="t-body" x="68" y="454">Intention als treibende,</text>
+  <text class="t-body" x="68" y="480">kanalisierende Kraft</text>
+  <rect class="f-forest" x="530" y="199" width="9" height="9"/>
+  <text class="t-body" x="558" y="210">Ausgangspunkt ist</text>
+  <text class="t-body" x="558" y="236">(emergentes) Systemverhalten</text>
+  <line class="s-rule" x1="530" y1="276" x2="960" y2="276"/>
+  <rect class="f-forest" x="530" y="295" width="9" height="9"/>
+  <text class="t-body" x="558" y="306">Losgelöst von „Intention“ der</text>
+  <text class="t-body" x="558" y="332">Individuen/Akteure in Systemen</text>
+  <line class="s-rule" x1="530" y1="372" x2="960" y2="372"/>
+  <rect class="f-forest" x="530" y="391" width="9" height="9"/>
+  <text class="t-body" x="558" y="402">Ermöglicht die Ergebnisbetrachtung</text>
+  <text class="t-body" x="558" y="428">und eröffnet einen Möglichkeitsraum</text>
+</svg>

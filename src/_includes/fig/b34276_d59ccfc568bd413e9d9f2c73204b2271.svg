@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1160" role="img" aria-label="Venn-Diagramm der drei Ansätze Sustainable, Regenerative und Circular mit ihren dominanten Systemsichten, Hauptzielen und Designansätzen in den Schnittmengen; im Zentrum Sustainable, Circular &amp; Regenerative">
+<defs>
+<clipPath id="b34276_d59ccfc568bd413e9d9f2c73204b2271-s"><circle cx="335" cy="400" r="330"/></clipPath>
+<clipPath id="b34276_d59ccfc568bd413e9d9f2c73204b2271-r"><circle cx="665" cy="400" r="330"/></clipPath>
+<clipPath id="b34276_d59ccfc568bd413e9d9f2c73204b2271-c"><circle cx="500" cy="690" r="330"/></clipPath>
+</defs>
+<g clip-path="url(#b34276_d59ccfc568bd413e9d9f2c73204b2271-s)"><circle class="f-tint" cx="665" cy="400" r="330"/><circle class="f-tint" cx="500" cy="690" r="330"/></g>
+<g clip-path="url(#b34276_d59ccfc568bd413e9d9f2c73204b2271-r)"><circle class="f-tint" cx="500" cy="690" r="330"/></g>
+<g clip-path="url(#b34276_d59ccfc568bd413e9d9f2c73204b2271-s)"><g clip-path="url(#b34276_d59ccfc568bd413e9d9f2c73204b2271-r)"><circle class="f-forest-3" cx="500" cy="690" r="330"/></g></g>
+<circle class="s-thin" cx="335" cy="400" r="330"/>
+<circle class="s-thin" cx="665" cy="400" r="330"/>
+<circle class="s-thin" cx="500" cy="690" r="330"/>
+<circle class="f-ink" cx="255" cy="118" r="8"/>
+<text class="t-head" x="255" y="152" text-anchor="middle">Socio-technical</text>
+<text class="t-head" x="255" y="178" text-anchor="middle">systems</text>
+<text class="t-body" x="255" y="206" text-anchor="middle">Limits to growth: the</text>
+<text class="t-body" x="255" y="227" text-anchor="middle">planet as a pool of finite</text>
+<text class="t-body" x="255" y="248" text-anchor="middle">resources and a growing</text>
+<text class="t-body" x="255" y="269" text-anchor="middle">population</text>
+<circle class="f-paper" cx="148" cy="330" r="8"/><circle class="s-ink" cx="148" cy="330" r="7"/>
+<text class="t-head" x="148" y="364" text-anchor="middle">Triple</text>
+<text class="t-head" x="148" y="390" text-anchor="middle">bottom line</text>
+<text class="t-body" x="148" y="418" text-anchor="middle">Balance economic,</text>
+<text class="t-body" x="148" y="439" text-anchor="middle">social and environ-</text>
+<text class="t-body" x="148" y="460" text-anchor="middle">mental value creation</text>
+<circle class="f-ink" cx="745" cy="118" r="8"/>
+<text class="t-head" x="745" y="152" text-anchor="middle">Social-ecological</text>
+<text class="t-head" x="745" y="178" text-anchor="middle">systems</text>
+<text class="t-body" x="745" y="206" text-anchor="middle">Gaia hypothesis: the</text>
+<text class="t-body" x="745" y="227" text-anchor="middle">planet as a single, self-</text>
+<text class="t-body" x="745" y="248" text-anchor="middle">regulating organism</text>
+<circle class="f-paper" cx="856" cy="298" r="8"/><circle class="s-ink" cx="856" cy="298" r="7"/>
+<text class="t-head" x="856" y="332" text-anchor="middle">Planetary health</text>
+<text class="t-head" x="856" y="358" text-anchor="middle">&amp; societal</text>
+<text class="t-head" x="856" y="384" text-anchor="middle">wellbeing</text>
+<text class="t-body" x="856" y="412" text-anchor="middle">Create net positive</text>
+<text class="t-body" x="856" y="433" text-anchor="middle">value across multiple</text>
+<text class="t-body" x="856" y="454" text-anchor="middle">stakeholder levels</text>
+<circle class="f-forest" cx="500" cy="178" r="8"/>
+<text class="t-head" x="500" y="212" text-anchor="middle">Sustainable</text>
+<text class="t-head" x="500" y="238" text-anchor="middle">humansphere</text>
+<text class="t-body" x="500" y="266" text-anchor="middle">Design to meet human</text>
+<text class="t-body" x="500" y="287" text-anchor="middle">needs within planetary</text>
+<text class="t-body" x="500" y="308" text-anchor="middle">boundaries</text>
+<circle class="f-forest" cx="500" cy="440" r="8"/>
+<text class="t-head" x="500" y="474" text-anchor="middle">Sustainable,</text>
+<text class="t-head" x="500" y="500" text-anchor="middle">Circular &amp;</text>
+<text class="t-head" x="500" y="526" text-anchor="middle">Regenerative</text>
+<circle class="f-forest" cx="292" cy="556" r="8"/>
+<text class="t-head" x="292" y="590" text-anchor="middle">Circular</text>
+<text class="t-head" x="292" y="616" text-anchor="middle">technosphere</text>
+<text class="t-body" x="292" y="644" text-anchor="middle">Design for the</text>
+<text class="t-body" x="292" y="665" text-anchor="middle">technical cycle and</text>
+<text class="t-body" x="292" y="686" text-anchor="middle">material productivity</text>
+<circle class="f-forest" cx="708" cy="556" r="8"/>
+<text class="t-head" x="708" y="590" text-anchor="middle">Regenerative</text>
+<text class="t-head" x="708" y="616" text-anchor="middle">biosphere</text>
+<text class="t-body" x="708" y="644" text-anchor="middle">Design for the</text>
+<text class="t-body" x="708" y="665" text-anchor="middle">biological cycle and</text>
+<text class="t-body" x="708" y="686" text-anchor="middle">ecosystem regeneration</text>
+<circle class="f-ink" cx="372" cy="748" r="8"/>
+<text class="t-head" x="372" y="782" text-anchor="middle">Closed-loop</text>
+<text class="t-head" x="372" y="808" text-anchor="middle">systems</text>
+<text class="t-body" x="372" y="836" text-anchor="middle">Spaceship earth: the</text>
+<text class="t-body" x="372" y="857" text-anchor="middle">planet as a closed loop</text>
+<text class="t-body" x="372" y="878" text-anchor="middle">system of material,</text>
+<text class="t-body" x="372" y="899" text-anchor="middle">energy and information</text>
+<text class="t-body" x="372" y="920" text-anchor="middle">flows</text>
+<circle class="f-paper" cx="628" cy="748" r="8"/><circle class="s-ink" cx="628" cy="748" r="7"/>
+<text class="t-head" x="628" y="782" text-anchor="middle">Material</text>
+<text class="t-head" x="628" y="808" text-anchor="middle">productivity</text>
+<text class="t-body" x="628" y="836" text-anchor="middle">Decrease material</text>
+<text class="t-body" x="628" y="857" text-anchor="middle">throughput in the</text>
+<text class="t-body" x="628" y="878" text-anchor="middle">economy, emphasize</text>
+<text class="t-body" x="628" y="899" text-anchor="middle">value over volume</text>
+<text class="t-head-l" x="30" y="70">Sustainable</text>
+<text class="t-head-l t-forest" x="970" y="70" text-anchor="end">Regenerative</text>
+<text class="t-head-l" x="500" y="1066" text-anchor="middle">Circular</text>
+<path class="s-rule" d="M30 1100H970"/>
+<circle class="f-ink" cx="155" cy="1131" r="8"/>
+<text class="t-mono" x="173" y="1136">Dominant systems view</text>
+<circle class="f-paper" cx="430" cy="1131" r="8"/><circle class="s-ink" cx="430" cy="1131" r="7"/>
+<text class="t-mono" x="448" y="1136">Main goals</text>
+<circle class="f-forest" cx="602" cy="1131" r="8"/>
+<text class="t-mono" x="620" y="1136">Dominant design approach</text>
+</svg>

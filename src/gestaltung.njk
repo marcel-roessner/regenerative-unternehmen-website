@@ -1,0 +1,189 @@
+---
+layout: layouts/base.njk
+title: Gestaltung
+permalink: /gestaltung/
+noindex: true
+description: Das Erscheinungsbild von Regenerative Unternehmen – Logo, Farben, Schriften, Elemente und Abbildungen auf einen Blick.
+colors:
+  - { name: "Papier", token: "--paper", hex: "#F1EDE3", use: "Grundfläche aller Seiten" }
+  - { name: "Papier dunkel", token: "--paper-2", hex: "#E8E2D4", use: "Abwechselnde Abschnitte, neutrale Flächen in Abbildungen" }
+  - { name: "Linie", token: "--rule", hex: "#CDC5B2", use: "Haarlinien, Rahmen, neutrale Flächen" }
+  - { name: "Gedämpft", token: "--muted", hex: "#77725F", use: "Kleine Beschriftungen, Metadaten" }
+  - { name: "Tinte", token: "--ink", hex: "#171713", use: "Text, Linien, Buttons · in Abbildungen: konventionell / degenerativ" }
+  - { name: "Tannengrün", token: "--forest", hex: "#183D34", use: "Dunkle Abschnitte · in Abbildungen: regenerativ" }
+  - { name: "Grün mittel", token: "--forest-2", hex: "#4F7062", use: "Abstufung in Abbildungen" }
+  - { name: "Salbei", token: "--forest-3", hex: "#A7BCAE", use: "Helle Abstufung in Abbildungen, Hervorhebungen" }
+  - { name: "Rost", token: "--accent", hex: "#C4471F", use: "Nur als Punkt oder Linie (Logo-Punkt, Fokus) – nie für Text" }
+  - { name: "Lime", token: "--lime", hex: "#D7F36A", use: "Nur Textmarkierung und Hover auf Grün – sehr sparsam" }
+---
+<header class="page-head wrap">
+  <span class="label">Erscheinungsbild · Stand Oktober 2026</span>
+  <h1 class="display">Gestaltung</h1>
+  <p class="lead">Ruhig, editorial, mit einem kräftigen Moment: viel Papier, eine starke Schrift, zwei Farben mit Bedeutung. Diese Seite hält fest, wie die Website – und alles, was nach außen geht – aussieht.</p>
+</header>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="side"><span class="num">01</span><span class="label">Logo</span></div>
+    <div>
+      <h2 class="h2">Die Wortmarke</h2>
+      <div class="prose"><p>Dreizeilig in Unbounded, fett und in Versalien. Das „Re“ steht allein in der ersten Zeile – die Wiederholung, das Wieder-Erzeugen, ist der Kern. Der rostfarbene Punkt sitzt immer links oben auf Höhe der ersten Zeile.</p></div>
+      <div class="ci-logos">
+        <div class="ci-logo"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+        <div class="ci-logo ci-logo--ink"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+        <div class="ci-logo ci-logo--forest"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+      </div>
+      <ul class="specs">
+        <li><span class="label">Schrift</span><span>Unbounded, Gewicht 800, Versalien, Zeilenabstand 0,95</span></li>
+        <li><span class="label">Hintergründe</span><span>Papier, Tinte oder Tannengrün – nie auf Fotos</span></li>
+        <li><span class="label">Schutzraum</span><span>Mindestens die Höhe einer Zeile rundherum frei lassen</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div class="side"><span class="num">02</span><span class="label">Farben</span></div>
+    <div>
+      <h2 class="h2">Zwei Farben mit Bedeutung</h2>
+      <div class="prose"><p>Papier und Tinte tragen fast alles. Tannengrün kommt aus dem Kartenset und steht für das Regenerative. Rost ist kein Textfarbton, sondern ein Signal in Punktgröße.</p></div>
+      <div class="ci-swatches">
+        {%- for c in colors %}
+        <div class="ci-swatch">
+          <div class="ci-chip" style="background: var({{ c.token }})"></div>
+          <p class="ci-name">{{ c.name }}</p>
+          <p class="label">{{ c.hex }} · {{ c.token }}</p>
+          <p class="ci-use">{{ c.use }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="side"><span class="num">03</span><span class="label">Schrift</span></div>
+    <div>
+      <h2 class="h2">Drei Schriften, keine Kursive</h2>
+      <div class="ci-fonts">
+        <div class="ci-font">
+          <p class="label">Unbounded · von NaN · SIL OFL</p>
+          <p class="ci-sample ci-sample--wide">Regenerativ</p>
+          <p class="ci-sample ci-sample--head">Überschriften in Light</p>
+          <p class="ci-use">Fett und breit für Wortmarke, Kapitelnamen und einzelne Schlagworte. Light (300) für alle Überschriften.</p>
+        </div>
+        <div class="ci-font">
+          <p class="label">Hanken Grotesk · SIL OFL</p>
+          <p class="ci-sample ci-sample--body">Fließtext für längere Gedanken, gut lesbar bei 18 Pixel und höchstens 66 Zeichen pro Zeile.</p>
+          <p class="ci-use">Alles, was gelesen wird: Absätze, Listen, Buttons.</p>
+        </div>
+        <div class="ci-font">
+          <p class="label">IBM Plex Mono · SIL OFL</p>
+          <p class="ci-sample ci-sample--mono">Abb. 01 — 29. Okt. 2026</p>
+          <p class="ci-use">Nur klein und in Versalien: Datum, Kategorien, Bildunterschriften, Quellen.</p>
+        </div>
+      </div>
+
+      <h3 class="h3" style="margin-top:4rem">Größen</h3>
+      <div class="ci-scale">
+        <div><span class="label">Display</span><span class="display" style="font-size:clamp(2.2rem,5vw,4.4rem)">Die Zukunft</span></div>
+        <div><span class="label">Überschrift</span><span class="h2" style="margin:0">Unser Angebot</span></div>
+        <div><span class="label">Zwischentitel</span><span class="h3" style="margin:0;font-size:1.4rem">Workshops</span></div>
+        <div><span class="label">Einleitung</span><span class="lead">Wir begleiten Organisationen beim nächsten sinnvollen Schritt.</span></div>
+        <div><span class="label">Text</span><span>Regenerative Unternehmen verstehen ihre Rolle als Teil eines größeren Ökosystems.</span></div>
+        <div><span class="label">Beschriftung</span><span class="label" style="color:var(--ink)">Stufe 3 / 5</span></div>
+      </div>
+      <ul class="specs" style="margin-top:3rem">
+        <li><span class="label">Kursiv</span><span>Nie. Hervorhebungen über Gewicht oder Schriftwechsel, nicht über Schräglage.</span></li>
+        <li><span class="label">Versalien</span><span>Nur Unbounded fett und Plex Mono – nie Fließtext.</span></li>
+        <li><span class="label">Farbe</span><span>Text ist Tinte oder gedämpft, auf dunklen Flächen Papier. Nie farbig.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div class="side"><span class="num">04</span><span class="label">Elemente</span></div>
+    <div>
+      <h2 class="h2">Bausteine</h2>
+      <div class="ci-row">
+        <span class="label">Buttons</span>
+        <div class="btns" style="margin:0"><span class="btn btn--solid">Hauptaktion</span><span class="btn">Nebenaktion</span></div>
+      </div>
+      <div class="ci-row">
+        <span class="label">Auf Grün</span>
+        <div class="ci-onforest"><span class="btn btn--light">Zum Kartenset</span></div>
+      </div>
+      <div class="ci-row">
+        <span class="label">Themen</span>
+        <ul class="chips"><li><a href="/blog/">Purpose</a></li><li><a href="/blog/">Regeneration</a></li><li><a href="/blog/">Transformation</a></li></ul>
+      </div>
+      <div class="ci-row">
+        <span class="label">Kapitel</span>
+        <div class="split" style="grid-template-columns:auto"><div class="side"><span class="num">02</span><span class="label">Modell</span></div></div>
+      </div>
+      <div class="ci-row">
+        <span class="label">Zitat</span>
+        <blockquote class="quote" style="margin:0"><p>Inspiriere andere, unserem Beispiel zu folgen</p><footer class="label">Yvon Chouinard</footer></blockquote>
+      </div>
+      <div class="ci-row">
+        <span class="label">Linien</span>
+        <ul class="specs" style="margin:0;flex:1"><li><span class="label">Oben</span><span>1 Pixel Tinte eröffnet eine Liste oder Tabelle</span></li><li><span class="label">Dazwischen</span><span>1 Pixel Linie trennt Einträge</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="side"><span class="num">05</span><span class="label">Abbildungen</span></div>
+    <div>
+      <h2 class="h2">Diagramme sprechen dieselbe Sprache</h2>
+      <div class="prose">
+        <p>Alle Grafiken werden als Vektor neu gezeichnet – keine bunten Screenshots. Die Farbe trägt Bedeutung: <strong>Tinte</strong> für konventionell und degenerativ, <strong>Grün</strong> in drei Stufen für regenerativ, <strong>Beige</strong> für neutrale Flächen.</p>
+      </div>
+      <ul class="specs">
+        <li><span class="label">Beschriftung</span><span>Unbounded für Begriffe, Plex Mono für Achsen und Quellen, Hanken für Erklärtexte</span></li>
+        <li><span class="label">Linien</span><span>1–2 Pixel, Pfeile mit kleinem Dreieck, gepunktete Linie für Grenzen und Nullpunkte</span></li>
+        <li><span class="label">Verboten</span><span>Verläufe, Schatten, Icons aus Clipart, Orange, Kursive</span></li>
+        <li><span class="label">Technik</span><span>SVG in <code>src/_includes/fig/</code>, Name wie das ursprüngliche Bild – wird automatisch eingesetzt</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ci-figs">
+    <div>
+      <img data-fig="b34276_5a336160379e4ce497a271f344b42b5e" src="/assets/img/b34276_5a336160379e4ce497a271f344b42b5e.webp" alt="">
+      <p class="label">Business as usual</p>
+    </div>
+    <div>
+      <img data-fig="b34276_aa9a22ef5d124f22a3ccc0d6eb863971" src="/assets/img/b34276_aa9a22ef5d124f22a3ccc0d6eb863971.webp" alt="">
+      <p class="label">Business redesigned</p>
+    </div>
+    <div>
+      <img data-fig="b34276_30b6365fa01441e5b3cf404a2628260e" src="/assets/img/b34276_30b6365fa01441e5b3cf404a2628260e.webp" alt="">
+      <p class="label">Quadranten (Serie)</p>
+    </div>
+    <div>
+      <img data-fig="248ab9_bbb4b07f7f7540ccae12e219912980a5" src="/assets/img/248ab9_bbb4b07f7f7540ccae12e219912980a5.webp" alt="">
+      <p class="label">Divergenz und Konvergenz</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap split">
+    <div class="side"><span class="num">06</span><span class="label">Bilder & Ton</span></div>
+    <div>
+      <h2 class="h2">Fotos, Bewegung, Sprache</h2>
+      <ul class="specs">
+        <li><span class="label">Fotos</span><span>In Farbe, ohne Filter. Ausschnitt 4:3 in Listen, 4:5 bei Porträts. Echte Menschen und Materialien statt Stockfotos.</span></li>
+        <li><span class="label">Bewegung</span><span>Eine starke Szene pro Seite (das Modell auf der Startseite), sonst Ruhe. Bei „Bewegung reduzieren“ entfällt sie.</span></li>
+        <li><span class="label">Sprache</span><span>Klar und pragmatisch. „Sie“ für Unternehmen, „du“ im Blog und beim Kartenset.</span></li>
+        <li><span class="label">Struktur</span><span>Nummerierte Kapitel nur, wo die Reihenfolge etwas bedeutet.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>

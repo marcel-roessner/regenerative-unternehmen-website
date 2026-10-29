@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" role="img" aria-label="Divergenz und Konvergenz: von der Divergenz führen Pfeile auseinander (Öffnung, Erkundung), zur Konvergenz führen Pfeile zusammen (Konsolidierung, Fokus)">
+  <text class="t-head-l" x="242" y="251" text-anchor="end">Divergenz</text>
+  <text class="t-head-l" x="758" y="251">Konvergenz</text>
+  <text class="t-body" x="378" y="246" text-anchor="middle">Öffnung, Erkundung</text>
+  <text class="t-body" x="628" y="246" text-anchor="middle">Konsolidierung, Fokus</text>
+  <path class="s-ink" d="M262 222 Q410 200 437.3 81.7"/>
+  <path class="f-ink" d="M0 0 l-16 -8 v16 z" transform="translate(440 70) rotate(-77.0)"/>
+  <path class="s-ink" d="M262 258 Q410 280 437.3 398.3"/>
+  <path class="f-ink" d="M0 0 l-16 -8 v16 z" transform="translate(440 410) rotate(77.0)"/>
+  <path class="s-forest" d="M560 70 Q700 110 734.2 212.6"/>
+  <path class="f-forest" d="M0 0 l-16 -8 v16 z" transform="translate(738 224) rotate(71.6)"/>
+  <path class="s-forest" d="M560 410 Q700 370 734.2 267.4"/>
+  <path class="f-forest" d="M0 0 l-16 -8 v16 z" transform="translate(738 256) rotate(-71.6)"/>
+</svg>

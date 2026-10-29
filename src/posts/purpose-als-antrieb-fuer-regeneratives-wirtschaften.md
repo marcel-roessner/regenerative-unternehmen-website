@@ -19,6 +19,7 @@ Ausgangslage auch für diesen Artikel ist die Tatsache, dass sich Unternehmen de
 ## Purpose im gegenwärtigen Handeln = Purpose in der zukünftigen Form
 
 Eine weitere Perspektive auf das Thema Purpose ist durch Stafford Beer, einem Systemtheoretiker und Kybernetiker aus den 60er Jahren, möglich. Er beschreibt das Viable System Model und definierte in seiner Zeit ein wichtiges Akronym, welches für Organisationen und seine Aktivitäten gilt. **POSIWID – The Purpose of a System is What it Does**. Diese Eselsbrücke weist darauf hin, dass nur tatsächliche Verhaltensweisen und Leistungen eines Unternehmens der echte Purpose sind. Es geht also darum, welche Resultate ein Unternehmen wirklich erzeugt. Dem gegenüber steht die Frage eines Unternehmens, welchen Sinn es weiter in der Zukunft verfolgt. Beide Sichtweisen lassen sich integrieren, indem der formulierte Sinn und Zweck eines Unternehmens mit dem realen Wirken gegenübergestellt wird.<sup class="ref">[5]</sup> 
+
 ![](/assets/img/b34276_cce6b3d1e42f4bb18482b38f89789c17.webp)
 
 <p class="caption">Abbildung 1: Purpose als fehlendes Puzzleteil in der Ausrichtung für Unternehmen (vgl. Gomez/Lambertz/Meynhardt)</p>

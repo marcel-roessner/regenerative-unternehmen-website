@@ -30,7 +30,7 @@ Unserer Erfahrungen nach waren Organisationen bisher sehr gut in der Lösungsges
 
 ![](/assets/img/b34276_39661ce3f4b24e3aba5d74220bcfcafd.webp)
 
-Wie in der Abbildung zu sehen, versuchen wir mit der blauen Fläche innerhalb der Quadranten die derzeitige Kapazität innerhalb der Organisationen zu visualisieren. Eine große blaue Fläche bedeutet, dass es dafür derzeit viel Raum gibt. Im Umkehrschluss bedeutet eine kleine blaue Fläche, dass die Auseinandersetzung mit diesem Quadranten weniger Raum zur Verfügung steht. Natürlich stellt die Abbildung lediglich unsere subjektive Sicht des Status Quos dar.
+Wie in der Abbildung zu sehen, versuchen wir mit der grünen Fläche innerhalb der Quadranten die derzeitige Kapazität innerhalb der Organisationen zu visualisieren. Eine große blaue Fläche bedeutet, dass es dafür derzeit viel Raum gibt. Im Umkehrschluss bedeutet eine kleine blaue Fläche, dass die Auseinandersetzung mit diesem Quadranten weniger Raum zur Verfügung steht. Natürlich stellt die Abbildung lediglich unsere subjektive Sicht des Status Quos dar.
 
 Glaubt man der Theorie von Ken Wilber und verfolgt den Grundsatz des „vier-quadrantischen“ Vorgehens, ist der Fokus auf einen Quadranten allein zu legen nicht falsch, nur erhöht sich dadurch das Risiko durch fehlende Resonanz von einem der anderen Quadranten ausgehebelt zu werden.
 

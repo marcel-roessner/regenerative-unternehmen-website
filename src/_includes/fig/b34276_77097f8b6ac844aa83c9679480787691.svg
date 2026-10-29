@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 490" role="img" aria-label="Am Beispiel der Suchmaschine Ecosia: Eine herkömmliche Suchmaschine macht Suchergebnisse verfügbar, um Geld zu verdienen; Ecosia verdient mit Suchergebnissen Geld, um durch das Pflanzen von Bäumen den Klimawandel zu bekämpfen">
+  <text class="t-head-l" x="40" y="44">Am Beispiel der deutschen Suchmaschine Ecosia</text>
+  <text class="t-body" x="40" y="86">Der Zweck des Unternehmens liegt im Gemeinwohl und wird damit zum Purpose</text>
+
+  <!-- Zeile 1: herkömmliche Suchmaschine -->
+  <rect class="s-ink" x="40" y="140" width="214" height="110"/>
+  <text class="t-head" x="147" y="191" text-anchor="middle">herkömmliche</text>
+  <text class="t-head" x="147" y="219" text-anchor="middle">Suchmaschine</text>
+  <text class="t-mono" x="290" y="160">Suche</text>
+  <text class="t-body" x="290" y="196">Macht Suchergebnisse durch eine</text>
+  <text class="t-body" x="290" y="222">Suchmaschine verfügbar,</text>
+  <text class="t-head-l" x="650" y="214" text-anchor="middle">=</text>
+  <text class="t-mono" x="700" y="160">Geld</text>
+  <text class="t-body" x="700" y="196">um damit Geld im</text>
+  <text class="t-body" x="700" y="222">Austausch zu erhalten</text>
+
+  <line class="s-ink" x1="40" y1="300" x2="960" y2="300"/>
+
+  <!-- Zeile 2: Ecosia -->
+  <rect class="f-forest" x="40" y="350" width="214" height="110"/>
+  <text class="t-wide t-inv" x="147" y="411" text-anchor="middle">Ecosia</text>
+  <text class="t-mono" x="290" y="370">Suche · Geld</text>
+  <text class="t-body" x="290" y="406">Durch die Verfügbarkeit von</text>
+  <text class="t-body" x="290" y="432">Suchergebnissen verdient Ecosia Geld,</text>
+  <text class="t-head-l t-forest" x="650" y="424" text-anchor="middle">=</text>
+  <text class="t-mono t-forest" x="700" y="370">Bäume</text>
+  <text class="t-body" x="700" y="406">um den Klimawandel durch das</text>
+  <text class="t-body" x="700" y="432">Pflanzen von Bäumen zu bekämpfen</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 656" role="img" aria-label="Entwicklung der wirtschaftlichen Orientierung zwischen Gemeinwohl und Profit von den 70er- bis zu den 10er-Jahren: Management und Werte, Customer Value, Shareholder Value, Stakeholder Value, Corporate Social Responsibility, Shared Value, Public Value">
+  <line class="s-ink" x1="110" y1="38" x2="110" y2="572"/>
+  <path class="f-ink" d="M110 26 l-7 14 h14 z"/>
+  <path class="f-ink" d="M110 584 l-7 -14 h14 z"/>
+  <line class="s-ink" x1="110" y1="600" x2="950" y2="600"/>
+  <path class="f-ink" d="M962 600 l-14 -7 v14 z"/>
+  <text class="t-head" x="76" y="26" transform="rotate(-90 76 26)" text-anchor="end">Profit</text>
+  <text class="t-mono" x="80" y="305" transform="rotate(-90 80 305)" text-anchor="middle">Orientierung</text>
+  <text class="t-head" x="76" y="584" transform="rotate(-90 76 584)">Gemeinwohl</text>
+  <text class="t-head" x="962" y="638" text-anchor="end">Zeit</text>
+  <line class="s-ink" x1="201" y1="594" x2="201" y2="606"/>
+  <text class="t-head" x="201" y="638" text-anchor="middle">70er</text>
+  <line class="s-ink" x1="363" y1="594" x2="363" y2="606"/>
+  <text class="t-head" x="363" y="638" text-anchor="middle">80er</text>
+  <line class="s-ink" x1="525" y1="594" x2="525" y2="606"/>
+  <text class="t-head" x="525" y="638" text-anchor="middle">90er</text>
+  <line class="s-ink" x1="679" y1="594" x2="679" y2="606"/>
+  <text class="t-head" x="679" y="638" text-anchor="middle">00er</text>
+  <line class="s-ink" x1="834" y1="594" x2="834" y2="606"/>
+  <text class="t-head" x="834" y="638" text-anchor="middle">10er</text>
+  <rect class="f-tint" x="165" y="255" width="150" height="92"/>
+  <text class="t-body" x="240" y="283" text-anchor="middle">Management</text>
+  <text class="t-body" x="240" y="304" text-anchor="middle">und Werte</text>
+  <text class="t-mono" x="240" y="333" text-anchor="middle">Drucker | Ulrich</text>
+  <rect class="f-ink" x="327" y="185" width="150" height="92"/>
+  <text class="t-body t-inv" x="402" y="213" text-anchor="middle">Customer Value</text>
+  <text class="t-mono t-inv" x="402" y="263" text-anchor="middle">Kotler</text>
+  <rect class="f-ink" x="445" y="44" width="150" height="92"/>
+  <text class="t-body t-inv" x="520" y="72" text-anchor="middle">Shareholder</text>
+  <text class="t-body t-inv" x="520" y="94" text-anchor="middle">Value</text>
+  <text class="t-mono t-inv" x="520" y="122" text-anchor="middle">Rappaport</text>
+  <rect class="f-forest" x="439" y="469" width="150" height="92"/>
+  <text class="t-body t-inv" x="514" y="497" text-anchor="middle">Stakeholder</text>
+  <text class="t-body t-inv" x="514" y="518" text-anchor="middle">Value</text>
+  <text class="t-mono t-inv" x="514" y="547" text-anchor="middle">Freeman</text>
+  <rect class="f-ink" x="655" y="168" width="150" height="92"/>
+  <text class="t-body t-inv" x="730" y="196" text-anchor="middle">Shared Value</text>
+  <text class="t-mono t-inv" x="730" y="246" text-anchor="middle">Porter</text>
+  <rect class="f-forest" x="598" y="375" width="150" height="92"/>
+  <text class="t-body t-inv" x="673" y="403" text-anchor="middle">Corporate Social</text>
+  <text class="t-body t-inv" x="673" y="424" text-anchor="middle">Responsibility</text>
+  <text class="t-mono t-inv" x="673" y="453" text-anchor="middle">Carroll</text>
+  <rect class="f-forest" x="798" y="306" width="150" height="92"/>
+  <text class="t-body t-inv" x="873" y="334" text-anchor="middle">Public Value</text>
+  <text class="t-mono t-inv" x="873" y="384" text-anchor="middle">Moore</text>
+</svg>

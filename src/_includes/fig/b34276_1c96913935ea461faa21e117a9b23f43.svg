@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-label="Drei Arbeitsebenen: im System arbeiten, am Organisationssystem arbeiten und am Unternehmenssystem arbeiten">
+  <!-- AM Organisationssystem: äußerer Kreis -->
+  <circle class="f-tint" cx="650" cy="290" r="235"/>
+  <circle class="s-dash" cx="650" cy="290" r="235"/>
+  <text class="t-head" x="650" y="150" text-anchor="middle">AM Organisationssystem</text>
+  <text class="t-head" x="650" y="178" text-anchor="middle">arbeiten</text>
+
+  <!-- IM System: innere Ellipse mit linearen Abläufen -->
+  <ellipse class="f-paper" cx="662" cy="392" rx="165" ry="105"/>
+  <ellipse class="s-dash" cx="662" cy="392" rx="165" ry="105"/>
+  <text class="t-head" x="662" y="330" text-anchor="middle">IM System</text>
+  <text class="t-head" x="662" y="357" text-anchor="middle">arbeiten</text>
+  <line class="s-ink" x1="670" y1="395" x2="780" y2="395"/>
+  <path class="f-ink" d="M 796 395 l -18 -8 v 16 z"/>
+  <line class="s-ink" x1="560" y1="430" x2="670" y2="430"/>
+  <path class="f-ink" d="M 686 430 l -18 -8 v 16 z"/>
+  <line class="s-ink" x1="630" y1="466" x2="740" y2="466"/>
+  <path class="f-ink" d="M 756 466 l -18 -8 v 16 z"/>
+
+  <!-- Rückkopplung am Organisationssystem -->
+  <path class="s-ink" d="M 548 330 C 470 305, 470 225, 552 232"/>
+  <path class="f-ink" d="M 0 0 l -16 -8 v 16 z" transform="translate(566 236) rotate(12)"/>
+
+  <!-- AM Unternehmenssystem: großer Bogen von außen -->
+  <path class="s-forest" d="M 380 480 C 60 480, 10 150, 230 90 C 320 62, 400 85, 462 126"/>
+  <path class="f-forest" d="M 0 0 l -18 -9 v 18 z" transform="translate(476 135) rotate(33)"/>
+  <text class="t-head t-forest" x="258" y="262" text-anchor="middle">AM Unternehmens-</text>
+  <text class="t-head t-forest" x="258" y="290" text-anchor="middle">system</text>
+  <text class="t-head t-forest" x="258" y="318" text-anchor="middle">arbeiten</text>
+</svg>

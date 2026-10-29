@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 822" role="img" aria-label="Der Zeithorizont: Zweck, Purpose, Vision, Mission, qualitative und quantitative Ziele sowie Aufgaben mit ihren Zeiträumen am Beispiel einer Bäckerei">
+  <text class="t-head-l" x="40" y="44">Der Zeithorizont</text>
+  <text class="t-body" x="40" y="88">Entgegen vieler Meinungen, lässt sich der Purpose wunderbar in die zeitliche Perspektive eines</text>
+  <text class="t-body" x="40" y="114">Unternehmens einordnen und funktioniert oft als fehlendes Puzzleteil</text>
+  <line class="s-rule" x1="80" y1="176" x2="960" y2="176"/>
+  <text class="t-head" x="100" y="212">Zweck</text>
+  <text class="t-body" x="400" y="212">Backwaren verkaufen</text>
+  <rect class="f-forest-3" x="80" y="262" width="880" height="86"/>
+  <line class="s-rule" x1="80" y1="262" x2="960" y2="262"/>
+  <text class="t-head t-forest" x="100" y="298">Purpose</text>
+  <text class="t-mono" x="100" y="322">10 – 100 Jahre</text>
+  <text class="t-body" x="400" y="298">Wir tragen zur lokalen Identität bei, indem wir als sozialer Raum</text>
+  <text class="t-body" x="400" y="324">agieren und die Stadtteile mit hochwertigen Backwaren versorgen</text>
+  <line class="s-rule" x1="80" y1="348" x2="960" y2="348"/>
+  <text class="t-head" x="100" y="384">Vision</text>
+  <text class="t-mono" x="100" y="408">3 – 10 Jahre</text>
+  <text class="t-body" x="400" y="384">Wir sind die beste Bäckerei im jeweiligen Stadtteil.</text>
+  <text class="t-body" x="400" y="410">Hier trifft man sich gerne.</text>
+  <line class="s-rule" x1="80" y1="434" x2="960" y2="434"/>
+  <text class="t-head" x="100" y="470">Mission</text>
+  <text class="t-mono" x="100" y="494">1 bis 5 Jahre</text>
+  <text class="t-body" x="400" y="470">Konsequente Kundenorientierung</text>
+  <line class="s-rule" x1="80" y1="520" x2="960" y2="520"/>
+  <text class="t-head" x="100" y="556">Qualitative Ziele</text>
+  <text class="t-mono" x="100" y="580">0,25 bis 1 Jahre</text>
+  <text class="t-body" x="400" y="556">Bestes Sortiment der Stadt anbieten</text>
+  <line class="s-rule" x1="80" y1="606" x2="960" y2="606"/>
+  <text class="t-head" x="100" y="642">Quantitative Ziele</text>
+  <text class="t-mono" x="100" y="666">0,25 bis 1 Jahre</text>
+  <text class="t-body" x="400" y="642">Es gibt immer mindestens 10 Brotsorten zur Auswahl</text>
+  <line class="s-rule" x1="80" y1="692" x2="960" y2="692"/>
+  <text class="t-head" x="100" y="728">Aufgabe/Maßnahme</text>
+  <text class="t-mono" x="100" y="752">Täglich bis Monate</text>
+  <text class="t-body" x="400" y="728">Backplan mit Hilfe von Praktikanten entwickeln</text>
+  <line class="s-rule" x1="80" y1="778" x2="960" y2="778"/>
+  <line class="s-ink" x1="44" y1="778" x2="44" y2="190"/>
+  <path class="f-ink" d="M44 176 l-7 14 h14 z"/>
+  <text class="t-mono" x="44" y="804" text-anchor="middle">Zeit</text>
+  <line class="s-ink" x1="38" y1="219" x2="50" y2="219"/>
+  <line class="s-ink" x1="38" y1="305" x2="50" y2="305"/>
+  <line class="s-ink" x1="38" y1="391" x2="50" y2="391"/>
+  <line class="s-ink" x1="38" y1="477" x2="50" y2="477"/>
+  <line class="s-ink" x1="38" y1="563" x2="50" y2="563"/>
+  <line class="s-ink" x1="38" y1="649" x2="50" y2="649"/>
+  <line class="s-ink" x1="38" y1="735" x2="50" y2="735"/>
+</svg>

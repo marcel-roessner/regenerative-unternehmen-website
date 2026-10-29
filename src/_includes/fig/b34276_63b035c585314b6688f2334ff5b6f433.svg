@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-label="Grundsätze (systembasiertes Anspruchsniveau, adaptiver Managementansatz) und sechs Kriterien für regeneratives Wirtschaften">
+  <!-- Kriterien: äußere Segmente -->
+  <path class="f-rule" d="M 120.0 296.0 A 280 280 0 0 1 199.2 104.9 L 298.2 203.9 A 140 140 0 0 0 260.1 296.0 Z"/>
+  <path class="f-rule" d="M 204.9 99.2 A 280 280 0 0 1 595.1 99.2 L 496.1 198.2 A 140 140 0 0 0 303.9 198.2 Z"/>
+  <path class="f-rule" d="M 600.8 104.9 A 280 280 0 0 1 680.0 296.0 L 539.9 296.0 A 140 140 0 0 0 501.8 203.9 Z"/>
+  <path class="f-ink" d="M 680.0 304.0 A 280 280 0 0 1 600.8 495.1 L 501.8 396.1 A 140 140 0 0 0 539.9 304.0 Z"/>
+  <path class="f-ink" d="M 595.1 500.8 A 280 280 0 0 1 204.9 500.8 L 303.9 401.8 A 140 140 0 0 0 496.1 401.8 Z"/>
+  <path class="f-ink" d="M 199.2 495.1 A 280 280 0 0 1 120.0 304.0 L 260.1 304.0 A 140 140 0 0 0 298.2 396.1 Z"/>
+  <!-- Grundsätze: Kern -->
+  <path class="f-tint" d="M 270.1 296 A 130 130 0 0 1 529.9 296 Z"/>
+  <path class="f-tint" d="M 529.9 304 A 130 130 0 0 1 270.1 304 Z"/>
+  <text class="t-body" x="195" y="232" text-anchor="middle">Impact</text>
+  <text class="t-body" x="195" y="254" text-anchor="middle">auf das</text>
+  <text class="t-body" x="195" y="276" text-anchor="middle">Ökosystem</text>
+  <text class="t-body" x="400" y="92" text-anchor="middle">Beziehung zum</text>
+  <text class="t-body" x="400" y="114" text-anchor="middle">Ökosystem</text>
+  <text class="t-body" x="605" y="232" text-anchor="middle">Zugrunde</text>
+  <text class="t-body" x="605" y="254" text-anchor="middle">liegende</text>
+  <text class="t-body" x="605" y="276" text-anchor="middle">Geschäftslogik</text>
+  <text class="t-body t-inv" x="195" y="338" text-anchor="middle">Gespür für</text>
+  <text class="t-body t-inv" x="195" y="360" text-anchor="middle">den Ort</text>
+  <text class="t-body t-inv" x="400" y="492" text-anchor="middle">Unternehmensstrategie und</text>
+  <text class="t-body t-inv" x="400" y="514" text-anchor="middle">strategische Praktiken</text>
+  <text class="t-body t-inv" x="605" y="338" text-anchor="middle">Zeitliche</text>
+  <text class="t-body t-inv" x="605" y="360" text-anchor="middle">Orientierung</text>
+  <text class="t-head" x="400" y="252" text-anchor="middle">Systembasiertes</text>
+  <text class="t-head" x="400" y="280" text-anchor="middle">Anspruchsniveau</text>
+  <text class="t-head" x="400" y="342" text-anchor="middle">Adaptiver</text>
+  <text class="t-head" x="400" y="370" text-anchor="middle">Management-</text>
+  <text class="t-head" x="400" y="398" text-anchor="middle">ansatz</text>
+  <!-- Legende -->
+  <circle class="f-ink" cx="460" cy="200" r="4"/>
+  <line class="s-thin" x1="460" y1="200" x2="990" y2="200"/>
+  <text class="t-head" x="990" y="188" text-anchor="end">Grundsätze</text>
+  <circle class="f-ink" cx="662" cy="400" r="4"/>
+  <line class="s-thin" x1="662" y1="400" x2="990" y2="400"/>
+  <text class="t-head" x="990" y="388" text-anchor="end">Kriterien</text>
+</svg>

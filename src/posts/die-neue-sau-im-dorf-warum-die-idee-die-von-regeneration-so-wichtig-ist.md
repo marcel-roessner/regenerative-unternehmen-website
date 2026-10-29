@@ -13,7 +13,9 @@ legacy: ""
 Bisher gibt es keinen allgemeinen Konsens über Nachhaltigkeit in der Wirtschaft. Eine mögliche Definition ist, freiwillig die ökologischen und sozialen Belange in einem Unternehmen höher als die finanziellen Belange zu werten.<sup class="ref">[1]</sup> 
 Natürlich gibt es inzwischen eine Reihe an regulatorischen Rahmenbedingungen, die immer stärker auf Unternehmen einwirken. Diese führen dann oft zu reaktiven Maßnahmen der Unternehmen, unabhängig von sinnvollen strukturellen Änderungen. Noch dazu sind solche Maßnahmen oft bei weitem nicht geeignet, um den planetaren Grenzen wirklich Rechnung zu tragen. Obwohl auch kleine Schritte wichtig sind, sollte es jedoch eigentlich um aktive Partizipation und Gestaltung bei der Bewältigung der sozio-ökologischen Herausforderungen in den Unternehmen gehen. Dabei kann **Nachhaltigkeit als wirtschaftlicher Vorteil** genutzt werden. Hierfür ist es hilfreich, das "Wirrwarr" der Begriffe rund um Nachhaltigkeit etwas aufzubrechen. Zur Einordnung dient das folgende Modell in **Abbildung 1.**
 
-Phasen des ökologischen Designs und Entwicklung von der Degeneration zur Regeneration
+![](/assets/img/b34276_946d3719eb0f4ff0a97dec6e23cd7311.webp)
+
+<p class="caption">Phasen des ökologischen Designs und Entwicklung von der Degeneration zur Regeneration</p>
 
 <p class="caption">Abbildung 1<sup class="ref">[2]</sup> </p>
 Auf den ersten Blick teilt sich das Bild in zwei Bereiche. Dabei steht die linke Seite für Degeneration. Ein Bereich in dem sich die Bedingungen der Umwelt immer weiter verschlechtert. Die rechte Seite steht für Regeneration. Hier richtet sich alles Wirken auf das Leben aus. Während degenerative Vorgehensweisen mehr Energie und damit auch mehr finanzielle Mittel benötigen, kann regeneratives Wirtschaften mit weniger Energie und Betriebskosten auskommen.

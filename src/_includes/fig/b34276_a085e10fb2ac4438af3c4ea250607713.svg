@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-label="Quadrantenmodell mit Flächen für die derzeitige Kapazität: klein bei Haltung, mittel bei Werten und Kultur, groß bei Wissen und bei Strukturen">
+  <rect class="f-forest-3" x="422" y="359" width="78" height="81"/>
+  <rect class="f-forest-3" x="500" y="219" width="224" height="221"/>
+  <rect class="f-forest-3" x="343" y="440" width="157" height="148"/>
+  <rect class="f-forest-3" x="500" y="440" width="258" height="258"/>
+  <rect class="s-dash" x="220" y="160" width="272" height="272"/>
+  <rect class="s-dash" x="508" y="160" width="272" height="272"/>
+  <rect class="s-dash" x="220" y="448" width="272" height="272"/>
+  <rect class="s-dash" x="508" y="448" width="272" height="272"/>
+  <line class="s-ink" x1="60" y1="440" x2="940" y2="440"/>
+  <line class="s-ink" x1="500" y1="52" x2="500" y2="828"/>
+  <text class="t-mono" x="486" y="70" text-anchor="end">Innen</text>
+  <text class="t-mono" x="514" y="70">Außen</text>
+  <text class="t-mono" x="486" y="820" text-anchor="end">Innen</text>
+  <text class="t-mono" x="514" y="820">Außen</text>
+  <text class="t-mono" x="60" y="426">Ich</text>
+  <text class="t-mono" x="60" y="468">Wir</text>
+  <text class="t-mono" x="940" y="426" text-anchor="end">Ich</text>
+  <text class="t-mono" x="940" y="468" text-anchor="end">Wir</text>
+  <text class="t-head" x="60" y="78" text-anchor="start">Haltung</text>
+  <text class="t-head" x="60" y="106" text-anchor="start">Fühlen</text>
+  <text class="t-head" x="60" y="134" text-anchor="start">Denken</text>
+  <text class="t-head" x="940" y="78" text-anchor="end">Wissen</text>
+  <text class="t-head" x="940" y="106" text-anchor="end">Verhalten</text>
+  <text class="t-head" x="940" y="134" text-anchor="end">Fähigkeiten</text>
+  <text class="t-head" x="60" y="770" text-anchor="start">Werte</text>
+  <text class="t-head" x="60" y="798" text-anchor="start">Kultur</text>
+  <text class="t-head" x="60" y="826" text-anchor="start">Zusammenarbeit</text>
+  <text class="t-head" x="940" y="770" text-anchor="end">Produkte</text>
+  <text class="t-head" x="940" y="798" text-anchor="end">Prozesse</text>
+  <text class="t-head" x="940" y="826" text-anchor="end">Strukturen</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-label="Donut-Modell nach Kate Raworth: zwischen dem sozialen Fundament innen und der ökologischen Decke außen liegt der sichere und gerechte Raum für die Menschheit – eine regenerative und verteilende Wirtschaft; Überlastung nach außen, Defizit nach innen">
+<defs>
+<path id="b34276_6e5ffa4e0c8b4577ac0763605bbd794d-ceil" d="M236.5 392A263.5 263.5 0 0 1 763.5 392"/>
+<path id="b34276_6e5ffa4e0c8b4577ac0763605bbd794d-soc" d="M321.5 392A178.5 178.5 0 0 1 678.5 392"/>
+<path id="b34276_6e5ffa4e0c8b4577ac0763605bbd794d-safe-t" d="M280.0 392A220.0 220.0 0 0 1 720.0 392"/>
+<path id="b34276_6e5ffa4e0c8b4577ac0763605bbd794d-safe-b" d="M266.0 392A234.0 234.0 0 0 0 734.0 392"/>
+</defs>
+<path class="s-rule" d="M604 106.3L636.8 16.1"/>
+<path class="s-rule" d="M763.3 240L846.4 192"/>
+<path class="s-rule" d="M799.4 444.8L893.9 461.5"/>
+<path class="s-rule" d="M695.4 624.9L757.1 698.4"/>
+<path class="s-rule" d="M500 696L500 792"/>
+<path class="s-rule" d="M304.6 624.9L242.9 698.4"/>
+<path class="s-rule" d="M200.6 444.8L106.1 461.5"/>
+<path class="s-rule" d="M236.7 240L153.6 192"/>
+<path class="s-rule" d="M396 106.3L363.2 16.1"/>
+<circle class="f-tint" cx="500" cy="392" r="166"/>
+<path class="s-paper" d="M500 370L500 226"/>
+<path class="s-paper" d="M511 372.9L583 248.2"/>
+<path class="s-paper" d="M519.1 381L643.8 309"/>
+<path class="s-paper" d="M522 392L666 392"/>
+<path class="s-paper" d="M519.1 403L643.8 475"/>
+<path class="s-paper" d="M511 411.1L583 535.8"/>
+<path class="s-paper" d="M500 414L500 558"/>
+<path class="s-paper" d="M489 411.1L417 535.8"/>
+<path class="s-paper" d="M480.9 403L356.2 475"/>
+<path class="s-paper" d="M478 392L334 392"/>
+<path class="s-paper" d="M480.9 381L356.2 309"/>
+<path class="s-paper" d="M489 372.9L417 248.2"/>
+<path class="f-forest-3" fill-rule="evenodd" d="M297 392a203 203 0 1 0 406 0a203 203 0 1 0 -406 0zM334 392a166 166 0 1 0 332 0a166 166 0 1 0 -332 0z"/>
+<path class="f-forest" fill-rule="evenodd" d="M249 392a251 251 0 1 0 502 0a251 251 0 1 0 -502 0zM297 392a203 203 0 1 0 406 0a203 203 0 1 0 -406 0z"/>
+<path class="f-forest-3" fill-rule="evenodd" d="M212 392a288 288 0 1 0 576 0a288 288 0 1 0 -576 0zM249 392a251 251 0 1 0 502 0a251 251 0 1 0 -502 0z"/>
+<text class="t-wide t-forest"><textPath href="#b34276_6e5ffa4e0c8b4577ac0763605bbd794d-ceil" startOffset="50%" text-anchor="middle">ökologische Decke</textPath></text>
+<text class="t-wide t-forest"><textPath href="#b34276_6e5ffa4e0c8b4577ac0763605bbd794d-soc" startOffset="50%" text-anchor="middle">Soziales Fundament</textPath></text>
+<text class="t-head t-inv"><textPath href="#b34276_6e5ffa4e0c8b4577ac0763605bbd794d-safe-t" startOffset="50%" text-anchor="middle">Sicherer und gerechter Raum für Menschheit</textPath></text>
+<text class="t-head t-inv"><textPath href="#b34276_6e5ffa4e0c8b4577ac0763605bbd794d-safe-b" startOffset="50%" text-anchor="middle">Regenerative und verteilende Wirtschaft</textPath></text>
+<text class="t-head" x="500" y="84" text-anchor="middle">Klimawandel</text>
+<text class="t-head" x="696.1" y="135.6" text-anchor="start">Ozean-</text>
+<text class="t-head" x="696.1" y="160.6" text-anchor="start">versauerung</text>
+<text class="t-head" x="800.4" y="329.6" text-anchor="start">Chemische</text>
+<text class="t-head" x="800.4" y="354.6" text-anchor="start">Verschmutzung</text>
+<text class="t-head" x="764.1" y="544" text-anchor="start">Stickstoff- &amp;</text>
+<text class="t-head" x="764.1" y="569" text-anchor="start">Phosphor-</text>
+<text class="t-head" x="764.1" y="594" text-anchor="start">kreislauf</text>
+<text class="t-head" x="604.3" y="694.2" text-anchor="start">Nutzung von</text>
+<text class="t-head" x="604.3" y="719.2" text-anchor="start">Süßwasser</text>
+<text class="t-head" x="395.7" y="694.2" text-anchor="end">Flächen-</text>
+<text class="t-head" x="395.7" y="719.2" text-anchor="end">umwandlung</text>
+<text class="t-head" x="235.9" y="550.3" text-anchor="end">Verlust von</text>
+<text class="t-head" x="235.9" y="575.3" text-anchor="end">Biodiversität</text>
+<text class="t-head" x="199.6" y="329.6" text-anchor="end">Luftver-</text>
+<text class="t-head" x="199.6" y="354.6" text-anchor="end">schmutzung</text>
+<text class="t-head" x="303.9" y="135.6" text-anchor="end">Schäden an</text>
+<text class="t-head" x="303.9" y="160.6" text-anchor="end">Ozonschicht</text>
+<text class="t-body" x="656" y="398" text-anchor="end" transform="rotate(-48 500 392)">Unterkunft</text>
+<text class="t-body" x="656" y="398" text-anchor="end" transform="rotate(-75 500 392)">Energie</text>
+<text class="t-body" x="344" y="398" text-anchor="start" transform="rotate(435 500 392)">Wasser</text>
+<text class="t-body" x="344" y="398" text-anchor="start" transform="rotate(405 500 392)">Ernährung</text>
+<text class="t-body" x="344" y="388.5" text-anchor="start" transform="rotate(375 500 392)">Soziale</text>
+<text class="t-body" x="344" y="407.5" text-anchor="start" transform="rotate(375 500 392)">Netzwerke</text>
+<text class="t-body" x="344" y="388.5" text-anchor="start" transform="rotate(345 500 392)">Einkommen &amp;</text>
+<text class="t-body" x="344" y="407.5" text-anchor="start" transform="rotate(345 500 392)">Arbeit</text>
+<text class="t-body" x="344" y="388.5" text-anchor="start" transform="rotate(315 500 392)">Geschlechter-</text>
+<text class="t-body" x="344" y="407.5" text-anchor="start" transform="rotate(315 500 392)">gleichheit</text>
+<text class="t-body" x="344" y="388.5" text-anchor="start" transform="rotate(285 500 392)">Frieden &amp;</text>
+<text class="t-body" x="344" y="407.5" text-anchor="start" transform="rotate(285 500 392)">Gerechtigkeit</text>
+<text class="t-body" x="656" y="388.5" text-anchor="end" transform="rotate(75 500 392)">Politische</text>
+<text class="t-body" x="656" y="407.5" text-anchor="end" transform="rotate(75 500 392)">Mitsprache</text>
+<text class="t-body" x="656" y="388.5" text-anchor="end" transform="rotate(45 500 392)">Soziale</text>
+<text class="t-body" x="656" y="407.5" text-anchor="end" transform="rotate(45 500 392)">Fairness</text>
+<text class="t-body" x="656" y="398" text-anchor="end" transform="rotate(15 500 392)">Gesundheit</text>
+<text class="t-body" x="656" y="398" text-anchor="end" transform="rotate(-12 500 392)">Bildung</text>
+<polygon class="f-ink" points="292,-15 490,-15 490,-26 520,0 490,26 490,15 292,15" transform="translate(500 392) rotate(-30)"/><text class="t-wide t-inv" x="891" y="398" text-anchor="middle" transform="rotate(-30 500 392)">Überlastung</text>
+<polygon class="f-ink" points="205,-12 70,-12 70,-19 44,0 70,19 70,12 205,12" transform="translate(500 392) rotate(-30)"/><text class="t-wide t-inv" x="637.5" y="398" text-anchor="middle" transform="rotate(-30 500 392)">Defizit</text>
+<text class="t-mono" x="30" y="786">Quelle: Donut-Modell von Kate Raworth</text>
+</svg>

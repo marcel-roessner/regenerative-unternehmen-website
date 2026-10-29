@@ -62,6 +62,8 @@ Um die Idee der Regeneration aus der programmatischen und normativen Diskussion 
 
 - **aufwerten.[5]** Diese sind aufeinander aufbauend und können in ihrer Entwicklung nicht übersprungen werden (siehe **Abbildung 2**).
 
+![](/assets/img/b34276_80d070c9d1d347fa853582e7db94bda9.webp)
+
 <p class="caption">Abbildung 2 Praktische Anwendung regenerativer Business Strategien für Unternehmen (eigene Darstellung)</p>
 
 ### I. Strategie Wiederherstellen:
