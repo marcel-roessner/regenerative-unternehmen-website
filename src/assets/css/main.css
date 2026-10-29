@@ -232,7 +232,14 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
   color: transparent;
 }
 .section--forest .split > .side .num { -webkit-text-stroke-color: var(--forest-ink); }
-.split > .side .label { position: sticky; top: 2rem; }
+.split > .side .label {
+  position: sticky; top: 2rem; display: block;
+  font-family: var(--f-wide); font-weight: 800;
+  font-size: clamp(.95rem, 1.3vw, 1.15rem); line-height: 1.1;
+  letter-spacing: .01em; text-transform: uppercase;
+  color: var(--ink);
+}
+.section--forest .split > .side .label { color: var(--forest-ink); }
 
 /* Zitat */
 .quote { margin: 0 0 2.5rem; }
