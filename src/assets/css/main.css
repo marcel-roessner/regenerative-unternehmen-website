@@ -153,14 +153,13 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
   line-height: .95;
   text-transform: uppercase;
   text-decoration: none;
-  display: flex; align-items: center; gap: .7rem;
+  display: flex; align-items: flex-start; gap: .7rem;
 }
+.wordmark .dot { margin-top: .12em; }
 .site-header .wrap { padding-block: 1rem; }
 .wordmark:hover { color: var(--ink); }
-.wordmark .mark { width: 2.4em; height: 2.4em; flex: none; color: var(--forest); transition: transform 1.2s var(--ease); }
-.wordmark .mark-core { fill: var(--accent); stroke: var(--forest); stroke-width: 1; }
-.wordmark:hover .mark { transform: rotate(90deg); }
-.ci-logo--ink .wordmark .mark, .ci-logo--forest .wordmark .mark { color: currentColor; }
+.wordmark .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); flex: none; transition: transform .6s var(--ease); }
+.wordmark:hover .dot { transform: scale(1.6); }
 .nav ul { list-style: none; display: flex; gap: clamp(1rem, 2.4vw, 2.2rem); margin: 0; padding: 0; }
 .nav a { text-decoration: none; font-size: .95rem; position: relative; }
 .nav a[aria-current="page"]::before { content: ""; position: absolute; left: -12px; top: .55em; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
