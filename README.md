@@ -107,6 +107,7 @@ Alles ist vorbereitet, aber noch nicht an einen Dienst angebunden. Solange die F
 
 - **Shop:** z. B. einen [Stripe Payment Link](https://stripe.com/de/payments/payment-links) pro Produkt anlegen und in `shop.kartenset` eintragen.
 - **Newsletter:** z. B. Brevo, Buttondown oder Mailchimp – Formular-Action in `newsletter.action` eintragen.
+- **Bestellungen und Whitepaper-Anfragen:** Das Formular auf den Produktseiten löst eine E-Mail aus, sobald in der Redaktion unter „Einstellungen“ die Bestell-Adresse eingetragen ist. Zwei Wege (eigenes Skript bei deutschem Hoster oder Formular-Dienst) stehen in `server/README.md`. Ohne Adresse öffnet sich nur eine vorausgefüllte E-Mail.
 - **Kontaktformular:** z. B. [Formspree](https://formspree.io) – Endpoint in `contactFormAction` eintragen.
 
 Jeder dieser Dienste muss in der Datenschutzerklärung ergänzt werden.

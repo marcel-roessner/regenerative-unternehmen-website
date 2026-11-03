@@ -27,7 +27,7 @@ image: /assets/img/b34276_78fa1eadb33f43e98c5e3aab2b7512f7
         <li><span class="label">Anwendung</span><span>Workshops, Einzelcoachings oder Teamentwicklungsprozesse.</span></li>
         <li><span class="label">Inhalt</span><span>21 Themenkarten mit Denkanstößen und praktischen Übungen · 4 Workshop-Module · Booklet mit Hintergrundwissen, Methoden und Workshop-Ideen · praktische Schachtel für den Transport</span></li>
       </ul>
-      <a class="btn btn--solid" href="{{ site.shop.kartenset or ('Bestellung: Planetary Thinking Kartenset' | mailto(site.email)) }}">Jetzt bestellen</a>
+      <a class="btn btn--solid" href="#bestellung">Jetzt bestellen</a>
       <div style="margin-top:2.5rem">
         <details class="acc"><summary>Versand</summary><div>
           <p>Wir versenden als <strong>Warensendung</strong> mit der Deutschen Post (Go Green), um Ihnen eine kostengünstige Lieferung zu ermöglichen.</p>
@@ -38,6 +38,18 @@ image: /assets/img/b34276_78fa1eadb33f43e98c5e3aab2b7512f7
           <p>Für Rückgaben schreiben Sie uns an <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
         </div></details>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="bestellung">
+  <div class="wrap split">
+    <div class="side"><span class="label">Bestellung</span></div>
+    <div>
+      <h2 class="h2">Planetary Thinking Kartenset bestellen.</h2>
+      <p class="lead">{{ p.price }} je Set zzgl. Versand (Deutschland 2,55 €). Sie erhalten die Rechnung per E-Mail, wir versenden nach Zahlungseingang.</p>
+      {%- set formKind = "order" %}{% set formProduct = "Planetary Thinking – Kartenset" %}{% set formUnit = p.price | priceNum %}{% set formShipping = 2.55 %}
+      {% include "partials/order-form.njk" %}
     </div>
   </div>
 </section>

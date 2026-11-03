@@ -151,3 +151,54 @@ if (cardsWrap) {
   }));
   if (location.hash) apply(location.hash.slice(1));
 }
+
+// ---------- Bestell- und Anfrageformulare ----------
+// Mit Formular-Adresse: Absenden im Hintergrund, Bestätigung direkt auf der Seite.
+// Ohne Adresse: vorausgefüllte E-Mail im Mailprogramm.
+document.querySelectorAll("form[data-ajax]").forEach((form) => {
+  const status = form.querySelector(".form-status");
+  const fmt = (n) => n.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+  const qty = form.querySelector('[name="anzahl"]');
+  const totalEl = form.querySelector(".js-total");
+  const total = () => {
+    if (!qty || !totalEl) return;
+    const n = Math.max(1, Math.min(50, parseInt(qty.value, 10) || 1));
+    totalEl.textContent = fmt(n * parseFloat(form.dataset.unit) + parseFloat(form.dataset.shipping));
+  };
+  if (qty) { qty.addEventListener("input", total); total(); }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const fd = new FormData(form);
+    const data = Object.fromEntries(fd);
+    if (data.website) return;                       // Honigtopf: Bots füllen das aus
+    delete data.website; data.datenschutz = "akzeptiert";
+    if (totalEl) data.gesamtpreis = totalEl.textContent;
+
+    const mailFallback = () => {
+      const lines = [...form.querySelectorAll("[data-label]")].filter((f) => f.name !== "produkt").map((f) => `${f.dataset.label}: ${f.value}`);
+      if (totalEl) lines.push(`Gesamtpreis: ${totalEl.textContent}`);
+      location.href = `mailto:${form.dataset.mailto}?subject=${encodeURIComponent(form.dataset.subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+      status.textContent = "Ihr E-Mail-Programm öffnet sich – bitte die vorbereitete Nachricht absenden.";
+    };
+    if (!form.dataset.action) return mailFallback();
+
+    const btn = form.querySelector('[type="submit"]');
+    btn.disabled = true; status.textContent = "Wird gesendet …";
+    try {
+      const r = await fetch(form.dataset.action, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) });
+      if (!r.ok) throw new Error(r.status);
+      const done = document.createElement("div");
+      done.className = "form-done"; done.setAttribute("role", "status");
+      done.innerHTML = "<h3></h3><p></p>";
+      done.querySelector("h3").textContent = form.dataset.successTitle;
+      done.querySelector("p").textContent = form.dataset.successText;
+      form.replaceWith(done);
+      done.scrollIntoView({ block: "center", behavior: "smooth" });
+    } catch (err) {
+      btn.disabled = false;
+      status.textContent = "Das Senden hat leider nicht geklappt. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an " + form.dataset.mailto + ".";
+    }
+  });
+});

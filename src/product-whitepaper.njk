@@ -22,7 +22,19 @@ image: /assets/img/b34276_ab43e671a04b4d43986fe2db9696bd11
         <p>Tolle Zahlen und farbenfrohe Bilder: So sehen die Nachhaltigkeitsberichte vieler Unternehmen aus. Doch zahlen die inhaltlichen Bestandteile dieser Berichte auf die Einhaltung der planetaren Grenzen ein? Wird damit das 1,5-Grad-Ziel nachhaltig erreicht?</p>
         <p>Es braucht einen Weg, der Nachhaltigkeitsberichterstattungs- und Dokumentationsfalle zu entkommen und Maßnahmen anzugehen. Kontextbasierte Strategien können hierfür eine Lösung sein.</p>
       </div>
-      <div class="btns"><a class="btn btn--solid" href="{{ site.shop.whitepaper or ('Whitepaper: Kontextbasierte Strategien' | mailto(site.email)) }}">Whitepaper anfordern</a></div>
+      <div class="btns"><a class="btn btn--solid" href="#anfordern">Whitepaper anfordern</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="anfordern">
+  <div class="wrap split">
+    <div class="side"><span class="label">Anfordern</span></div>
+    <div>
+      <h2 class="h2">Whitepaper kostenlos anfordern.</h2>
+      <p class="lead">Tragen Sie Ihre E-Mail-Adresse ein, wir senden Ihnen das Whitepaper zu.</p>
+      {%- set formKind = "request" %}{% set formProduct = "Whitepaper: Kontextbasierte Strategien" %}
+      {% include "partials/order-form.njk" %}
     </div>
   </div>
 </section>

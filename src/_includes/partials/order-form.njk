@@ -1,0 +1,29 @@
+{#- Erwartet: formKind ("order" | "request"), formProduct, formUnit (Zahl, nur order), formShipping (Zahl, nur order) #}
+<form class="order-form" data-ajax data-action="{{ site.orderFormAction }}" data-mailto="{{ site.email }}" data-subject="{{ 'Bestellung: ' if formKind == 'order' else 'Anfrage: ' }}{{ formProduct }}"
+  data-success-title="{{ 'Vielen Dank für Ihre Bestellung.' if formKind == 'order' else 'Vielen Dank für Ihre Anfrage.' }}"
+  data-success-text="{{ 'Wir haben Ihre Bestellung erhalten und melden uns in der Regel innerhalb weniger Tage mit der Rechnung.' if formKind == 'order' else 'Wir haben Ihre Anfrage erhalten und senden Ihnen das Whitepaper in Kürze per E-Mail.' }}"
+  {%- if formKind == 'order' %} data-unit="{{ formUnit }}" data-shipping="{{ formShipping }}"{% endif %} novalidate>
+  <input type="hidden" name="produkt" value="{{ formProduct }}" data-label="Produkt">
+  <p class="hp" aria-hidden="true"><label>Bitte leer lassen <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+
+  {%- if formKind == 'order' %}
+  <div class="field field--qty"><label class="label" for="o-qty">Anzahl</label><input id="o-qty" type="number" name="anzahl" value="1" min="1" max="50" required data-label="Anzahl"></div>
+  {%- endif %}
+  <div class="field-row">
+    <div class="field"><label class="label" for="o-name">Name</label><input id="o-name" type="text" name="name" required autocomplete="name" data-label="Name"></div>
+    <div class="field"><label class="label" for="o-org">Organisation (optional)</label><input id="o-org" type="text" name="organisation" autocomplete="organization" data-label="Organisation"></div>
+  </div>
+  <div class="field"><label class="label" for="o-mail">E-Mail-Adresse</label><input id="o-mail" type="email" name="email" required autocomplete="email" data-label="E-Mail"></div>
+  {%- if formKind == 'order' %}
+  <div class="field"><label class="label" for="o-street">Straße und Hausnummer</label><input id="o-street" type="text" name="strasse" required autocomplete="street-address" data-label="Straße"></div>
+  <div class="field-row field-row--plz">
+    <div class="field"><label class="label" for="o-plz">PLZ</label><input id="o-plz" type="text" name="plz" required inputmode="numeric" autocomplete="postal-code" data-label="PLZ"></div>
+    <div class="field"><label class="label" for="o-city">Ort</label><input id="o-city" type="text" name="ort" required autocomplete="address-level2" data-label="Ort"></div>
+  </div>
+  <div class="field"><label class="label" for="o-note">Anmerkung (optional)</label><textarea id="o-note" name="anmerkung" data-label="Anmerkung" rows="3"></textarea></div>
+  <p class="order-total"><span class="label">Gesamtpreis</span><strong class="js-total">–</strong><span class="order-total-note">inkl. Versand innerhalb Deutschlands. Zahlung per Rechnung nach Erhalt der Bestellung. Versand ins Ausland: bitte per E-Mail anfragen.</span></p>
+  {%- endif %}
+  <label class="check"><input type="checkbox" name="datenschutz" required> <span>Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> zur Kenntnis genommen. Meine Angaben werden zur Bearbeitung {{ 'der Bestellung' if formKind == 'order' else 'der Anfrage' }} per E-Mail an Regenerative Unternehmen übermittelt.</span></label>
+  <div class="btns"><button class="btn btn--solid" type="submit">{{ 'Zahlungspflichtig bestellen' if formKind == 'order' else 'Whitepaper anfordern' }}</button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>

@@ -48,6 +48,7 @@ export default function (eleventyConfig) {
     t.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
   );
   eleventyConfig.addFilter("excerpt", (s = "", n = 180) => (s.length > n ? s.slice(0, s.lastIndexOf(" ", n)) + " …" : s));
+  eleventyConfig.addFilter("priceNum", (v = "") => parseFloat(String(v).replace(/[^0-9,]/g, "").replace(",", ".")) || 0);
   eleventyConfig.addFilter("glossarLd", (terms = [], base = "") =>
     terms.map((t) => ({ "@type": "DefinedTerm", name: t.term, description: `${t.short} ${t.text}`, url: `${base}/glossar/#${t.slug}` }))
   );

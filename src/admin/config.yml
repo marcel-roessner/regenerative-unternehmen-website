@@ -164,6 +164,7 @@ collections:
             fields:
               - { name: action, label: "Formular-Adresse des Anbieters", widget: string, required: false, hint: "Leer = Anmeldung per E-Mail" }
               - { name: emailField, label: Name des E-Mail-Felds, widget: string, default: email }
+          - { name: orderFormAction, label: "Bestell- und Anfrageformular: Adresse, die die E-Mail auslöst", widget: string, required: false, hint: "Leer = vorausgefüllte E-Mail im Mailprogramm des Kunden. Mit Adresse: Bestellung kommt direkt per E-Mail bei Ihnen an." }
           - { name: contactFormAction, label: "Kontaktformular-Adresse (z. B. Formspree)", widget: string, required: false }
 
       - name: impressum

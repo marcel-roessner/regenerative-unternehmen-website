@@ -46,6 +46,10 @@ Diese Website setzt keine Cookies und verwendet keine Analyse-, Tracking- oder M
 
 Rechtsgrundlage für die Verarbeitung dieser Daten ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens gemäß Art. 6 Abs. 1 lit. f DSGVO. Zielt Ihre Kontaktierung auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht. Dies ist der Fall, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist und sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
 
+5.2 **Bestell- und Anfrageformulare.** Wenn Sie über unsere Website ein Produkt bestellen oder das Whitepaper anfordern, übermitteln wir Ihre Angaben (Name, ggf. Organisation, E-Mail-Adresse, bei Bestellungen Lieferadresse und Anmerkung sowie Produkt, Anzahl und Preis) per E-Mail an uns. Die Verarbeitung erfolgt zur Durchführung des Vertrags bzw. zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Bestelldaten bewahren wir entsprechend den handels- und steuerrechtlichen Aufbewahrungsfristen auf, Anfragen löschen wir nach abschließender Bearbeitung.
+
+Für die Übermittlung nutzen wir einen Formular-Dienstleister (Angabe vor Livegang ergänzen: Name, Sitz und Speicherort des Anbieters; mit dem Anbieter besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO).
+
 ## 6) Nutzung von Kundendaten zur Direktwerbung
 ### 6.1 Anmeldung zu unserem E-Mail-Newsletter
 

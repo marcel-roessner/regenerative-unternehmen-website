@@ -21,5 +21,8 @@
   },
 
   "_hinweis_kontakt": "Kontaktformular: z. B. https://formspree.io/f/XXXX eintragen. Leer = es wird nur die E-Mail-Adresse angezeigt.",
+  "_hinweis_bestellung": "Bestell- und Anfrageformular: Adresse eintragen, an die Bestellungen als E-Mail gesendet werden (z. B. https://submit-form.com/XXXX oder die Adresse eines eigenen Skripts, siehe server/README.md). Leer = es öffnet sich eine vorausgefüllte E-Mail.",
+  "orderFormAction": "",
+
   "contactFormAction": ""
 }

@@ -322,7 +322,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .cta { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: end; }
 .form-inline { display: flex; gap: .6rem; flex-wrap: wrap; }
 .field { display: grid; gap: .4rem; margin-bottom: 1.1rem; }
-input[type="email"], input[type="text"], textarea {
+input[type="email"], input[type="text"], input[type="number"], textarea {
   width: 100%; font: inherit; color: var(--ink);
   background: transparent; border: 0; border-bottom: 1px solid var(--ink);
   padding: .7rem 0; border-radius: 0;
@@ -769,3 +769,19 @@ html.zoom-open { overflow: hidden; }
 .ref-title { margin: 0; font-size: 1.1rem; line-height: 1.4; color: var(--ink-2); }
 .ref-text { margin: .3rem 0 0; color: var(--ink-2); }
 @media (max-width: 800px) { .refs { grid-template-columns: 1fr; } .ref { min-height: 0; } }
+
+/* ---------- Bestellformular ---------- */
+.order-form { max-width: 40rem; margin-top: 2.5rem; }
+.order-form .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.6rem; }
+.order-form .field-row--plz { grid-template-columns: 8rem 1fr; }
+.order-form .field--qty { max-width: 8rem; }
+.order-form input[type="number"] { width: 100%; }
+.order-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.order-total { display: grid; gap: .3rem; margin: 1.6rem 0 0; padding: 1.1rem 1.2rem; background: var(--paper); border: 1px solid var(--rule); border-left: 3px solid var(--accent); }
+.order-total strong { font: 700 1.6rem/1.1 var(--f-wide); letter-spacing: -.02em; }
+.order-total-note { font-size: .85rem; color: var(--muted); }
+.form-status { margin: 1rem 0 0; min-height: 1.4em; font-size: .92rem; color: var(--ink-2); }
+.form-done { max-width: 40rem; margin-top: 2.5rem; padding: 1.6rem; background: var(--paper); border: 1px solid var(--rule); border-left: 3px solid var(--accent); }
+.form-done h3 { font: 400 1.6rem/1.1 var(--f-head); letter-spacing: -.03em; margin: 0 0 .6rem; }
+.form-done p { margin: 0; }
+@media (max-width: 600px) { .order-form .field-row, .order-form .field-row--plz { grid-template-columns: 1fr; } .order-form .field-row--plz { grid-template-columns: 7rem 1fr; } }
