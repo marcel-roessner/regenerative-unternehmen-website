@@ -14,6 +14,7 @@ for f in pages:
     r=os.path.relpath(f,SRC); d=r.count('/')
     h=open(f).read()
     h=re.sub(r'(href|src)="(/[^"]*)"',lambda m:f'{m.group(1)}="{rel(m.group(2),d)}"',h)
+    h=re.sub(r'srcset="([^"]*)"',lambda m:'srcset="'+', '.join((rel(u.split()[0],d)+(' '+u.split()[1] if len(u.split())>1 else '')) for u in m.group(1).split(','))+'"',h)
     h=re.sub(r'<link rel="(canonical|alternate|preload)"[^>]*>\n?','',h)
     h=re.sub(r'<meta property="og:[^>]*>\n?','',h)
     h=re.sub(r'<li><a href="[./]*feed.xml">RSS-Feed</a></li>','',h)
