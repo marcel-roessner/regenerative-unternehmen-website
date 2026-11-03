@@ -29,6 +29,7 @@
   --muted: #66716a;
   --rule: #cfd5c8;
   --accent: #ff6624;      /* Orange – die Akzentfarbe (Flächen, Zahlen, Hover, Kern der Baumscheibe) */
+  --accent-soft: #ffb184;  /* helles Apricot – für Flächen (Kontaktblock, Markierungen, Hover) */
   --forest: #183d34;      /* Tannengrün – aus dem Kartenset */
   --forest-ink: #e9efe6;
   --forest-2: #4f7062;    /* Abstufungen für Diagramme */
@@ -68,7 +69,7 @@ body::before {
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
-::selection { background: var(--accent); color: var(--ink); }
+::selection { background: var(--accent-soft); color: var(--ink); }
 img { max-width: 100%; height: auto; display: block; }
 em, i, cite, address, var, dfn { font-style: normal; }
 a { color: inherit; text-decoration-line: underline; text-decoration-thickness: 1px; text-underline-offset: .22em; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); transition: color .2s, text-decoration-color .2s; }
@@ -137,9 +138,9 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .btn:hover { background: var(--ink); color: var(--paper); }
 .btn:hover::after { transform: translateX(4px); }
 .btn--solid { background: var(--ink); color: var(--paper); }
-.btn--solid:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+.btn--solid:hover { background: var(--accent-soft); border-color: var(--accent-soft); color: var(--ink); }
 .btn--light { border-color: currentColor; color: var(--forest-ink); }
-.btn--light:hover { background: var(--accent); color: var(--forest); border-color: var(--accent); }
+.btn--light:hover { background: var(--accent-soft); color: var(--forest); border-color: var(--accent-soft); }
 .btns { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 
 /* ---------- Header ---------- */
@@ -562,7 +563,7 @@ details.acc > div { padding-bottom: 1.2rem; font-size: 1rem; color: var(--ink-2)
   background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px;
   padding: .45rem .7rem; cursor: zoom-in;
 }
-.fig-zoom-btn:hover { background: var(--accent); border-color: var(--accent); }
+.fig-zoom-btn:hover { background: var(--accent-soft); border-color: var(--accent-soft); }
 .zoom-layer {
   position: fixed; inset: 0; z-index: 300; background: var(--paper);
   overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
@@ -660,7 +661,7 @@ html.zoom-open { overflow: hidden; }
 @media (max-width: 860px) { .newsletter-inner { grid-template-columns: auto minmax(0, 1fr); } .nl-form { grid-column: 1 / -1; } }
 
 /* ---------- Kontakt-Block vor dem Footer (eigene Farbfläche) ---------- */
-.cta-block { background: var(--accent); color: var(--ink); padding-block: clamp(4rem, 9vw, 7.5rem); overflow: hidden; }
+.cta-block { background: var(--accent-soft); color: var(--ink); padding-block: clamp(4rem, 9vw, 7.5rem); overflow: hidden; }
 .cta-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
 .cta-block .label { color: var(--ink); opacity: .7; }
 .cta-title { font: 300 clamp(2.2rem, 5.6vw, 5rem)/1 var(--f-head); letter-spacing: -.04em; margin: 1.2rem 0 1.4rem; max-width: 15ch; text-wrap: balance; }
@@ -675,7 +676,7 @@ html.zoom-open { overflow: hidden; }
 .foot-grid { border-top: 0; padding-top: 0; }
 
 /* Grafik und Text verbinden: hellgrüne Markierung am Stufennamen = hellgrüner Punkt in der Grafik */
-.story-name span { background: linear-gradient(transparent 58%, var(--accent) 58%, var(--accent) 92%, transparent 92%); padding-inline: .08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.story-name span { background: linear-gradient(transparent 58%, var(--accent-soft) 58%, var(--accent-soft) 92%, transparent 92%); padding-inline: .08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .story.is-live .sv-station.is-current text { font-weight: 600; }
 .story.is-live .sv-station.is-current line { stroke-width: 3; }
 @media (max-width: 860px) {
@@ -694,7 +695,7 @@ html.zoom-open { overflow: hidden; }
 
 /* ---------- Kontaktseite ---------- */
 .contact-wrap { padding-bottom: clamp(4rem, 8vw, 7rem); }
-.contact-mail { display: grid; gap: 1rem; justify-items: start; padding: clamp(1.8rem, 4vw, 3rem); background: var(--accent); text-decoration: none; max-width: 52rem; }
+.contact-mail { display: grid; gap: 1rem; justify-items: start; padding: clamp(1.8rem, 4vw, 3rem); background: var(--accent-soft); text-decoration: none; max-width: 52rem; }
 .contact-mail:hover { color: var(--ink); }
 .contact-mail .label { color: var(--ink); opacity: .7; }
 .contact-address { font: 300 clamp(1.5rem, 4.2vw, 3rem)/1.1 var(--f-head); letter-spacing: -.035em; overflow-wrap: anywhere; }
@@ -726,4 +727,4 @@ html.zoom-open { overflow: hidden; }
 .card--feature .card-body { padding: clamp(1.4rem, 3vw, 2.4rem); align-content: end; }
 .card[hidden] { display: none; }
 .chips a[aria-current="page"] { background: var(--forest); border-color: var(--forest); color: var(--forest-ink); }
-.chips a:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+.chips a:hover { background: var(--accent-soft); border-color: var(--accent-soft); color: var(--ink); }
