@@ -13,7 +13,7 @@ description: Kartensets wie Planetary Thinking und praxisorientierte Tools – s
   <div class="shop-grid">
     {%- for p in products.items %}
     <a class="card" href="/product-page/{{ p.slug }}/">
-      <div class="thumb" style="aspect-ratio:5/4;background:#fbf9f4"><img src="{{ p.image | img }}" alt="" style="object-fit:contain;padding:6%" loading="lazy"></div>
+      <div class="thumb" style="aspect-ratio:5/4;background:var(--paper-2)"><img src="{{ p.image | img }}" alt="" style="object-fit:contain;padding:6%" loading="lazy"></div>
       <span class="label">{{ p.kicker }} · {{ p.price }}</span>
       <h2 class="t">{{ p.title }}</h2>
       <p>{{ p.teaser }}</p>

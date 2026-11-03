@@ -25,7 +25,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   <div class="wrap split">
     <div class="side"><span class="num">01</span><span class="label">Haltung</span></div>
     <div>
-      <h2 class="h2">Regeneration = <em>Erfolg?</em></h2>
+      <h2 class="h2">Regeneration = Erfolg?</h2>
       <blockquote class="quote">
         <p>Inspiriere andere, unserem Beispiel zu folgen, um Lösungen zur aktuellen Umweltkrise zu finden</p>
         <footer class="label">Yvon Chouinard — „Lass die Mitarbeiter surfen gehen!“</footer>
@@ -43,7 +43,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   <div class="wrap split">
     <div class="side"><span class="num">03</span><span class="label">Warum</span></div>
     <div>
-      <h2 class="h2" style="max-width:22ch">In der heutigen Zeit gibt es einige Herausforderungen zu meistern. Regeneration ist <em>ein Teil der Lösung.</em></h2>
+      <h2 class="h2" style="max-width:22ch">In der heutigen Zeit gibt es einige Herausforderungen zu meistern. Regeneration ist ein Teil der Lösung.</h2>
       <div class="prose">
         <h3 class="h3" style="margin-top:2.5rem">Welchen Vorteil bieten regenerative Unternehmensstrukturen?</h3>
         <p>Regenerative Unternehmen bieten eine Vielzahl von Vorteilen für die Gesellschaft und den Planeten. Indem sie aktiv die Umwelt regenerieren, tragen sie zur Erhaltung der Biodiversität und zur Wiederherstellung empfindlicher Ökosysteme bei, in denen sie wirtschaften. Sie fördern über die gesamte Lieferkette hinweg soziale Verantwortung, indem sie gerechte Arbeitsbedingungen schaffen, Gemeinschaften stärken und benachteiligte Gruppen unterstützen.</p>
@@ -53,33 +53,33 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   </div>
 </section>
 
-<section class="section section--tint" id="angebot">
+<section class="section section--forest" id="angebot">
   <div class="wrap split">
     <div class="side"><span class="num">04</span><span class="label">Angebot</span></div>
     <div>
-      <h2 class="h2">Unser <em>Angebot</em></h2>
+      <h2 class="h2">Workshops, Training und Beratung – für den nächsten Schritt.</h2>
       <p class="lead">Wir stärken Ihr Team mit praxisnahen Trainings, unterstützen Sie mit nachhaltigen Strategien durch unsere Beratung und entwickeln in interaktiven Workshops gemeinsam innovative Lösungen für eine regenerative Zukunft Ihres Unternehmens.</p>
     </div>
   </div>
   <div class="wrap">
     <div class="offer">
       <article>
-        <span class="roman">i.</span>
-        <h3 class="h3">Workshops</h3>
+        <span class="sub-n">/01</span>
+        <h3 class="offer-t">Workshops</h3>
         <p>In unseren interaktiven Workshops erarbeiten wir gemeinsam innovative Ansätze für eine regenerative Ökonomie.</p>
       </article>
       <article>
-        <span class="roman">ii.</span>
-        <h3 class="h3">Training</h3>
+        <span class="sub-n">/02</span>
+        <h3 class="offer-t">Training</h3>
         <p>Wir bieten praxisnahe Trainings und Vorträge, die Ihr Team fit für die Zukunft machen. Nutzen Sie unsere maßgeschneiderten Programme zur Weiterbildung.</p>
       </article>
       <article>
-        <span class="roman">iii.</span>
-        <h3 class="h3">Beratung</h3>
+        <span class="sub-n">/03</span>
+        <h3 class="offer-t">Beratung</h3>
         <p>Mit unserer strategischen Beratung unterstützen wir Sie dabei, wirtschaftlichen Erfolg mit sozialer und ökologischer Verantwortung zu verbinden.</p>
       </article>
     </div>
-    <div class="btns"><a class="btn btn--solid" href="/kontakt/">Anfrage stellen</a></div>
+    <div class="btns"><a class="btn btn--light" href="/kontakt/">Anfrage stellen</a></div>
   </div>
 </section>
 
@@ -87,17 +87,19 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   <div class="wrap split">
     <div class="side"><span class="num">05</span><span class="label">Kollektiv</span></div>
     <div>
-      <h2 class="h2">Unser <em>Kollektiv</em></h2>
-      <p class="lead">Wir beschäftigen uns mit der Zukunft unserer Wirtschaft – mit Hintergrund in Organisations- und Nachhaltigkeitsentwicklung. Lernt uns kennen und geht mit uns in den Austausch, um gemeinsam eine regenerative Wirtschaft zu gestalten.</p>
+      <h2 class="h2">Die Menschen dahinter.</h2>
+      <p class="lead">Wir beschäftigen uns mit der Zukunft unserer Wirtschaft – mit Hintergrund in Organisations- und Nachhaltigkeitsentwicklung. Lernen Sie uns kennen und kommen Sie mit uns in den Austausch.</p>
       <div class="team">
         {%- for p in team.members %}
-        <div class="person">
+        <article class="person">
           <figure><img src="{{ p.image | img(true) }}" alt="Porträt {{ p.name }}" loading="lazy" width="720" height="900"></figure>
-          <span class="label">{{ p.role }}</span>
-          <p class="name">{{ p.name }}</p>
-          <ul>{% for f in p.focus %}<li>{{ f }}</li>{% endfor %}</ul>
-          <a class="label" href="{{ p.linkedin }}" rel="noopener">LinkedIn ↗</a>
-        </div>
+          <div class="person-body">
+            <h3 class="name">{{ p.name }}</h3>
+            <p class="role">{{ p.role }}</p>
+            <ul>{% for f in p.focus %}<li>{{ f }}</li>{% endfor %}</ul>
+            {%- if p.linkedin %}<a class="person-link" href="{{ p.linkedin }}" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>{% endif %}
+          </div>
+        </article>
         {%- endfor %}
       </div>
     </div>
@@ -108,12 +110,12 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   <div class="wrap split">
     <div class="side"><span class="num">06</span><span class="label">Journal</span></div>
     <div>
-      <h2 class="h2">Aktuelle Beiträge <em>zum Thema.</em></h2>
+      <h2 class="h2">Aktuelle Beiträge zum Thema.</h2>
       <ul class="postlist">
         {%- for post in collections.posts | head(5) %}
         <li><a href="{{ post.url }}">
           <span class="label date">{{ post.date | dateDe }}</span>
-          <span class="t">{{ post.data.title }}</span>
+          <span class="t"><span class="t-link">{{ post.data.title }}</span><span class="arrow" aria-hidden="true">→</span></span>
           <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(true) }}" alt="" loading="lazy">{% endif %}</span>
         </a></li>
         {%- endfor %}
@@ -124,16 +126,18 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
 </section>
 
 <section class="section section--forest">
-  <div class="wrap">
-    <span class="label">07 — Prinzipien</span>
-    <h2 class="display" style="font-size:clamp(2.2rem,5.4vw,5rem);max-width:16ch;margin-top:1.5rem">Von regenerativem Wirtschaften profitieren <em>wir alle.</em></h2>
-    <ol class="principles">
-      <li><span class="n">/01</span><span class="p">Positiver Impact als grundlegender Zweck</span></li>
-      <li><span class="n">/02</span><span class="p">Langfristige &amp; zyklische Ausrichtung an der Umwelt</span></li>
-      <li><span class="n">/03</span><span class="p">Kooperative Beziehungen auf Augenhöhe</span></li>
-      <li><span class="n">/04</span><span class="p">Purpose-driven &amp; disruptive Innovationen</span></li>
-    </ol>
-    <div class="btns"><a class="btn btn--light" href="/kartenset/">Zum Planetary Thinking Kartenset</a></div>
+  <div class="wrap split">
+    <div class="side"><span class="num">07</span><span class="label">Prinzipien</span></div>
+    <div>
+      <h2 class="h2">Von regenerativem Wirtschaften profitieren wir alle.</h2>
+      <ol class="principles">
+        <li><span class="sub-n">/01</span><span class="p">Positiver Impact als grundlegender Zweck</span></li>
+        <li><span class="sub-n">/02</span><span class="p">Langfristige &amp; zyklische Ausrichtung an der Umwelt</span></li>
+        <li><span class="sub-n">/03</span><span class="p">Kooperative Beziehungen auf Augenhöhe</span></li>
+        <li><span class="sub-n">/04</span><span class="p">Purpose-driven &amp; disruptive Innovationen</span></li>
+      </ol>
+      <div class="btns"><a class="btn btn--light" href="/kartenset/">Zum Planetary Thinking Kartenset</a></div>
+    </div>
   </div>
 </section>
 

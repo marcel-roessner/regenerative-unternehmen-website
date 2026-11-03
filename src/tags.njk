@@ -8,18 +8,17 @@ permalink: "/blog/tags/{{ topic | slugTag }}/"
 eleventyComputed:
   title: "Thema: {{ topic }}"
 ---
+{%- set activeTopic = topic %}
 <header class="page-head wrap">
-  <a class="label" href="/blog/">← Alle Beiträge</a>
-  <h1 class="display" style="margin-top:1.6rem"><em>#</em>{{ topic }}</h1>
+  <span class="label">Journal · Thema</span>
+  <h1 class="display">{{ topic }}</h1>
 </header>
-<section class="wrap" style="padding-bottom:clamp(4rem,8vw,7rem)">
-  <ul class="postlist">
-    {%- for post in collections[topic] %}
-    <li><a href="{{ post.url }}">
-      <span class="label date">{{ post.date | dateDe }}</span>
-      <span class="t">{{ post.data.title }}</span>
-      <span class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(true) }}" alt="" loading="lazy">{% endif %}</span>
-    </a></li>
+<section class="wrap blog-list" style="padding-bottom:clamp(4rem,8vw,7rem)">
+  {% include "partials/topic-filter.njk" %}
+  <div class="cards">
+    {%- for post in collections[topic] | reverse %}
+    {%- set feature = false %}
+    {% include "partials/post-card.njk" %}
     {%- endfor %}
-  </ul>
+  </div>
 </section>

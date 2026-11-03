@@ -16,8 +16,7 @@
           <ol class="story-steps">
             {%- for s in model.stages %}
             <li class="story-step" data-step="{{ loop.index0 }}">
-              <span class="label">Stufe {{ loop.index }} / {{ model.stages.length }}</span>
-              <h3 class="story-name">{{ s.name }}</h3>
+                            <h3 class="story-name"><span>{{ s.name }}</span></h3>
               <p class="story-claim">{{ s.claim }}</p>
               <p class="story-body">{{ s.text }}</p>
             </li>

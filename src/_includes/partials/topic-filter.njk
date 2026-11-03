@@ -1,0 +1,11 @@
+{#- Themenfilter: auf /blog/ filtert JavaScript direkt auf der Seite; ohne JS führen die Links zu den Themenseiten. -#}
+<nav class="topic-filter" aria-label="Nach Thema filtern">
+  <span class="label">Themen</span>
+  <ul class="chips">
+    <li><a href="/blog/" data-filter=""{% if not activeTopic %} aria-current="page"{% endif %}>Alle</a></li>
+    {%- for t in collections.topics %}
+    {%- set slug = t | slugTag %}
+    <li><a href="{{ '/blog/' if activeTopic == t else '/blog/tags/' + slug + '/' }}" data-filter="{{ slug }}"{% if activeTopic == t %} aria-current="page"{% endif %}>{{ t }}{% if activeTopic == t %} <span aria-hidden="true">✕</span>{% endif %}</a></li>
+    {%- endfor %}
+  </ul>
+</nav>

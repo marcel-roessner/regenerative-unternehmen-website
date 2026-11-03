@@ -5,16 +5,15 @@ permalink: /gestaltung/
 noindex: true
 description: Das Erscheinungsbild von Regenerative Unternehmen – Logo, Farben, Schriften, Elemente und Abbildungen auf einen Blick.
 colors:
-  - { name: "Papier", token: "--paper", hex: "#F1EDE3", use: "Grundfläche aller Seiten" }
-  - { name: "Papier dunkel", token: "--paper-2", hex: "#E8E2D4", use: "Abwechselnde Abschnitte, neutrale Flächen in Abbildungen" }
-  - { name: "Linie", token: "--rule", hex: "#CDC5B2", use: "Haarlinien, Rahmen, neutrale Flächen" }
-  - { name: "Gedämpft", token: "--muted", hex: "#77725F", use: "Kleine Beschriftungen, Metadaten" }
-  - { name: "Tinte", token: "--ink", hex: "#171713", use: "Text, Linien, Buttons · in Abbildungen: konventionell / degenerativ" }
-  - { name: "Tannengrün", token: "--forest", hex: "#183D34", use: "Dunkle Abschnitte · in Abbildungen: regenerativ" }
+  - { name: "Papier", token: "--paper", hex: "#F5F5EF", use: "Grundfläche aller Seiten – hell, leicht grünlich, kein reines Weiß" }
+  - { name: "Salbei hell", token: "--paper-2", hex: "#E9ECE2", use: "Abwechselnde Abschnitte, Karten, neutrale Flächen in Abbildungen" }
+  - { name: "Linie", token: "--rule", hex: "#CFD5C8", use: "Haarlinien, Rahmen" }
+  - { name: "Gedämpft", token: "--muted", hex: "#66716A", use: "Kleine Beschriftungen, Metadaten" }
+  - { name: "Tinte", token: "--ink", hex: "#1A2420", use: "Text, Linien, Footer · in Abbildungen: konventionell / degenerativ" }
+  - { name: "Tannengrün", token: "--forest", hex: "#183D34", use: "Dunkle Abschnitte (Angebot, Prinzipien, Mission) · in Abbildungen: regenerativ" }
   - { name: "Grün mittel", token: "--forest-2", hex: "#4F7062", use: "Abstufung in Abbildungen" }
-  - { name: "Salbei", token: "--forest-3", hex: "#A7BCAE", use: "Helle Abstufung in Abbildungen, Hervorhebungen" }
-  - { name: "Rost", token: "--accent", hex: "#C4471F", use: "Nur als Punkt oder Linie (Logo-Punkt, Fokus) – nie für Text" }
-  - { name: "Lime", token: "--lime", hex: "#D7F36A", use: "Nur Textmarkierung und Hover auf Grün – sehr sparsam" }
+  - { name: "Salbei", token: "--forest-3", hex: "#A7BCAE", use: "Helle Abstufung in Abbildungen" }
+  - { name: "Hellgrün", token: "--lime", hex: "#D4F25A", use: "Die Akzentfarbe: Zahlen auf Grün, Markierungen, Hover, Kontakt-Fläche, Kern der Baumscheibe" }
 ---
 <header class="page-head wrap">
   <span class="label">Erscheinungsbild · Stand Oktober 2026</span>
@@ -27,11 +26,11 @@ colors:
     <div class="side"><span class="num">01</span><span class="label">Logo</span></div>
     <div>
       <h2 class="h2">Die Wortmarke</h2>
-      <div class="prose"><p>Dreizeilig in Unbounded, fett und in Versalien. Das „Re“ steht allein in der ersten Zeile – die Wiederholung, das Wieder-Erzeugen, ist der Kern. Der rostfarbene Punkt sitzt immer links oben auf Höhe der ersten Zeile.</p></div>
+      <div class="prose"><p>Dreizeilig in Unbounded, fett und in Versalien. Das „Re“ steht allein in der ersten Zeile – die Wiederholung, das Wieder-Erzeugen, ist der Kern. Davor steht die Bildmarke: eine reduzierte Baumscheibe mit drei Jahresringen und hellgrünem Kern.</p></div>
       <div class="ci-logos">
-        <div class="ci-logo"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
-        <div class="ci-logo ci-logo--ink"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
-        <div class="ci-logo ci-logo--forest"><span class="wordmark"><span class="dot"></span><span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+        <div class="ci-logo"><span class="wordmark">{% include "partials/mark.svg" %}<span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+        <div class="ci-logo ci-logo--ink"><span class="wordmark">{% include "partials/mark.svg" %}<span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
+        <div class="ci-logo ci-logo--forest"><span class="wordmark">{% include "partials/mark.svg" %}<span class="wm-text">Re<br>generative<br>Unternehmen</span></span></div>
       </div>
       <ul class="specs">
         <li><span class="label">Schrift</span><span>Unbounded, Gewicht 800, Versalien, Zeilenabstand 0,95</span></li>
@@ -47,7 +46,7 @@ colors:
     <div class="side"><span class="num">02</span><span class="label">Farben</span></div>
     <div>
       <h2 class="h2">Zwei Farben mit Bedeutung</h2>
-      <div class="prose"><p>Papier und Tinte tragen fast alles. Tannengrün kommt aus dem Kartenset und steht für das Regenerative. Rost ist kein Textfarbton, sondern ein Signal in Punktgröße.</p></div>
+      <div class="prose"><p>Helles Papier und Tinte tragen den Text. Tannengrün kommt aus dem Kartenset, steht für das Regenerative und gibt der Seite dunkle Ruhepunkte. Hellgrün ist die Akzentfarbe für alles, was nach vorn zeigt – nie als Textfarbe auf hellem Grund.</p></div>
       <div class="ci-swatches">
         {%- for c in colors %}
         <div class="ci-swatch">
@@ -143,12 +142,12 @@ colors:
     <div>
       <h2 class="h2">Diagramme sprechen dieselbe Sprache</h2>
       <div class="prose">
-        <p>Alle Grafiken werden als Vektor neu gezeichnet – keine bunten Screenshots. Die Farbe trägt Bedeutung: <strong>Tinte</strong> für konventionell und degenerativ, <strong>Grün</strong> in drei Stufen für regenerativ, <strong>Beige</strong> für neutrale Flächen.</p>
+        <p>Alle Grafiken werden als Vektor neu gezeichnet – keine bunten Screenshots. Die Farbe trägt Bedeutung: <strong>Tinte</strong> für konventionell und degenerativ, <strong>Grün</strong> in drei Stufen für regenerativ, <strong>Salbei hell</strong> für neutrale Flächen, <strong>Hellgrün</strong> für den Kern einer Baumscheibe. Linien wie in einer Architekturzeichnung: dünn, gleichmäßig, Enden laufen leicht über.</p>
       </div>
       <ul class="specs">
         <li><span class="label">Beschriftung</span><span>Unbounded für Begriffe, Achsen und Quellen, Hanken für Erklärtexte</span></li>
         <li><span class="label">Linien</span><span>1–2 Pixel, Pfeile mit kleinem Dreieck, gepunktete Linie für Grenzen und Nullpunkte</span></li>
-        <li><span class="label">Verboten</span><span>Verläufe, Schatten, Icons aus Clipart, Orange, Kursive</span></li>
+        <li><span class="label">Verboten</span><span>Verläufe, Schatten, Icons aus Clipart, Kursive, Grafiken breiter als der Bildschirm</span></li>
         <li><span class="label">Technik</span><span>SVG in <code>src/_includes/fig/</code>, Name wie das ursprüngliche Bild – wird automatisch eingesetzt</span></li>
       </ul>
     </div>
@@ -181,8 +180,8 @@ colors:
       <ul class="specs">
         <li><span class="label">Fotos</span><span>In Farbe, ohne Filter. Ausschnitt 4:3 in Listen, 4:5 bei Porträts. Echte Menschen und Materialien statt Stockfotos.</span></li>
         <li><span class="label">Bewegung</span><span>Eine starke Szene pro Seite (das Modell auf der Startseite), sonst Ruhe. Bei „Bewegung reduzieren“ entfällt sie.</span></li>
-        <li><span class="label">Sprache</span><span>Klar und pragmatisch. „Sie“ für Unternehmen, „du“ im Blog und beim Kartenset.</span></li>
-        <li><span class="label">Struktur</span><span>Nummerierte Kapitel nur, wo die Reihenfolge etwas bedeutet.</span></li>
+        <li><span class="label">Sprache</span><span>Klar und pragmatisch. Durchgängig „Sie“. Ausnahme: Blogbeiträge behalten den Ton ihrer Autor:innen.</span></li>
+        <li><span class="label">Nummern</span><span>Kapitel: Umrissziffer + fetter Kapitelname (01 Haltung). Punkte innerhalb eines Kapitels: „/01“ in Unbounded fett. Gleiche Ebene, gleiche Form.</span></li>
       </ul>
     </div>
   </div>
