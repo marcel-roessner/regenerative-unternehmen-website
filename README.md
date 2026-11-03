@@ -47,7 +47,7 @@ Alte Wix-Adressen werden über `_redirects` dauerhaft (301) auf die neuen Adress
 ## Redaktion (Backend) unter /admin
 
 Unter **https://www.regenerative-unternehmen.de/admin/** lassen sich Blogbeiträge schreiben und Kerntexte ändern:
-Blog · Modell (5 Stufen) · Team · Produkte · Einstellungen (Kontakt, Shop, Newsletter) · Impressum · Datenschutz.
+Blog · Modell (5 Stufen) · Team · Referenzen · Glossar · Produkte · Einstellungen (Kontakt, Shop, Newsletter) · Impressum · Datenschutz.
 Jede Änderung wird als Commit im Repo gespeichert; statichost baut die Seite danach automatisch neu (ca. 1 Minute).
 
 **Anmeldung mit 2FA – so geht’s:**
@@ -69,6 +69,8 @@ Seitenlayouts (Startseite, Mission, Kartenset) bleiben bewusst fest im Code – 
 | --- | --- |
 | E-Mail, LinkedIn, Shop-/Newsletter-/Formular-Links | `src/_data/site.json` |
 | Team | `src/_data/team.json` |
+| Referenzen (Startseite) | `src/_data/references.json` |
+| Glossar (`/glossar/`) | `src/_data/glossar.json` |
 | Produkte | `src/_data/products.json` + `src/product-*.njk` |
 | Navigation | `src/_data/nav.json` |
 | Seiten | `src/index.njk`, `src/mission.njk`, `src/kartenset.njk`, `src/kontakt.njk`, … |

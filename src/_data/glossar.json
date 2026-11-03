@@ -1,0 +1,162 @@
+{
+  "terms": [
+    {
+      "term": "Regeneratives Unternehmen",
+      "short": "Ein Unternehmen, das nicht nur Schaden begrenzt, sondern mit seinem Wirtschaften die Lebendigkeit der Systeme stärkt, in die es eingebettet ist.",
+      "text": "Regenerative Unternehmen verstehen sich als Teil von Natur und Gesellschaft. Sie fragen nicht nur, wie sie weniger schaden, sondern was ihr Geschäftsmodell zur Erneuerung dieser Systeme beitragen kann – ökologisch, sozial und wirtschaftlich.",
+      "post": "woher-kommt-die-idee-fuer-regenerative-unternehmen",
+      "related": ["Regeneration", "Nachhaltigkeit", "Stufenmodell der Regeneration"]
+    },
+    {
+      "term": "Regeneration",
+      "short": "Die Fähigkeit lebender Systeme, sich selbst zu erneuern – und ein Wirtschaften, das diese Fähigkeit stärkt.",
+      "text": "Im Gegensatz zum bloßen Erhalten oder Reparieren geht es bei Regeneration darum, dass ein System danach besser in der Lage ist, sich weiterzuentwickeln. Ein Wald, der sich nach einem Sturm selbst neu aufbaut, ist dafür das klassische Bild.",
+      "related": ["Restorativ (wiederherstellend)", "Lebende Systeme", "Degenerativ"]
+    },
+    {
+      "term": "Degenerativ",
+      "short": "Ein Wirtschaften, das die Grundlagen, von denen es lebt, schwächt oder aufbraucht.",
+      "text": "Degenerative Geschäftsmodelle verbrauchen Ressourcen und belasten Ökosysteme oder Gemeinschaften schneller, als diese sich erholen können. Auf dem Stufenmodell der Regeneration steht dieser Zustand ganz links.",
+      "related": ["Stufenmodell der Regeneration", "Nachhaltigkeit"]
+    },
+    {
+      "term": "Nachhaltigkeit",
+      "short": "Das Ziel, Schaden zu vermeiden und Ressourcen so zu nutzen, dass sie nicht aufgebraucht werden.",
+      "text": "Nachhaltigkeit hält den Zustand von Umwelt und Gesellschaft stabil. Im Modell der Regeneration bedeutet das, die Dinge weniger schlecht zu machen: Der Nullpunkt ist fast erreicht, aber noch nichts ist besser geworden. Regeneration geht darüber hinaus.",
+      "related": ["Regeneration", "Stufenmodell der Regeneration", "Kreislaufwirtschaft"]
+    },
+    {
+      "term": "Restorativ (wiederherstellend)",
+      "short": "Ansätze, die geschädigte Systeme wieder in einen gesunden Zustand versetzen.",
+      "text": "Restorative Maßnahmen, etwa die Renaturierung eines Gewässers, stellen ursprüngliche Funktionen wieder her. Der Mensch greift dabei ein, um einen früheren Zustand zu erreichen. Regenerativ ist der nächste Schritt: das System darin zu stärken, sich künftig selbst zu erneuern.",
+      "related": ["Regeneration", "Stufenmodell der Regeneration"]
+    },
+    {
+      "term": "Stufenmodell der Regeneration",
+      "short": "Ein Modell, das den Weg von konventionell über grün und nachhaltig bis regenerativ als fünf Stufen beschreibt.",
+      "text": "Das Modell stammt von Bill Reed und Pamela Mang. Es zeigt, dass die Stufen nicht nur ein „Mehr“ an Nachhaltigkeit sind, sondern ein anderes Verständnis: von technischen Systemen, die sparsamer betrieben werden, hin zu lebenden Systemen, in die man sich einbringt.",
+      "post": "die-neue-sau-im-dorf-warum-die-idee-die-von-regeneration-so-wichtig-ist",
+      "related": ["Degenerativ", "Nachhaltigkeit", "Restorativ (wiederherstellend)", "Lebende Systeme"]
+    },
+    {
+      "term": "Lebende Systeme",
+      "short": "Systeme, die sich selbst organisieren, entwickeln und erneuern – Ökosysteme, Gemeinschaften, Organisationen.",
+      "text": "Wer Unternehmen als lebende Systeme versteht, plant nicht nur Maschinen und Prozesse, sondern achtet auf Beziehungen, Rückkopplungen und Entwicklung. Das verändert, wie man Strategien, Teams und Geschäftsmodelle gestaltet.",
+      "related": ["Regeneration", "Regeneratives Design", "Stufenmodell der Regeneration"]
+    },
+    {
+      "term": "Regeneratives Design",
+      "short": "Ein Gestaltungsansatz, der Systeme so entwirft, dass sie lebendige Prozesse stärken, statt sie zu ersetzen.",
+      "text": "Der Ansatz stammt aus Architektur und Landschaftsplanung und wird auf Unternehmen übertragen: Man beginnt beim Ort, den Beteiligten und ihrem Potenzial und fragt, welchen Beitrag das Unternehmen zur Entwicklung des Ganzen leisten kann.",
+      "related": ["Lebende Systeme", "Transformation"]
+    },
+    {
+      "term": "Donut-Modell",
+      "short": "Ein Modell der Ökonomin Kate Raworth, das den sicheren und gerechten Raum für die Menschheit zwischen einem sozialen Fundament und einer ökologischen Decke zeigt.",
+      "text": "Das Fundament umfasst zwölf soziale Grundbedürfnisse wie Nahrung, Bildung oder Gleichberechtigung, die Decke die planetaren Grenzen. Zwischen beiden liegt der Donut, in dem Wirtschaft gedeihen kann, ohne Menschen zu übergehen oder die Erde zu überlasten.",
+      "post": "regenerative-unternehmen-definieren-erfolg",
+      "related": ["Planetare Grenzen", "Erfolg, regenerativer"]
+    },
+    {
+      "term": "Planetare Grenzen",
+      "short": "Neun Belastungsgrenzen der Erde, innerhalb derer die Menschheit sicher leben kann.",
+      "text": "Das Konzept wurde 2009 am Stockholm Resilience Centre entwickelt. Es zeigt, ab wann Eingriffe etwa bei Klima, Artenvielfalt oder Stickstoffkreisläufen irreversible Schäden verursachen können. Im Donut-Modell bilden sie die ökologische Decke.",
+      "post": "regenerative-unternehmen-definieren-erfolg",
+      "related": ["Donut-Modell", "Planetary Thinking"]
+    },
+    {
+      "term": "Planetary Thinking",
+      "short": "Eine Denkweise, die die planetaren Grenzen in unternehmerische Entscheidungen einbezieht.",
+      "text": "Aus der Perspektive der handelnden Organisation wird gefragt, wie sie zu den Grenzen der Erde steht und was sie daraus ableiten kann. Das Planetary Thinking Kartenset macht diese Denkweise mit 21 Themenkarten und einem Booklet in vier Workshop-Teilen anwendbar.",
+      "related": ["Planetare Grenzen", "Donut-Modell"]
+    },
+    {
+      "term": "Erfolg, regenerativer",
+      "short": "Erfolg, der nicht nur an Gewinn gemessen wird, sondern daran, wie gut ein Unternehmen im Einklang mit Gesellschaft und Natur wirtschaftet.",
+      "text": "Eine Organisation ist demnach erfolgreich, wenn sie finanziell gesund ist und zugleich innerhalb der gesellschaftlichen und planetaren Grenzen bleibt. Das erfordert eine Bilanz, die auch die sozio-ökologische Dimension sichtbar macht.",
+      "post": "regenerative-unternehmen-definieren-erfolg",
+      "related": ["Donut-Modell", "Public Value", "Purpose"]
+    },
+    {
+      "term": "Purpose",
+      "short": "Der Zweck, für den eine Organisation existiert – über Gewinn und Wachstum hinaus.",
+      "text": "Ein glaubwürdiger Purpose beantwortet, welchen Beitrag ein Unternehmen zur Welt leistet und für wen. Er wirkt nur, wenn Strategie, Produkte und Zusammenarbeit tatsächlich daran ausgerichtet sind.",
+      "post": "purpose-als-antrieb-fuer-regeneratives-wirtschaften",
+      "related": ["POSIWID", "Public Value", "Impact Business Model"]
+    },
+    {
+      "term": "POSIWID",
+      "short": "„The Purpose Of a System Is What It Does“ – der Zweck eines Systems ist das, was es tatsächlich bewirkt.",
+      "text": "Der Satz stammt vom Kybernetiker Stafford Beer. Er lenkt den Blick von der erklärten Absicht auf die tatsächlichen Ergebnisse: Ein Unternehmen, das Nachhaltigkeit verspricht, aber Schaden verursacht, hat in der Praxis einen anderen Zweck.",
+      "post": "posiwid-co-revisited-eine-weitere-betrachtung-des-purposebegriffs",
+      "related": ["Purpose", "Impact Business Model"]
+    },
+    {
+      "term": "Impact Business Model",
+      "short": "Ein Geschäftsmodell, dessen Produkte oder Dienstleistungen selbst zur Lösung eines sozialen oder ökologischen Problems beitragen.",
+      "text": "Hier ist die positive Wirkung nicht Beiwerk, sondern Kern der Wertschöpfung. Das Beispiel Denttabs zeigt, wie Purpose, Vision und Mission in ein solches Modell übersetzt werden können.",
+      "post": "denttabs-ein-impact-business-model-mit-purpose-vision-und-mission",
+      "related": ["Purpose", "Public Value"]
+    },
+    {
+      "term": "Public Value",
+      "short": "Der gesellschaftliche Mehrwert eines Angebots über den individuellen Kundennutzen hinaus.",
+      "text": "Wenn ein Unternehmen ein konkretes gesellschaftliches oder ökologisches Problem löst, steigt neben der Kundenzufriedenheit auch der Public Value. Das kann wiederum Vertrauen, Loyalität und damit den wirtschaftlichen Erfolg stärken.",
+      "post": "purpose-als-antrieb-fuer-regeneratives-wirtschaften",
+      "related": ["Erfolg, regenerativer", "Impact Business Model", "Stakeholder"]
+    },
+    {
+      "term": "Stakeholder",
+      "short": "Alle Gruppen, die von einem Unternehmen betroffen sind oder es beeinflussen – etwa Mitarbeitende, Kundschaft, Lieferanten, Nachbarschaft und Umwelt.",
+      "text": "Regenerative Unternehmen denken nicht nur an Eigentümer, sondern an das gesamte Beziehungsgeflecht. Kooperative Beziehungen auf Augenhöhe gehören zu ihren Grundprinzipien.",
+      "related": ["Public Value", "Wesentlichkeit"]
+    },
+    {
+      "term": "Wesentlichkeit",
+      "short": "Die Frage, welche Nachhaltigkeitsthemen für ein Unternehmen und für seine Umwelt tatsächlich bedeutsam sind.",
+      "text": "Bei der doppelten Wesentlichkeit werden zwei Blickrichtungen betrachtet: wie Themen das Unternehmen finanziell beeinflussen und wie das Unternehmen auf Menschen und Umwelt wirkt. Sie ist Grundlage für Nachhaltigkeitsberichte und Strategie.",
+      "post": "divergenz-und-konvergenz-in-der-nachhaltigkeitspraxis-ein-systemtheoretischer-blick-auf-wesentlich",
+      "related": ["Stakeholder", "Divergenz und Konvergenz"]
+    },
+    {
+      "term": "Divergenz und Konvergenz",
+      "short": "Zwei Bewegungen im Denken: erst öffnen und erkunden, dann bündeln und entscheiden.",
+      "text": "In der Nachhaltigkeitspraxis hilft das, Phasen der Vielfalt, in denen viele Perspektiven Platz haben, von Phasen der Konkretisierung zu unterscheiden, in denen Fokus entsteht. Beides braucht seinen Moment.",
+      "post": "divergenz-und-konvergenz-in-der-nachhaltigkeitspraxis-ein-systemtheoretischer-blick-auf-wesentlich",
+      "related": ["Wesentlichkeit"]
+    },
+    {
+      "term": "Integrale Theorie",
+      "short": "Ein Denkrahmen von Ken Wilber, der Innen und Außen sowie Individuum und Gemeinschaft in vier Quadranten zusammenführt.",
+      "text": "Für Organisationen heißt das: Haltung und Denken des Einzelnen, Verhalten und Fähigkeiten, gemeinsame Werte und Kultur sowie Strukturen und Prozesse hängen zusammen. Wer nur einen Bereich verändert, erreicht selten dauerhaften Wandel.",
+      "post": "innere-beziehung-zum-aussen-finden-ausrichtung-auf-regenerative-raeume",
+      "related": ["Spiral Dynamics", "Transformation"]
+    },
+    {
+      "term": "Spiral Dynamics",
+      "short": "Ein Entwicklungsmodell, das Werte- und Weltbildstufen von Menschen und Gemeinschaften beschreibt.",
+      "text": "Es geht auf Clare Graves zurück und wurde von Don Beck und Chris Cowan weiterentwickelt. In Organisationen kann es helfen zu verstehen, warum Menschen unterschiedlich auf Veränderung reagieren und welche Angebote zu ihrer Entwicklungsstufe passen.",
+      "post": "offene-raeume-fuer-regeneratives-wirtschaften-mit-leben-fuellen",
+      "related": ["Integrale Theorie", "Transformation"]
+    },
+    {
+      "term": "Transformation",
+      "short": "Ein grundlegender Wandel von Haltung, Strukturen und Geschäftsmodell – mehr als Optimierung.",
+      "text": "Optimierung macht Bestehendes effizienter. Transformation verändert, wofür ein Unternehmen da ist und wie es wirkt. Für den Weg zum regenerativen Unternehmen braucht es beides, aber vor allem den zweiten Schritt.",
+      "related": ["Stufenmodell der Regeneration", "Regeneratives Design"]
+    },
+    {
+      "term": "Regenerative Führung",
+      "short": "Ein Führungsverständnis, das darauf ausgerichtet ist, die Entwicklung des gesamten Systems zu fördern.",
+      "text": "Führung wird hier weniger als Steuerung gesehen, sondern als Gestalten von Bedingungen, in denen Menschen, Teams und das Unternehmen lebendig wachsen können. Haltung und Beziehungsqualität stehen im Vordergrund.",
+      "related": ["Lebende Systeme", "Transformation"]
+    },
+    {
+      "term": "Kreislaufwirtschaft",
+      "short": "Eine Wirtschaftsweise, die Stoffe möglichst lange im Kreislauf hält und Abfall vermeidet.",
+      "text": "Sie ist ein wichtiger Baustein nachhaltigen Wirtschaftens. Regenerative Ansätze gehen noch weiter: Sie fragen, wie Produktion und Lieferketten zur Erneuerung natürlicher Systeme beitragen können, nicht nur, wie sie Verluste verringern.",
+      "post": "regenerative-unternehmen-pnz-produkte-gmbh",
+      "related": ["Nachhaltigkeit", "Regeneration"]
+    }
+  ]
+}

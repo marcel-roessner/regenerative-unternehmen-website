@@ -110,6 +110,35 @@ collections:
               - { name: image, label: Bild 1, widget: image }
               - { name: image2, label: Bild 2, widget: image }
 
+      - name: references
+        label: Referenzen (Startseite)
+        file: src/_data/references.json
+        fields:
+          - name: items
+            label: Referenzen
+            widget: list
+            summary: "{{fields.client}} – {{fields.title}}"
+            fields:
+              - { name: client, label: Unternehmen, widget: string }
+              - { name: format, label: Format, widget: string, hint: "z. B. Workshop, Learning Journey, Analyse" }
+              - { name: title, label: Titel des Projekts, widget: string }
+              - { name: text, label: Kurzbeschreibung (optional), widget: text, required: false, hint: "1–2 Sätze. Leer lassen = wird nicht angezeigt" }
+
+      - name: glossar
+        label: Glossar
+        file: src/_data/glossar.json
+        fields:
+          - name: terms
+            label: Begriffe
+            widget: list
+            summary: "{{fields.term}}"
+            fields:
+              - { name: term, label: Begriff, widget: string }
+              - { name: short, label: Kurzdefinition (ein Satz), widget: text }
+              - { name: text, label: Erklärung (2–3 Sätze), widget: text }
+              - { name: post, label: Blogbeitrag dazu, widget: relation, collection: posts, value_field: "{{slug}}", search_fields: [title], display_fields: [title], required: false }
+              - { name: related, label: "Siehe auch (Begriffe)", widget: list, required: false, hint: "Ein Begriff pro Zeile, genau wie oben geschrieben" }
+
       - name: site
         label: Einstellungen (Kontakt, Shop, Newsletter)
         file: src/_data/site.json

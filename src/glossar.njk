@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: Glossar
+permalink: /glossar/
+description: Begriffe rund um regeneratives Wirtschaften kurz erklärt – von Regeneration und Donut-Modell bis Purpose, POSIWID und planetare Grenzen.
+eleventyComputed:
+  jsonld: >-
+    {{ { "@context": "https://schema.org", "@type": "DefinedTermSet", "name": "Glossar regeneratives Wirtschaften", "url": site.url + "/glossar/", "inLanguage": "de", "hasDefinedTerm": glossarGroups.all | glossarLd(site.url) } | dump | safe }}
+---
+<header class="page-head wrap">
+  <span class="label">Glossar · {{ glossarGroups.all.length }} Begriffe</span>
+  <h1 class="display">Begriffe rund um regeneratives Wirtschaften.</h1>
+  <p class="lead">Kurz erklärt und mit den Beiträgen verknüpft, in denen wir tiefer einsteigen.</p>
+</header>
+
+<section class="wrap glossary">
+  <nav class="az" aria-label="Alphabetisch springen">
+    {%- for g in glossarGroups.groups %}<a href="#buchstabe-{{ g.letter | lower }}">{{ g.letter }}</a>{% endfor %}
+  </nav>
+
+  {%- for g in glossarGroups.groups %}
+  <div class="gl-group" id="buchstabe-{{ g.letter | lower }}">
+    <div class="gl-letter" aria-hidden="true">{{ g.letter }}</div>
+    <div class="gl-terms">
+      {%- for t in g.terms %}
+      <article class="gl-term" id="{{ t.slug }}">
+        <h2 class="gl-name"><a href="#{{ t.slug }}">{{ t.term }}</a></h2>
+        <p class="gl-short">{{ t.short }}</p>
+        <p class="gl-text">{{ t.text }}</p>
+        {%- if t.post %}
+        {%- for p in collections.posts %}{% if p.fileSlug == t.post %}
+        <p class="gl-more"><a class="t-link" href="{{ p.url }}">Im Blog: {{ p.data.title }} <span class="arrow" aria-hidden="true">→</span></a></p>
+        {%- endif %}{% endfor %}
+        {%- endif %}
+        {%- if t.relatedLinks.length %}
+        <p class="gl-see"><span class="label">Siehe auch</span>{% for r in t.relatedLinks %}<a href="#{{ r.slug }}">{{ r.term }}</a>{% endfor %}</p>
+        {%- endif %}
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+{% include "partials/newsletter.njk" %}

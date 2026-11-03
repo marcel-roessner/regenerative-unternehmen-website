@@ -48,6 +48,9 @@ export default function (eleventyConfig) {
     t.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
   );
   eleventyConfig.addFilter("excerpt", (s = "", n = 180) => (s.length > n ? s.slice(0, s.lastIndexOf(" ", n)) + " …" : s));
+  eleventyConfig.addFilter("glossarLd", (terms = [], base = "") =>
+    terms.map((t) => ({ "@type": "DefinedTerm", name: t.term, description: `${t.short} ${t.text}`, url: `${base}/glossar/#${t.slug}` }))
+  );
   eleventyConfig.addFilter("mailto", (subject, email) => `mailto:${email}?subject=${encodeURIComponent(subject)}`);
 
   // Diagramme: liegt zu einem Bild eine SVG-Fassung in src/_includes/fig/, wird sie inline eingesetzt
