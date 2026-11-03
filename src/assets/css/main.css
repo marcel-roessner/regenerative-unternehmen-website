@@ -760,16 +760,6 @@ html.zoom-open { overflow: hidden; }
   .az a { flex: none; }
 }
 
-/* ---------- Referenzen ---------- */
-.refs { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1rem, 2vw, 1.5rem); margin-top: 2.5rem; }
-.ref { padding: clamp(1.6rem, 3vw, 2.4rem); background: var(--paper); border: 1px solid var(--rule); border-top: 3px solid var(--forest); display: flex; flex-direction: column; gap: .5rem; min-height: 15rem; }
-.ref .sub-n { color: var(--forest); margin-bottom: .4rem; }
-.ref-format { margin: .6rem 0 0; }
-.ref-client { font: 400 clamp(1.6rem, 3vw, 2.4rem)/1.05 var(--f-head); letter-spacing: -.03em; margin: 0; }
-.ref-title { margin: 0; font-size: 1.1rem; line-height: 1.4; color: var(--ink-2); }
-.ref-text { margin: .3rem 0 0; color: var(--ink-2); }
-@media (max-width: 800px) { .refs { grid-template-columns: 1fr; } .ref { min-height: 0; } }
-
 /* ---------- Bestellformular ---------- */
 .order-form { max-width: 40rem; margin-top: 2.5rem; }
 .order-form .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.6rem; }

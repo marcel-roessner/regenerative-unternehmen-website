@@ -110,20 +110,6 @@ collections:
               - { name: image, label: Bild 1, widget: image }
               - { name: image2, label: Bild 2, widget: image }
 
-      - name: references
-        label: Referenzen (Startseite)
-        file: src/_data/references.json
-        fields:
-          - name: items
-            label: Referenzen
-            widget: list
-            summary: "{{fields.client}} – {{fields.title}}"
-            fields:
-              - { name: client, label: Unternehmen, widget: string }
-              - { name: format, label: Format, widget: string, hint: "z. B. Workshop, Learning Journey, Analyse" }
-              - { name: title, label: Titel des Projekts, widget: string }
-              - { name: text, label: Kurzbeschreibung (optional), widget: text, required: false, hint: "1–2 Sätze. Leer lassen = wird nicht angezeigt" }
-
       - name: glossar
         label: Glossar
         file: src/_data/glossar.json

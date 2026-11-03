@@ -283,9 +283,9 @@
     },
     {
       "term": "Mission",
-      "short": "Der Auftrag eines Unternehmens: was es konkret tut, um seinen Purpose zu erfüllen – für wen, womit und wie.",
-      "text": "Während der Purpose das Wozu benennt, beschreibt die Mission den Weg dorthin. Zusammen mit der Vision bildet sie die Ausrichtung, an der Strategie, Angebote und Zusammenarbeit gemessen werden können.",
-      "post": "denttabs-ein-impact-business-model-mit-purpose-vision-und-mission",
+      "short": "Der Auftrag eines Unternehmens, der auf einen Zeitraum von etwa 1 bis 5 Jahren angelegt ist und auf den Purpose zielt.",
+      "text": "Die Mission beschreibt, was ein Unternehmen konkret tut, um seinen Purpose zu erfüllen. Sie zielt schon auf den Purpose, wenn in ihr der Existenzgrund artikuliert wird. Der Purpose geht zeitlich weit darüber hinaus und kann über viele Jahrzehnte wirken.",
+      "post": "purpose-als-antrieb-fuer-regeneratives-wirtschaften",
       "related": [
         "Purpose",
         "Vision",
@@ -294,9 +294,9 @@
     },
     {
       "term": "Vision",
-      "short": "Das Bild der Zukunft, die ein Unternehmen mit seiner Arbeit erreichen will.",
-      "text": "Eine Vision beschreibt, wie die Welt aussähe, wenn die Mission gelingt. Sie schafft Orientierung und Motivation, ohne den Weg im Einzelnen festzulegen.",
-      "post": "denttabs-ein-impact-business-model-mit-purpose-vision-und-mission",
+      "short": "Das langfristige Zukunftsbild eines Unternehmens auf etwa 3 bis 10 Jahre.",
+      "text": "Eine Vision beschreibt, wie die Welt aussähe, wenn die Mission gelingt. Sie schafft Orientierung, ohne den Weg im Einzelnen festzulegen. Der Purpose geht über Visions- und Missionsarbeit hinaus, weil er den Beitrag zu einem größeren Ganzen beschreibt.",
+      "post": "purpose-als-antrieb-fuer-regeneratives-wirtschaften",
       "related": [
         "Mission",
         "Purpose"
