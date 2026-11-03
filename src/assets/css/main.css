@@ -255,10 +255,6 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 /* Angebot */
 .offer { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); margin-top: 3rem; }
 .offer article { padding: 1.8rem 1.6rem 2rem; background: color-mix(in srgb, var(--forest-ink) 6%, transparent); border-top: 2px solid var(--accent); }
-.offer-img { display: block; width: calc(100% + 3.2rem); max-width: none; margin: -1.8rem -1.6rem 1.6rem; aspect-ratio: 3 / 2; object-fit: cover; }
-.offer article { overflow: hidden; }
-.offer article:has(.offer-img) { border-top: 0; }
-.offer-img { border-bottom: 3px solid var(--accent); }
 
 .sub-n { display: block; font: 800 clamp(1.8rem, 3vw, 2.6rem)/1 var(--f-wide); letter-spacing: -.01em; color: var(--accent); margin-bottom: 1.6rem; }
 .offer-t { font: 400 clamp(1.4rem, 2.2vw, 1.9rem)/1.1 var(--f-head); letter-spacing: -.03em; margin: 0 0 .9rem; }

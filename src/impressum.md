@@ -43,6 +43,6 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 ### Bildnachweis
 
-Fotos von [Unsplash](https://unsplash.com/de/lizenz) (Unsplash-Lizenz): Emma Henderson (Baum mit Wurzeln), Michail Dementiev (Waldlandschaft), GreenForce Staffing (Setzling), FORTYTWO (Workshop), Herlambang Tinasih Gusti (Training), Vitaly Gariev (Beratung). Alle übrigen Bilder und Grafiken: Regenerative Unternehmen.
+Fotos von [Unsplash](https://unsplash.com/de/lizenz) (Unsplash-Lizenz): Emma Henderson (Baum mit Wurzeln), Michail Dementiev (Waldlandschaft). Alle übrigen Bilder und Grafiken: Regenerative Unternehmen.
 
 <p class="label">Quelle: eRecht24 · Typografie: Unbounded von NaN und Hanken Grotesk (beide SIL OFL)</p>
