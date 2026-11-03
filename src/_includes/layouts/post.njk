@@ -14,7 +14,7 @@ layout: layouts/base.njk
   </header>
   {%- if image %}
   <figure class="article-hero wrap">
-    <img src="{{ image | img }}" alt="" loading="eager" fetchpriority="high">
+    <img src="{{ image | img }}" alt="{{ imageAlt }}" loading="eager" fetchpriority="high">
   </figure>
   {%- endif %}
   <div class="article wrap">
