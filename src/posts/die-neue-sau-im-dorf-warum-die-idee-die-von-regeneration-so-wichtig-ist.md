@@ -19,6 +19,7 @@ Natürlich gibt es inzwischen eine Reihe an regulatorischen Rahmenbedingungen, d
 <p class="caption">Phasen des ökologischen Designs und Entwicklung von der Degeneration zur Regeneration</p>
 
 <p class="caption">Abbildung 1<sup class="ref">[2]</sup> </p>
+
 Auf den ersten Blick teilt sich das Bild in zwei Bereiche. Dabei steht die linke Seite für Degeneration. Ein Bereich in dem sich die Bedingungen der Umwelt immer weiter verschlechtert. Die rechte Seite steht für Regeneration. Hier richtet sich alles Wirken auf das Leben aus. Während degenerative Vorgehensweisen mehr Energie und damit auch mehr finanzielle Mittel benötigen, kann regeneratives Wirtschaften mit weniger Energie und Betriebskosten auskommen.
 
 In diesem Modell wird der Begriff der Nachhaltigkeit als ein Zustand dargestellt, der sich kurz vor dem Nullpunkt des Koordinatensystems auf der linken Seite der y-Achse befindet.
@@ -34,6 +35,7 @@ Momentanes Aushängeschild zur Ausrichtung vieler Unternehmen sind die Sustainab
 Die SDGs der United Nations als Brücke zwischen der degenerativen und regenerativen Welt
 
 <p class="caption">Abbildung 2 (eigene Darstellung)<sup class="ref">[4]</sup> </p>
+
 Die SDGs verdeutlichen den Status der Nachhaltigkeit als Brücke. Seiner Auffassung nach ermöglichen die 17 Ziele der *United Nations* Anlass für Gespräche und Partnerschaften, um diese Brücke in Richtung einer wiederherstellenden und regenerativen Welt zu überqueren.<sup class="ref">[5]</sup> Sie bilden damit eine Grundlage. Denn Stufen der Wiederherstellung (Restoration) und der Regeneration können nicht ohne die Reduzierung möglicher verursachter Schäden auf der linken Seite der Darstellung erreicht werden.<sup class="ref">[6]</sup> Die eingehende Frage kann also definitiv mit „JA!“ beantwortet werden.
 
 ## Wonach sollte sich mein Unternehmen beim Thema Nachhaltigkeit ausrichten?
