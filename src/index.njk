@@ -22,9 +22,13 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   </div>
 </section>
 
-<section class="section">
+{% include "partials/story.njk" %}
+
+{% include "partials/atem.njk" %}
+
+<section class="section" id="warum">
   <div class="wrap split">
-    <div class="side"><span class="num">01</span><span class="label">Haltung</span></div>
+    <div class="side"><span class="num">02</span><span class="label">Warum</span></div>
     <div>
       <h2 class="h2">Regeneration = Erfolg?</h2>
       <blockquote class="quote">
@@ -34,24 +38,26 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
       <div class="prose">
         <p>Es gibt nur einen Weg, als Vorbild im Unternehmenskontext wahrgenommen zu werden: Es muss gewinnbringend sein. Nach Auffassung des Gründers wird kein Unternehmen ein anderes Unternehmen respektieren, wenn es nicht profitabel ist – egal wie viel Geld es auch spenden wird. Dabei ist der Gewinn bei Patagonia nicht das Ziel. Gewinn geschieht hier eher, sobald alles andere richtig gemacht wird. Aber wonach richtet sich dieses Unternehmen am Ende aus?</p>
       </div>
-    </div>
-  </div>
-</section>
-
-{% include "partials/story.njk" %}
-
-{% include "partials/atem.njk" %}
-
-<section class="section">
-  <div class="wrap split">
-    <div class="side"><span class="num">03</span><span class="label">Warum</span></div>
-    <div>
-      <h2 class="h2" style="max-width:22ch">In der heutigen Zeit gibt es einige Herausforderungen zu meistern. Regeneration ist ein Teil der Lösung.</h2>
       <div class="prose">
         <h3 class="h3" style="margin-top:2.5rem">Welchen Vorteil bieten regenerative Unternehmensstrukturen?</h3>
         <p>Regenerative Unternehmen bieten eine Vielzahl von Vorteilen für die Gesellschaft und den Planeten. Indem sie aktiv die Umwelt regenerieren, tragen sie zur Erhaltung der Biodiversität und zur Wiederherstellung empfindlicher Ökosysteme bei, in denen sie wirtschaften. Sie fördern über die gesamte Lieferkette hinweg soziale Verantwortung, indem sie gerechte Arbeitsbedingungen schaffen, Gemeinschaften stärken und benachteiligte Gruppen unterstützen.</p>
         <p>Das alles schützt den langfristigen Bestand des Unternehmens und erhöht die Chancen auf Erfolg. Ihre Perspektive auf Sinn und Wertschätzung fördert die Innovation und Effizienz, den steigenden Bedarf an nachhaltigen Produkten und Dienstleistungen zu decken.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="prinzipien">
+  <div class="wrap split">
+    <div class="side"><span class="num">03</span><span class="label">Prinzipien</span></div>
+    <div>
+      <h2 class="h2">Von regenerativem Wirtschaften profitieren wir alle.</h2>
+      <ol class="principles">
+        <li><span class="sub-n">/01</span><span class="p">Positiver Impact als grundlegender Zweck</span></li>
+        <li><span class="sub-n">/02</span><span class="p">Langfristige &amp; zyklische Ausrichtung an der Umwelt</span></li>
+        <li><span class="sub-n">/03</span><span class="p">Kooperative Beziehungen auf Augenhöhe</span></li>
+        <li><span class="sub-n">/04</span><span class="p">Purpose-driven &amp; disruptive Innovationen</span></li>
+      </ol>
     </div>
   </div>
 </section>
@@ -83,10 +89,22 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
       </article>
     </div>
     <div class="btns"><a class="btn btn--light" href="/kontakt/">Anfrage stellen</a></div>
+    <div class="tools">
+      <span class="label">Werkzeuge zum Selbermachen</span>
+      <div class="tools-grid">
+        {%- for p in products.items %}
+        <a class="tool" href="/product-page/{{ p.slug }}/">
+          <span class="tool-kicker">{{ p.kicker }} · {{ p.price }}</span>
+          <span class="tool-title">{{ p.title }}</span>
+          <span class="tool-teaser">{{ p.teaser }}</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="kollektiv">
   <div class="wrap split">
     <div class="side"><span class="num">05</span><span class="label">Kollektiv</span></div>
     <div>
@@ -109,7 +127,7 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
   </div>
 </section>
 
-<section class="section section--tint">
+<section class="section section--tint" id="blog">
   <div class="wrap split">
     <div class="side"><span class="num">06</span><span class="label">Blog</span></div>
     <div>
@@ -124,22 +142,6 @@ description: In der Zukunft erfolgreich – regenerative Unternehmen entwickeln.
         {%- endfor %}
       </ul>
       <div class="btns"><a class="btn" href="/blog/">Alle Beiträge</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--forest">
-  <div class="wrap split">
-    <div class="side"><span class="num">07</span><span class="label">Prinzipien</span></div>
-    <div>
-      <h2 class="h2">Von regenerativem Wirtschaften profitieren wir alle.</h2>
-      <ol class="principles">
-        <li><span class="sub-n">/01</span><span class="p">Positiver Impact als grundlegender Zweck</span></li>
-        <li><span class="sub-n">/02</span><span class="p">Langfristige &amp; zyklische Ausrichtung an der Umwelt</span></li>
-        <li><span class="sub-n">/03</span><span class="p">Kooperative Beziehungen auf Augenhöhe</span></li>
-        <li><span class="sub-n">/04</span><span class="p">Purpose-driven &amp; disruptive Innovationen</span></li>
-      </ol>
-      <div class="btns"><a class="btn btn--light" href="/kartenset/">Zum Planetary Thinking Kartenset</a></div>
     </div>
   </div>
 </section>
