@@ -27,7 +27,7 @@
   <link rel="preload" href="/assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="/assets/js/site.js" defer></script>
-  {%- if page.url == "/" %}<script src="/assets/js/spiel.js" defer></script>{% endif %}
+  {%- for sc in scripts %}<script src="/assets/js/{{ sc }}.js" defer></script>{% endfor %}
 </head>
 <body>
   <a class="skip" href="#main">Zum Inhalt springen</a>

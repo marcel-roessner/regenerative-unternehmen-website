@@ -41,7 +41,7 @@ Schriftarten werden lokal von unserem eigenen Webspace geladen; es findet keine 
 
 Diese Website setzt keine Cookies und verwendet keine Analyse-, Tracking- oder Marketingdienste.
 
-Das Spiel „Planetare Grenzen halten“ auf der Startseite speichert Ihre besten Runden (Punktzahl, erreichtes Level, Datum) ausschließlich im lokalen Speicher Ihres Browsers (localStorage). Diese Daten werden nicht an uns oder an Dritte übertragen. Sie können sie jederzeit löschen, indem Sie die Website-Daten in Ihrem Browser löschen.
+Die Atempause auf der Startseite zählt die Ringe Ihrer Baumscheibe, und das Spiel „Planetare Grenzen halten“ auf der Seite zum Kartenset merkt sich Ihre besten Runden (Punktzahl, erreichtes Level, Datum). Beides wird ausschließlich im lokalen Speicher Ihres Browsers (localStorage) abgelegt und nicht an uns oder an Dritte übertragen. Sie können diese Daten jederzeit löschen, indem Sie die Website-Daten in Ihrem Browser löschen.
 
 ## 5) Kontaktaufnahme
 5.1 Im Rahmen der Kontaktaufnahme mit uns (z. B. per E-Mail oder über ein Kontaktformular) werden personenbezogene Daten erhoben. Welche Daten im Falle der Nutzung eines Kontaktformulars erhoben werden, ist aus dem jeweiligen Kontaktformular ersichtlich. Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens bzw. für die Kontaktaufnahme und die damit verbundene technische Administration gespeichert und verwendet.

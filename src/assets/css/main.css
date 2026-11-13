@@ -816,3 +816,18 @@ html.zoom-open { overflow: hidden; }
 .spiel-mehr a { text-decoration: underline; text-underline-offset: 3px; }
 .spiel-quelle { display: block; margin-top: 1.5rem; }
 @media (max-width: 760px) { .spiel-feld { grid-template-columns: 1fr; } }
+
+/* ---------- Atempause ---------- */
+.atem-feld { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 16rem); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; margin-top: 2rem; }
+.at { width: 100%; max-width: 520px; height: auto; display: block; touch-action: none; user-select: none; -webkit-user-select: none; }
+.at.laeuft { cursor: pointer; }
+.at-ring { fill: none; stroke: var(--forest-2); opacity: .85; animation: at-ein 1.2s var(--ease) both; }
+@keyframes at-ein { from { opacity: 0; } }
+.at-kreis { fill: var(--accent-soft); opacity: .35; transition: opacity .3s, fill .3s; }
+.at.halten .at-kreis { opacity: .55; fill: var(--accent); }
+.at-kern { fill: var(--accent); }
+.at-wort { font: 600 20px var(--f-wide); fill: var(--ink); letter-spacing: -.01em; }
+.at-zahl { font: 500 13px var(--f-body); fill: var(--muted); }
+.atem-hilfe { font-size: .9rem; color: var(--muted); margin-top: 1rem; }
+.atem-bilanz { margin-top: 1.5rem; font-size: 1rem; color: var(--ink-2); }
+@media (max-width: 760px) { .atem-feld { grid-template-columns: 1fr; } }
