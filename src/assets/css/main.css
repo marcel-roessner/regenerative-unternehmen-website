@@ -775,3 +775,46 @@ html.zoom-open { overflow: hidden; }
 .form-done h3 { font: 400 1.6rem/1.1 var(--f-head); letter-spacing: -.03em; margin: 0 0 .6rem; }
 .form-done p { margin: 0; }
 @media (max-width: 600px) { .order-form .field-row, .order-form .field-row--plz { grid-template-columns: 1fr; } .order-form .field-row--plz { grid-template-columns: 7rem 1fr; } }
+
+/* ---------- Spiel „Planetare Grenzen halten“ ---------- */
+.hero-spiel { display: inline-block; margin-top: 1.4rem; font-size: .95rem; color: var(--ink-2); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--ink) 30%, transparent); text-underline-offset: 4px; }
+.hero-spiel:hover { color: var(--ink); text-decoration-color: var(--accent); }
+.spiel-feld { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 16rem); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; margin-top: 2rem; }
+.pg { width: 100%; max-width: 560px; height: auto; display: block; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.pg-kipp { fill: color-mix(in srgb, var(--accent) 7%, var(--paper)); stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 2 6; stroke-linecap: round; }
+.pg-safe { fill: color-mix(in srgb, var(--forest-3) 45%, var(--paper)); }
+.pg-grenze { fill: none; stroke: var(--forest); stroke-width: 2; stroke-dasharray: 8 5; }
+.pg-kern { fill: var(--forest); }
+.pg-kern-t { font: 600 11px var(--f-wide); fill: var(--forest-ink); letter-spacing: .04em; text-transform: uppercase; }
+.pg-hit { fill: transparent; }
+.pg-bar { fill: var(--forest-2); transition: fill .2s; }
+.pg-seg[data-z="warn"] .pg-bar { fill: var(--accent-soft); }
+.pg-seg[data-z="krit"] .pg-bar { fill: var(--accent); }
+.pg-seg.hit .pg-bar { fill: var(--forest); }
+.pg-seg.gekippt .pg-bar { fill: #c2410c; }
+.pg.laeuft .pg-seg { cursor: pointer; }
+.pg.laeuft .pg-seg:hover .pg-hit { fill: color-mix(in srgb, var(--ink) 5%, transparent); }
+.pg-name { font: 600 11px var(--f-body); fill: var(--ink-2); pointer-events: none; }
+.pg-nr { font: 600 10px var(--f-wide); fill: var(--paper); pointer-events: none; }
+.pg-hud { font: 600 12px var(--f-wide); fill: var(--ink); letter-spacing: .04em; }
+.pg-status { font: 500 13px var(--f-body); fill: var(--ink-2); }
+.pg-plus { font: 700 14px var(--f-wide); fill: var(--forest); pointer-events: none; animation: pg-up .8s var(--ease) forwards; }
+@keyframes pg-up { to { transform: translateY(-18px); opacity: 0; } }
+.pg-over rect { fill: var(--forest); opacity: .92; }
+.pg-over text { fill: var(--forest-ink); }
+.pg-over .go1 { font: 800 30px var(--f-wide); text-transform: uppercase; letter-spacing: -.01em; }
+.pg-over .go2 { font: 500 17px var(--f-body); }
+.pg-over .go3 { font: 700 22px var(--f-wide); letter-spacing: .04em; }
+.pg-over .rekord { fill: var(--accent-soft); font-weight: 700; }
+.spiel-hilfe { font-size: .9rem; color: var(--muted); margin-top: 1rem; }
+.spiel-liste { margin-top: 2rem; }
+.spiel-liste .label { display: block; margin-bottom: .8rem; }
+.hs-liste { list-style: none; margin: 0; padding: 0; counter-reset: hs; }
+.hs-liste li { counter-increment: hs; display: grid; grid-template-columns: 1.6rem 1fr auto; gap: .5rem; padding: .45rem 0; border-bottom: 1px solid var(--rule); font-size: .92rem; }
+.hs-liste li::before { content: counter(hs) "."; color: var(--muted); }
+.hs-liste li strong { font-family: var(--f-wide); font-weight: 600; font-size: .85rem; }
+.hs-liste li.neu { color: var(--ink); background: color-mix(in srgb, var(--accent-soft) 35%, transparent); }
+.spiel-mehr { font-size: .9rem; margin-top: 1.2rem; }
+.spiel-mehr a { text-decoration: underline; text-underline-offset: 3px; }
+.spiel-quelle { display: block; margin-top: 1.5rem; }
+@media (max-width: 760px) { .spiel-feld { grid-template-columns: 1fr; } }
