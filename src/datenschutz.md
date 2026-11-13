@@ -5,7 +5,7 @@ permalink: /datenschutz/
 description: Informationen zum Umgang mit personenbezogenen Daten auf dieser Website.
 ---
 
-<p class="label">Stand: Oktober 2026 · Entwurf nach Umzug zu statichost.eu – vor Livegang rechtlich prüfen lassen.</p>
+<p class="label">Stand: Oktober 2026 · Entwurf nach Umzug zu GitHub Pages – vor Livegang rechtlich prüfen lassen.</p>
 
 ## 1) Einleitung und Kontaktdaten des Verantwortlichen
 1.1 Wir freuen uns, dass Sie unsere Website besuchen und bedanken uns für Ihr Interesse. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer Website. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.
@@ -29,7 +29,7 @@ Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres be
 
 ## 3) Hosting
 
-Diese Website wird bei folgendem Anbieter gehostet: Variable Object Assignment (statichost.eu), c/o Knackeriet, Stockholm, Schweden.
+Diese Website wird über GitHub Pages gehostet. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (Konzern: Microsoft). Beim Aufruf der Seite verarbeitet GitHub technisch notwendige Verbindungsdaten wie die IP-Adresse. Die Datenübermittlung in die USA stützt sich auf den EU-US Data Privacy Framework-Angebotsbeschluss und Standardvertragsklauseln.
 
 Beim Aufruf der Website verarbeitet der Anbieter die unter Ziffer 2 genannten Server-Logfiles (insbesondere die IP-Adresse), um die Website technisch auszuliefern und die Sicherheit des Dienstes zu gewährleisten. Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an einer sicheren und effizienten Bereitstellung unseres Internetauftritts. Die Daten werden ausschließlich innerhalb der EU/des EWR verarbeitet. Als Unterauftragsverarbeiter setzt der Anbieter die Hetzner Online GmbH (Rechenzentrum, Deutschland) und die BunnyWay d.o.o. (Content Delivery Network, Slowenien) ein.
 

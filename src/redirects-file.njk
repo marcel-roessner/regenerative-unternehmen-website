@@ -2,7 +2,7 @@
 permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
-# Alte Wix-Adressen → neue Adressen (statichost.eu, 301 = dauerhaft)
+# Alte Wix-Adressen → neue Adressen (Hinweis: GitHub Pages kennt keine Server-Weiterleitungen, die Datei dient nur als Referenz)
 {% for r in redirects -%}
 {%- set from = r.from | urlencodePath -%}
 {{ from }}    {{ r.to }}    301
