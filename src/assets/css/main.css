@@ -264,12 +264,13 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
 .team { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1rem, 2.5vw, 2rem); margin-top: 3rem; }
 .person { background: var(--paper-2); border: 1px solid var(--rule); }
 .person figure { margin: 0; overflow: hidden; aspect-ratio: 4 / 5; background: var(--paper-2); }
-.person-body { padding: 1.4rem 1.5rem 1.6rem; }
+.person-body { padding: 1.4rem 1.5rem 1.6rem; container-type: inline-size; }
 .person .role { font: 500 .66rem/1.4 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--forest); margin: 0 0 1rem; }
-.person-link { font: 500 .66rem/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; }
+.person-link { display: inline-flex; color: var(--forest); transition: color .2s; }
+.person-link:hover { color: var(--accent); }
 .person img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
 .person:hover img { transform: scale(1.025); }
-.person .name { font-family: var(--f-head); font-weight: 300; font-size: clamp(1.5rem, 2.4vw, 2.1rem); letter-spacing: -.035em; margin: 0 0 .4rem; line-height: 1.1; }
+.person .name { font-family: var(--f-head); font-weight: 300; font-size: min(2.1rem, 9cqi); white-space: nowrap; letter-spacing: -.035em; margin: 0 0 .4rem; line-height: 1.1; }
 .person ul { list-style: none; margin: 0 0 1.2rem; padding: 0; }
 .person li { padding: .45rem 0; border-top: 1px solid var(--rule); font-size: .98rem; }
 .person li:last-child { border-bottom: 1px solid var(--rule); }
@@ -831,3 +832,6 @@ html.zoom-open { overflow: hidden; }
 .atem-hilfe { font-size: .9rem; color: var(--muted); margin-top: 1rem; }
 .atem-bilanz { margin-top: 1.5rem; font-size: 1rem; color: var(--ink-2); }
 @media (max-width: 760px) { .atem-feld { grid-template-columns: 1fr; } }
+
+/* Atempause hebt sich vom Modell ab */
+.section.atem { background: color-mix(in srgb, var(--accent-soft) 22%, var(--paper)); }
