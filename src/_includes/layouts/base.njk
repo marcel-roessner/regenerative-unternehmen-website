@@ -12,9 +12,14 @@
   <meta property="og:description" content="{{ (description or site.description) | striptags | truncate(300) }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:locale" content="de_DE">
-  {%- if image %}<meta property="og:image" content="{{ site.url }}{{ image | img }}">{% endif %}
+  {%- set ogImage = (image | img) if image else "/assets/img/regenerative-unternehmen-vorschau.jpg" %}
+  <meta property="og:image" content="{{ site.url }}{{ ogImage }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#f5f5ef">
   {%- if noindex %}<meta name="robots" content="noindex">{% endif %}
+  {%- if page.url == "/" %}<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"{{ site.url }}/#org","name":{{ site.title | dump | safe }},"url":"{{ site.url }}/","email":"{{ site.email }}","sameAs":["{{ site.linkedin }}"],"description":{{ site.description | dump | safe }}},{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":{{ site.title | dump | safe }},"inLanguage":"de","publisher":{"@id":"{{ site.url }}/#org"}}]}</script>{% endif %}
+  {%- if productIndex is defined %}{% set product = products.items[productIndex] %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":{{ product.title | dump | safe }},"description":{{ description | dump | safe }},"image":"{{ site.url }}{{ product.image | img }}","brand":{"@type":"Organization","name":{{ site.title | dump | safe }}},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"{{ product.price | priceNum }}","availability":"https://schema.org/InStock","url":"{{ site.url }}{{ page.url }}"}}</script>{% endif %}
   {%- if jsonld %}<script type="application/ld+json">{{ jsonld | safe }}</script>{% endif %}
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Blog-Feed">

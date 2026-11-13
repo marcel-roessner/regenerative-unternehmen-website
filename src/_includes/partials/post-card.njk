@@ -1,6 +1,6 @@
 {%- set tagSlugs = [] %}{% for t in post.data.tags | topicTags %}{% set tagSlugs = (tagSlugs.push(t | slugTag), tagSlugs) %}{% endfor %}
 <a class="card{% if feature %} card--feature{% endif %}" href="{{ post.url }}" data-tags=" {{ tagSlugs | join(' ') }} ">
-  <div class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(not feature) }}" alt="" {% if not feature %}loading="lazy"{% endif %}>{% endif %}</div>
+  <div class="thumb">{% if post.data.image %}<img src="{{ post.data.image | img(not feature) }}" alt="{{ post.data.imageAlt }}" {% if not feature %}loading="lazy"{% endif %}>{% endif %}</div>
   <div class="card-body">
     <span class="label">{{ post.date | dateDe }}</span>
     <h2 class="t"><span class="t-link">{{ post.data.title }}</span> <span class="arrow" aria-hidden="true">→</span></h2>

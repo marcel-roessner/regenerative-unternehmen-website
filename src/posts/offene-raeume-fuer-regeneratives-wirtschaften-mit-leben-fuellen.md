@@ -5,6 +5,7 @@ date: "2024-07-02"
 updated: "2024-07-11"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_ad95e90b171d47848cba1535464573d0"
+imageAlt: "Hell erleuchtetes Haus bei Nacht unter einem Sternenhimmel mit Lichtspuren"
 tags: ["post", "RegenerativeBusiness", "Ken Wilber", "Spiral Dynamics", "regenerativesLeadership"]
 permalink: "/post/offene-raeume-fuer-regeneratives-wirtschaften-mit-leben-fuellen/"
 legacy: "offene-räume-für-regeneratives-wirtschaften-mit-leben-füllen"

@@ -5,6 +5,7 @@ date: "2023-09-04"
 updated: "2024-02-27"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_80d070c9d1d347fa853582e7db94bda9"
+imageAlt: "Kreisdiagramm des regenerativen Ansatzes: Grad der Regeneration, Grundsätze, Kriterien und Strategien mit adaptivem Managementansatz im Zentrum"
 tags: ["post"]
 permalink: "/post/regenerative-strategien-grundsaetze-kriterien-und-die-konsequente-umsetzung-von-nachhaltigkeit/"
 legacy: "regenerative-strategien-grundsätze-kriterien-und-die-konsequente-umsetzung-von-nachhaltigkeit"

@@ -5,6 +5,7 @@ date: "2023-06-05"
 updated: "2023-08-13"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_946d3719eb0f4ff0a97dec6e23cd7311"
+imageAlt: "Diagramm: Entwicklung von konventionell über nachhaltig bis regenerativ, mit steigendem Systemdenken und sinkendem Energiebedarf (Living System Design)"
 tags: ["post"]
 permalink: "/post/die-neue-sau-im-dorf-warum-die-idee-die-von-regeneration-so-wichtig-ist/"
 legacy: ""

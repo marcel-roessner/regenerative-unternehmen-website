@@ -5,6 +5,7 @@ date: "2023-08-13"
 updated: "2024-10-22"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_e8549545ef4d4ffbbe69ea2be192f79d"
+imageAlt: "Rosa Donut mit Streuseln schwebt vor Planeten und einer Galaxie – Anspielung auf das Donut-Modell"
 tags: ["post", "RegenerativeBusiness", "Regeneration", "Donut-Modell", "Nachhaltigkeit", "Transformation", "Unternehmen", "Erfolg"]
 permalink: "/post/regenerative-unternehmen-definieren-erfolg/"
 legacy: ""

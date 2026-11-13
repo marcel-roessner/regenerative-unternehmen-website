@@ -5,6 +5,7 @@ date: "2023-10-10"
 updated: "2023-10-10"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_d80467b629004229999ea1ef1039c883"
+imageAlt: "Erdkugel liegt auf einer Sanddüne in der Wüste – Bild für eine bedrohte Erde"
 tags: ["post"]
 permalink: "/post/die-regenerative-organisation-als-nordstern/"
 legacy: ""

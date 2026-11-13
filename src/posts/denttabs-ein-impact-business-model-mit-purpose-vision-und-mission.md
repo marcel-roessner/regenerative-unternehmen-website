@@ -5,6 +5,7 @@ date: "2024-04-30"
 updated: "2024-05-03"
 author: "Karry Schwettmann"
 image: "/assets/img/248ab9_ef1c835e4ba24f11aa3b22f6e20df075"
+imageAlt: "Zahnpastatuben in vielen Farben und Marken, dazwischen schwebende weiße Tabletten – Sinnbild für das Denttabs-Geschäftsmodell"
 tags: ["post"]
 permalink: "/post/denttabs-ein-impact-business-model-mit-purpose-vision-und-mission/"
 legacy: ""

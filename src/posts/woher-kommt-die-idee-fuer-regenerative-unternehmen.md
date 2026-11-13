@@ -5,6 +5,7 @@ date: "2023-07-17"
 updated: "2023-07-17"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_3f21c26b752c4571870526a9dd90d03c"
+imageAlt: "Bunt gemaltes Bild einer Siedlung zwischen Bäumen und Bergen"
 tags: ["post"]
 permalink: "/post/woher-kommt-die-idee-fuer-regenerative-unternehmen/"
 legacy: "woher-kommt-die-idee-für-regenerative-unternehmen"

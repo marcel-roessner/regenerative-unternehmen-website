@@ -5,6 +5,7 @@ date: "2023-11-22"
 updated: "2023-11-23"
 author: "Karry Schwettmann"
 image: "/assets/img/b34276_52b6ff6d7f9c4a2d9520a2347459ab7d"
+imageAlt: "Türkisfarbener Baum wächst aus einem weißen Eimer vor violettem Hintergrund"
 tags: ["post"]
 permalink: "/post/regenerative-unternehmen-pnz-produkte-gmbh/"
 legacy: ""

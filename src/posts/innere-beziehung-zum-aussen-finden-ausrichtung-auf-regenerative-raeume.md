@@ -5,6 +5,7 @@ date: "2024-05-28"
 updated: "2024-07-02"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_a085e10fb2ac4438af3c4ea250607713"
+imageAlt: "Diagramm zur Ausrichtung eines Unternehmens: Haltung, Wissen, Werte und Produkte aufgetragen nach innen und außen"
 tags: ["post", "RegenerativeBusiness", "Ken Wilber", "Spiral Dynamics", "regenerativesLeadership"]
 permalink: "/post/innere-beziehung-zum-aussen-finden-ausrichtung-auf-regenerative-raeume/"
 legacy: "innere-beziehung-zum-aussen-finden-ausrichtung-auf-regenerative-räume"

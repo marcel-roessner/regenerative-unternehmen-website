@@ -5,6 +5,7 @@ date: "2024-02-27"
 updated: "2024-05-30"
 author: "Marcel Rößner"
 image: "/assets/img/b34276_3099d6d82f5548919346341c775c1dd2"
+imageAlt: "Illustration: Hände mit blauen Handschuhen formen ein Gefäß auf einer Töpferscheibe"
 tags: ["post"]
 permalink: "/post/purpose-als-antrieb-fuer-regeneratives-wirtschaften/"
 legacy: "purpose-als-antrieb-für-regeneratives-wirtschaften"

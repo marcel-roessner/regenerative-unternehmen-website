@@ -5,6 +5,7 @@ date: "2024-07-08"
 updated: "2024-07-09"
 author: "Karry Schwettmann"
 image: "/assets/img/248ab9_a38b34f9ca3b4af485d572493e844930"
+imageAlt: "Diagramm: Pfeile von Divergenz (Öffnung, Erkundung) zu Konvergenz (Konsolidierung, Fokus)"
 tags: ["post"]
 permalink: "/post/divergenz-und-konvergenz-in-der-nachhaltigkeitspraxis-ein-systemtheoretischer-blick-auf-wesentlich/"
 legacy: ""

@@ -3,8 +3,8 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {%- for p in collections.all %}{% if p.url and not p.url.endsWith('.xml') and p.url != '/404.html' %}
-  <url><loc>{{ site.url }}{{ p.url }}</loc>{% if p.data.updated %}<lastmod>{{ p.data.updated }}</lastmod>{% endif %}</url>
+  <url><loc>{{ site.url }}{{ p.url }}</loc>{% if p.data.updated %}<lastmod>{{ p.data.updated }}</lastmod>{% endif %}{% if p.data.image %}<image:image><image:loc>{{ site.url }}{{ p.data.image | img }}</image:loc>{% if p.data.imageAlt %}<image:caption>{{ p.data.imageAlt | escape }}</image:caption>{% endif %}</image:image>{% endif %}</url>
 {%- endif %}{% endfor %}
 </urlset>
