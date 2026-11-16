@@ -13,7 +13,8 @@ Schillstr. 80e
 
 Vertretungsberechtigter Geschäftsführer: Marcel Rößner
 
-E-Mail: marcel.roessner(at)digitalrobust.de
+Telefon: 0157 38225770  
+E-Mail: direkt(at)regenerative-unternehmen.de
 
 Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE342577314
 
@@ -26,6 +27,10 @@ Schillstr. 80e
 ## Bildrechte
 
 Abbildungen und Grafiken: Regenerative Unternehmen, sofern nicht anders angegeben. Bilder mit anderen Bildquellen werden separat ausgewiesen.
+
+## Verbraucherstreitbeilegung
+
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ## Haftungsausschluss (Disclaimer)
 
@@ -43,6 +48,6 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 ### Bildnachweis
 
-Fotos von [Unsplash](https://unsplash.com/de/lizenz) (Unsplash-Lizenz): Emma Henderson (Baum mit Wurzeln), Michail Dementiev (Waldlandschaft). Alle übrigen Bilder und Grafiken: Regenerative Unternehmen.
+Fotos von [Unsplash](https://unsplash.com/de/lizenz) (Unsplash-Lizenz): Emma Henderson (Baum mit Wurzeln), Michail Dementiev (Waldlandschaft). Alle übrigen Bilder, Grafiken und Illustrationen: Regenerative Unternehmen.
 
 <p class="label">Quelle: eRecht24 · Typografie: Unbounded von NaN und Hanken Grotesk (beide SIL OFL)</p>
